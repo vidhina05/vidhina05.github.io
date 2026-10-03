@@ -39,7 +39,7 @@
 @media (max-width:640px){:root{--gutter:20px}}
 
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-padding-top:110px}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:88px}
 body{margin:0;background:#fff;color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit;text-decoration:none}
@@ -352,13 +352,13 @@ body.nav-open{overflow:hidden}
 /* =========================================================
    CASE STUDY — shared
    ========================================================= */
-.cs-bar{position:fixed;top:0;left:0;right:0;z-index:100;height:157px;background:rgba(36,17,9,.79);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:#fff;transition:height .5s var(--ease-out),background .4s}
-.cs-bar.is-scrolled{height:84px;background:rgba(36,17,9,.9)}
+.cs-bar{position:fixed;top:0;left:0;right:0;z-index:100;height:88px;background:rgba(36,17,9,.79);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:#fff;transition:height .5s var(--ease-out),background .4s}
+.cs-bar.is-scrolled{height:64px;background:rgba(36,17,9,.9)}
 .cs-bar .in{height:100%;max-width:1440px;margin:0 auto;padding:0 64px;display:flex;align-items:center;gap:16px}
 .cs-back{width:40px;height:40px;margin-left:-8px;border-radius:50%;display:grid;place-items:center;transition:background .3s,transform .35s var(--ease-out)}
 .cs-back img{width:24px;height:24px}
 .cs-back:hover{background:rgba(255,255,255,.12);transform:translateX(-4px)}
-.cs-name{font:600 24px/28px Poppins;white-space:nowrap}
+.cs-name{font:600 20px/24px Poppins;white-space:nowrap}
 .cs-links{margin-left:auto;display:flex;gap:40px}
 .cs-links a{position:relative;font:700 14px/20px Inter;padding:4px 0;opacity:.85;transition:opacity .3s}
 .cs-links a:hover,.cs-links a.is-active{opacity:1}
@@ -368,7 +368,7 @@ body.nav-open{overflow:hidden}
 .progress{position:absolute;left:0;bottom:0;height:2px;width:100%;background:currentColor;transform-origin:left;transform:scaleX(0);opacity:.8}
 .cs-zari{position:absolute;left:0;right:0;bottom:-10px;height:10px}
 @media (max-width:1180px){.cs-links{display:none}.cs-bar .menu-btn{display:inline-flex}}
-@media (max-width:640px){.cs-bar{height:76px}.cs-bar.is-scrolled{height:64px}.cs-bar .in{padding:0 14px 0 20px}.cs-name{font-size:19px}}
+@media (max-width:640px){.cs-bar{height:64px}.cs-bar.is-scrolled{height:56px}.cs-bar .in{padding:0 14px 0 20px}.cs-name{font-size:19px}}
 .cs-foot{background:var(--nav);color:#fff}
 .cs-foot .in{max-width:1440px;margin:0 auto;padding:56px 96px;display:flex;justify-content:space-between;align-items:center;gap:24px}
 .cs-foot a{display:flex;flex-direction:column;gap:6px}
@@ -700,8 +700,8 @@ body.nav-open{overflow:hidden}
 .zari{height:20px;background:url(../assets/images/zari.svg) center/100% 100% no-repeat}
 .bn-h{font:700 28px/1.25 Roboto;color:var(--mag)}
 /* hero */
-.bn-hero{position:relative;padding-top:157px;background:linear-gradient(126deg,#fdf8f1 0%,#f8f0ea 60%,#f2e6e2 100%);overflow:hidden}
-.bn-hero .silk{position:absolute;right:0;top:157px;width:940px;height:836px;pointer-events:none}
+.bn-hero{position:relative;padding-top:128px;background:linear-gradient(126deg,#fdf8f1 0%,#f8f0ea 60%,#f2e6e2 100%);overflow:hidden}
+.bn-hero .silk{position:absolute;right:0;top:128px;width:940px;height:836px;pointer-events:none}
 .bn-hero .silk img{width:100%;height:100%;object-fit:cover;object-position:left top}
 .bn-hero .in{position:relative;min-height:816px;display:grid;grid-template-columns:671px 1fr;align-items:center;gap:32px;max-width:1440px;margin:0 auto;padding:0 96px 0 81px}
 .bn-brand{font:500 32px/28px Inter;letter-spacing:.16em;text-transform:uppercase;color:#241e1a}
@@ -947,7 +947,7 @@ body.nav-open{overflow:hidden}
 @media (max-width:640px){.vg-head h2{font-size:30px;line-height:38px}.vg-lab{font-size:18px}}
 .vg .dark{background:var(--gr);color:#fff}
 /* hero */
-.vg-hero{padding:222px 0 90px;overflow:hidden}
+.vg-hero{padding:170px 0 90px;overflow:hidden}
 .vg-hero .g{display:grid;grid-template-columns:1fr 480px;gap:64px;align-items:start}
 .vg-hero h1{font:700 56px/64px Poppins}
 .vg-hero p.s{margin-top:28px;font:400 18px/28px Inter;color:var(--mut);max-width:560px}

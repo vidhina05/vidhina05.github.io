@@ -48,10 +48,10 @@
     revealEls.forEach(function (el) { io.observe(el); });
     /* Safety net: reveal anything on screen even if the observer misses it
        (inline wrappers, Safari quirks, background tabs, bfcache restores). */
-    var pending = true, ticking = false;
+    var revPending = true, revTick = false;
     function sweep() {
-      ticking = false;
-      if (!pending) return;
+      revTick = false;
+      if (!revPending) return;
       var vh = window.innerHeight || root.clientHeight, left = 0;
       revealEls.forEach(function (el) {
         if (el.classList.contains("is-in")) return;
@@ -59,9 +59,9 @@
         if ((!r.width && !r.height) && el.firstElementChild) r = el.firstElementChild.getBoundingClientRect();
         if (r.top < vh * 0.95 && r.bottom > 0) { el.classList.add("is-in"); io.unobserve(el); } else left++;
       });
-      pending = left > 0;
+      revPending = left > 0;
     }
-    function queue() { if (!ticking) { ticking = true; requestAnimationFrame(sweep); } }
+    function queue() { if (!revTick) { revTick = true; requestAnimationFrame(sweep); } }
     window.addEventListener("scroll", queue, { passive: true });
     window.addEventListener("resize", queue);
     window.addEventListener("load", queue);
