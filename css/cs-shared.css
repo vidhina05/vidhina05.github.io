@@ -1,10 +1,10 @@
 /* Shared chrome for the three case studies: same menu, footer and project cards as the landing page.
    Each case study keeps its own colours and type inside the page. */
-@font-face{font-family:"Poppins";font-weight:600;font-display:swap;src:url(../assets/fonts/poppins-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Poppins";font-weight:500;font-display:swap;src:url(../assets/fonts/poppins-latin-600-normal.woff2) format("woff2")}
 @font-face{font-family:"Poppins";font-weight:700;font-display:swap;src:url(../assets/fonts/poppins-latin-700-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:400;font-display:swap;src:url(../assets/fonts/inter-latin-400-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:500;font-display:swap;src:url(../assets/fonts/inter-latin-500-normal.woff2) format("woff2")}
-@font-face{font-family:"Inter";font-weight:600;font-display:swap;src:url(../assets/fonts/inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;font-display:swap;src:url(../assets/fonts/inter-latin-600-normal.woff2) format("woff2")}
 
 body.cs{--cs-pill:rgba(36,24,15,.92)}
 body.bs2{--cs-pill:rgba(20,48,42,.94)}
@@ -15,19 +15,19 @@ body.th{--cs-pill:rgba(22,59,104,.95)}
 body.cs .cs-bar,body.cs .cs-bar.is-scrolled{top:16px;left:50%;right:auto;transform:translateX(-50%);width:min(1120px,calc(100% - 128px));height:64px;border-radius:999px;overflow:hidden;background:var(--cs-pill);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 16px 36px -24px rgba(0,0,0,.6)}
 body.cs .cs-bar .in{max-width:none;padding:0 8px 0 12px;gap:4px}
 body.cs .cs-back{margin-left:0}
-body.cs .cs-name{font:600 20px/28px "Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;margin-left:4px}
+body.cs .cs-name{font:500 22px/28px "Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;margin-left:4px}
 body.cs .cs-links{align-items:center;gap:4px}
-body.cs .cs-links a{font:500 15px/20px "Inter",system-ui,sans-serif;padding:12px 14px;border-radius:999px}
+body.cs .cs-links a{font:500 16px/20px "Inter",system-ui,sans-serif;padding:12px 16px;border-radius:999px}
 body.cs .cs-links a::after{left:14px;right:14px;bottom:6px}
-body.cs .cs-links .cs-cv{margin-left:12px;padding:12px 20px;background:#fff;color:#1F1712;opacity:1;font-weight:600}
+body.cs .cs-links .cs-cv{margin-left:12px;padding:12px 20px;background:#fff;color:#1F1712;opacity:1;font-weight:500}
 body.cs .cs-links .cs-cv::after{content:none}
 body.cs .cs-links .cs-cv:focus-visible{outline:2px solid #fff;outline-offset:2px}
-body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:2px}
-@media (max-width:1100px){body.cs .cs-links a{padding:12px 10px}body.cs .cs-links .cs-cv{margin-left:4px;padding:12px 16px}}
+body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:4px}
+@media (max-width:1100px){body.cs .cs-links a{padding:12px 12px}body.cs .cs-links .cs-cv{margin-left:4px;padding:12px 16px}}
 @media (max-width:839px){
   body.cs .cs-bar,body.cs .cs-bar.is-scrolled{top:8px;width:calc(100% - 24px);height:56px}
   body.cs .cs-bar .in{padding:0 4px 0 8px}
-  body.cs .cs-name{font-size:18px}
+  body.cs .cs-name{font-size:16px}
 }
 
 /* ---------- Footer: other projects + one shared bar ---------- */
@@ -43,15 +43,15 @@ body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:2px}
 .cf-ph img{display:block;width:100%;height:100%;object-fit:cover}
 .cf-t{display:flex;flex-direction:column;gap:4px;padding:24px 88px 28px 28px}
 .cf-t small{font:500 14px/20px "Inter",system-ui,sans-serif;opacity:.8}
-.cf-t b{font:700 26px/32px "Poppins",system-ui,sans-serif;letter-spacing:-.01em}
+.cf-t b{font:700 24px/32px "Poppins",system-ui,sans-serif;letter-spacing:-.01em}
 .cf-th .cf-t b{color:#A42A1E}
 .cf-q{font:400 16px/24px "Inter",system-ui,sans-serif;opacity:.88}
 .cf-go{position:absolute;right:24px;bottom:28px;width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:#fff;color:#1F1712}
 .cf-th .cf-go{background:#1F2A3A;color:#fff}
 .cf-go .mi{font-size:22px;transition:transform .25s}
 .cf-c:hover .cf-go .mi{transform:translateX(3px)}
-.cf-bar{margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px;font:400 15px/22px "Inter",system-ui,sans-serif;color:rgba(255,255,255,.72)}
-.cf-back{display:inline-flex;align-items:center;gap:8px;min-height:48px;color:#fff;font:600 18px/1 "Poppins",system-ui,sans-serif;text-decoration:none}
+.cf-bar{margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px;font:400 16px/24px "Inter",system-ui,sans-serif;color:rgba(255,255,255,.72)}
+.cf-back{display:inline-flex;align-items:center;gap:8px;min-height:48px;color:#fff;font:500 16px/1 "Poppins",system-ui,sans-serif;text-decoration:none}
 .cf-back .mi{font-size:22px;transition:transform .25s}
 .cf-back:hover .mi{transform:translateX(-4px)}
 .cf-l{display:flex;flex-wrap:wrap;gap:8px 24px;margin:0 auto 0 0;padding:0;list-style:none}
@@ -66,7 +66,7 @@ body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:2px}
 
 /* ---------- Breathe Safe ---------- */
 .bs2 .audit{margin-top:32px;border-top:1px solid var(--line,#D5E3DD);border-bottom:1px solid var(--line,#D5E3DD)}
-.bs2 .audit summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;cursor:pointer;list-style:none;font-weight:600;font-size:17px;color:var(--spruce,#1E4A39)}
+.bs2 .audit summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;cursor:pointer;list-style:none;font-weight:500;font-size:16px;color:var(--spruce,#1E4A39)}
 .bs2 .audit summary::-webkit-details-marker{display:none}
 .bs2 .audit summary .mi{transition:transform .25s}
 .bs2 .audit[open] summary .mi{transform:rotate(180deg)}
@@ -77,7 +77,7 @@ body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:2px}
 .bs2 .learn2>div{border-top:0;padding-top:0}
 .bs2 .learn2>div:first-of-type{grid-column:1/-1;max-width:60ch}
 .bs2 .learn2>div:first-of-type h3{font-size:clamp(28px,3vw,36px);line-height:1.15}
-.bs2 .learn2>div:first-of-type p{margin-top:12px;font-size:18px;line-height:28px}
+.bs2 .learn2>div:first-of-type p{margin-top:12px;font-size:16px;line-height:28px}
 .bs2 .learn2>div:not(:first-of-type){padding-left:20px;border-left:3px solid var(--spruce)}
 @media (max-width:860px){.bs2 .learn2{grid-template-columns:1fr}}
 .bs2 .vit-k{gap:0}
@@ -89,7 +89,7 @@ body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:2px}
 .rr2 .tagcard>*:not(.tag-hole){position:relative;z-index:1}.rr2 .tag-hole{z-index:1}
 .rr2 .tag-hole{left:44px}
 .rr2 .tag-hole::before{content:none}
-@media (max-width:760px){.rr2 .tagcard{padding:56px 22px 26px;clip-path:polygon(0 40px,50% 0,100% 40px,100% 100%,0 100%)}.rr2 .tagcard::before{clip-path:polygon(0 40px,50% 0,100% 40px,100% 100%,0 100%)}.rr2 .tag-hole{left:50%;right:auto;top:22px;margin-left:-11px}}
+@media (max-width:760px){.rr2 .tagcard{padding:56px 24px 28px;clip-path:polygon(0 40px,50% 0,100% 40px,100% 100%,0 100%)}.rr2 .tagcard::before{clip-path:polygon(0 40px,50% 0,100% 40px,100% 100%,0 100%)}.rr2 .tag-hole{left:50%;right:auto;top:22px;margin-left:-12px}}
 /* problem statement: lighter, easier to read */
 .rr2 .pov2 p:first-child{font:400 clamp(20px,2vw,24px)/1.55 var(--body);color:#FBF1E4}
 .rr2 .pov2 b{font-weight:700}
@@ -106,28 +106,28 @@ body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:2px}
 .cs-foot.cf .cf-c span,.cs-foot.cf .cf-c small,.cs-foot.cf .cf-c b{display:block;text-align:left}
 .cs-foot.cf .cf-t{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
 .cs-foot.cf .cf-t small{font:500 14px/20px "Inter",system-ui,sans-serif;letter-spacing:0;color:inherit;opacity:.8}
-.cs-foot.cf .cf-t b{font:700 26px/32px "Poppins",system-ui,sans-serif}
+.cs-foot.cf .cf-t b{font:700 24px/32px "Poppins",system-ui,sans-serif}
 .cs-foot.cf .cf-q{font:400 16px/24px "Inter",system-ui,sans-serif}
 .cs-foot.cf .cf-go{display:grid}
 .cs-foot.cf .cf-go .mi{display:block;font:400 22px/1 "Material Icons"}
-.cs-foot.cf .cf-back{display:inline-flex;flex-direction:row;gap:8px;min-height:48px;font:600 18px/1 "Poppins",system-ui,sans-serif}
+.cs-foot.cf .cf-back{display:inline-flex;flex-direction:row;gap:8px;min-height:48px;font:500 16px/1 "Poppins",system-ui,sans-serif}
 .cs-foot.cf .cf-back .mi{font:400 22px/1 "Material Icons"}
-.cs-foot.cf .cf-l a{display:inline-flex;flex-direction:row;min-height:48px;font:400 15px/22px "Inter",system-ui,sans-serif}
+.cs-foot.cf .cf-l a{display:inline-flex;flex-direction:row;min-height:48px;font:400 16px/24px "Inter",system-ui,sans-serif}
 .cs-foot.cf .cf-l a span{font:inherit;display:inline}
 @media (max-width:839px){.cs-foot.cf .cf-t b{font-size:22px;line-height:28px}}
 .study-l{margin-bottom:32px}
 .cs-foot.cf .cf-c .cf-go{display:grid;place-items:center}
-.cs-foot.cf .cf-c .cf-go .mi{display:block;width:22px;height:22px;line-height:22px}
+.cs-foot.cf .cf-c .cf-go .mi{display:block;width:22px;height:22px;line-height:24px}
 .cs-foot.cf .cf-c .cf-ph{display:block}
 .th .pf-t{border-collapse:collapse!important;border-spacing:0!important}
 .th .pf-t td{background:transparent!important;border-radius:0!important;border-bottom:1px solid var(--line,#D9DEE5)}
 .th .pf-t thead th{background:transparent!important;border:0!important;border-bottom:2px solid #1B2430!important;border-radius:0!important}
-.th .pf-t tbody tr:last-child td{background:#E6F2EA!important;color:#1C4A2C;font-weight:600}
+.th .pf-t tbody tr:last-child td{background:#E6F2EA!important;color:#1C4A2C;font-weight:500}
 
 /* ---------- round 5 ---------- */
 /* "See more" toggles (Silk journey, Thela SWOT) */
 .more-d{margin-top:24px;border-top:1px solid var(--cs-line,#ddd);border-bottom:1px solid var(--cs-line,#ddd)}
-.more-d>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;cursor:pointer;list-style:none;font-weight:700;font-size:17px;color:var(--cs-main,#222)}
+.more-d>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;cursor:pointer;list-style:none;font-weight:700;font-size:16px;color:var(--cs-main,#222)}
 .more-d>summary::-webkit-details-marker{display:none}
 .more-d>summary .mi{transition:transform .25s}
 .more-d[open]>summary .mi{transform:rotate(180deg)}
@@ -137,22 +137,22 @@ body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:2px}
 .th .more-d>summary{color:#1D4E89}
 
 /* Breathe Safe: key finding up front */
-.bs2 .b-key{margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px;padding:20px 24px;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px #CFE0D8;font-size:17px;line-height:26px}
+.bs2 .b-key{margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px;padding:20px 24px;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px #CFE0D8;font-size:16px;line-height:28px}
 .bs2 .b-key span{max-width:70ch}
 .bs2 .b-key b{color:var(--spruce,#1E4A39)}
-.bs2 .b-key a{display:inline-flex;align-items:center;gap:6px;min-height:48px;padding:0 20px;border-radius:999px;background:var(--spruce,#1E4A39);color:#fff;font-weight:600;font-size:15px;text-decoration:none;white-space:nowrap}
-.bs2 .b-key a .mi{font-size:18px}
+.bs2 .b-key a{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 20px;border-radius:999px;background:var(--spruce,#1E4A39);color:#fff;font-weight:500;font-size:16px;text-decoration:none;white-space:nowrap}
+.bs2 .b-key a .mi{font-size:16px}
 .bs2 .b-key a:focus-visible{outline:2px solid var(--spruce,#1E4A39);outline-offset:3px}
 .bs2 .b-icon{width:64px;height:auto}
 
 /* Thela: the result in the first screenful */
 .th .t-res{margin:32px 0 0;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:center;padding:24px;border-radius:4px;background:#F5EFE4;border:1px solid #D9D2C3}
-.th .t-res img{display:block;width:100%;height:auto;border-radius:2px}
-.th .t-res-k{font:400 26px/1.2 var(--disp);color:#A42A1E}
-.th .t-res ul{margin:16px 0 0;padding-left:20px;list-style:disc;font-size:16px;line-height:26px}
+.th .t-res img{display:block;width:100%;height:auto;border-radius:4px}
+.th .t-res-k{font:400 24px/1.2 var(--disp);color:#A42A1E}
+.th .t-res ul{margin:16px 0 0;padding-left:20px;list-style:disc;font-size:16px;line-height:28px}
 .th .t-res-c{margin-top:12px;font-weight:700}
-.th .t-res a{margin-top:20px;display:inline-flex;align-items:center;gap:6px;min-height:48px;padding:0 20px;border-radius:999px;background:#1D4E89;color:#fff;font-weight:600;font-size:15px;text-decoration:none}
-.th .t-res a .mi{font-size:18px}
+.th .t-res a{margin-top:20px;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 20px;border-radius:999px;background:#1D4E89;color:#fff;font-weight:500;font-size:16px;text-decoration:none}
+.th .t-res a .mi{font-size:16px}
 .th .t-res a:focus-visible{outline:2px solid #1D4E89;outline-offset:3px}
 @media (max-width:760px){.th .t-res{grid-template-columns:1fr;padding:16px;gap:16px}}
 
@@ -160,7 +160,7 @@ body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:2px}
 .th .pz{grid-template-columns:1fr;border-radius:4px;box-shadow:0 1px 0 #E9E2D2,0 10px 24px -18px rgba(27,36,48,.45);border:1px solid #D9D2C3}
 .th .pz-side{display:grid;grid-template-columns:200px minmax(0,1fr) minmax(0,1fr);gap:16px 32px;align-items:center;padding:20px 24px;background:#F5EFE4;border-bottom:2px dashed #CDBFA6}
 .th .pz-ph{grid-row:span 2}
-.th .pz-ph img{aspect-ratio:1;border-radius:2px;border:6px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.15);transform:rotate(-1.5deg)}
+.th .pz-ph img{aspect-ratio:1;border-radius:4px;border:6px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.15);transform:rotate(-1.5deg)}
 .th .pz-tags{align-self:end}
 .th .pz-tags li{border-radius:4px;background:#1D4E89}
 .th .pz-facts{grid-column:3;grid-row:1 / span 2;align-self:center}
@@ -198,9 +198,9 @@ body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:2px}
 .th .pz-side{grid-template-columns:200px minmax(0,1fr);align-content:center;gap:20px 32px}
 .th .pz-tags{align-self:end;grid-column:2}
 .th .pz-facts{grid-column:2;grid-row:auto;align-self:start;display:flex;flex-wrap:wrap;gap:16px 40px}
-.th .pz-facts div{display:flex;flex-direction:column;gap:2px}
-.th .pz-facts dt{font-size:13px}
-.th .pz-facts dd{font-size:17px}
+.th .pz-facts div{display:flex;flex-direction:column;gap:4px}
+.th .pz-facts dt{font-size:14px}
+.th .pz-facts dd{font-size:16px}
 .th .pz-bio{margin-top:20px}
 @media (max-width:760px){.th .pz-side{grid-template-columns:120px minmax(0,1fr)}.th .pz-facts{grid-column:1 / -1}.th .pz-facts{gap:12px 24px}}
 .rr2 .emq ul{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 32px}
@@ -208,3 +208,6 @@ body.cs .cs-bar .progress{left:32px;right:32px;bottom:0;border-radius:2px}
 @media (max-width:760px){.rr2 .emq ul{grid-template-columns:1fr}}
 body.cs .cs-back .mi{font-size:24px;line-height:1;color:#fff;position:relative;transition:transform .2s}
 body.cs .cs-back:hover .mi{transform:translateX(-3px)}
+
+/* Material 3: 48dp tap targets in the case-study bar */
+.cs-bar .cs-links a,.cs-bar .cs-cv{min-height:48px;padding-top:14px;padding-bottom:14px;box-sizing:border-box;display:inline-flex;align-items:center}
