@@ -693,3 +693,4 @@
 .nda-real figcaption .mi{font-size:16px;color:#F2B48F}
 @media (max-width:860px){.nda-real{padding:0 24px 32px}.nda-real img{max-width:none;margin:0}.nda-real figcaption{justify-content:flex-start}}
 .nda-real::after{content:none;display:none}
+.tlx-mono{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#fff;color:#1F8FB0;font:700 20px/1 var(--disp)}
