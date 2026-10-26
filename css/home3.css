@@ -680,3 +680,8 @@
   .pc-bs .pc-n li{font-size:14px;line-height:20px}
   .pc-bs .pc-n b{font-size:24px}
 }
+
+/* one experience entry: let the card use the full width, bullets in two columns */
+.tlx:has(> li:only-child){grid-template-columns:1fr}
+.tlx > li:only-child .tlx-card{height:auto}
+@media (min-width:900px){.tlx > li:only-child .tlx-card ul{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:32px}}
