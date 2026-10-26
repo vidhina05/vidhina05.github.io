@@ -26,4 +26,4 @@ Then open http://localhost:8000.
 
 ## Contact
 
-vidhina63@gmail.com | [LinkedIn](https://www.linkedin.com/in/vidhina-singhal-3a0296372)
+vidhina63@gmail.com | [LinkedIn](https://www.linkedin.com/in/vidhina-singhal)
