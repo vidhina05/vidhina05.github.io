@@ -685,3 +685,11 @@
 .tlx:has(> li:only-child){grid-template-columns:1fr}
 .tlx > li:only-child .tlx-card{height:auto}
 @media (min-width:900px){.tlx > li:only-child .tlx-card ul{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:32px}}
+
+/* NDA card: blurred real dashboard */
+.nda-real{margin:0;padding:32px 40px 32px 0;display:flex;flex-direction:column;justify-content:center;gap:12px;background:none;min-height:0}
+.nda-real img{display:block;width:100%;max-width:420px;height:auto;margin-left:auto;border-radius:16px;box-shadow:0 24px 48px -24px rgba(0,0,0,.6)}
+.nda-real figcaption{display:flex;align-items:center;justify-content:flex-end;gap:8px;font-size:14px;color:#E6D9CF}
+.nda-real figcaption .mi{font-size:16px;color:#F2B48F}
+@media (max-width:860px){.nda-real{padding:0 24px 32px}.nda-real img{max-width:none;margin:0}.nda-real figcaption{justify-content:flex-start}}
+.nda-real::after{content:none;display:none}
