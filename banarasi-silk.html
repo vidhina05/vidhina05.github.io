@@ -3,258 +3,436 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Banarasi Silk Saree — Resham Riwayat Case Study · Vidhina Singhal</title>
-<meta name="description" content="Resham Riwayat: craft research and an e-commerce prototype for authentic handwoven Banarasi silk sarees — background, research, competitor analysis, stakeholder map and final UI. A case study by Vidhina Singhal.">
+<title>Resham Riwayat, Banarasi silk storefront case study | Vidhina Singhal</title>
+<meta name="description" content="Resham Riwayat: field research in a Varanasi weaving workshop and a desktop storefront designed to prove a saree is handwoven and, next, show who wove it. A case study by Vidhina Singhal.">
 <meta name="theme-color" content="#2a0a14">
 <link rel="canonical" href="https://vidhina05.github.io/banarasi-silk.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Banarasi Silk Saree — Case Study · Vidhina Singhal">
-<meta property="og:description" content="“Your Story, Our Weave. A Legacy in Banarasi Silk.” — a handloom e-commerce and customization platform.">
+<meta property="og:title" content="Resham Riwayat, a case study by Vidhina Singhal">
+<meta property="og:description" content="A Banarasi silk storefront built on field research in a Varanasi weaving workshop.">
 <meta property="og:url" content="https://vidhina05.github.io/banarasi-silk.html">
-<meta property="og:image" content="https://vidhina05.github.io/assets/og-banarasi.jpg">
+<meta property="og:image" content="https://vidhina05.github.io/assets/og-banarasi.jpg?v=3">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="css/style.css?v=20261025">
+<link rel="stylesheet" href="css/m3.css?v=20261025b">
+<link rel="stylesheet" href="css/silk.css?v=13">
+<link rel="stylesheet" href="css/cs-shared.css?v=3">
 </head>
-<body class="cs bn">
+<body class="cs rr2">
 <a class="skip" href="#main">Skip to content</a>
 <header class="cs-bar" role="banner">
   <div class="in">
-    <a class="cs-back" href="index.html#projects" aria-label="Back to all projects"><img src="assets/icons/arrow-back.svg" alt="" width="24" height="24"></a>
+    <a class="cs-back" href="index.html#work" aria-label="Back to all projects"><span class="mi" aria-hidden="true">arrow_back</span></a>
     <a class="cs-name" href="index.html">Vidhina Singhal</a>
-    <nav class="cs-links" aria-label="Case study sections"><a href="#overview">Overview</a><a href="#process">Process</a><a href="#goals">Goals</a><a href="#secondary-research">Secondary Research</a><a href="#competitors">Competitors</a><a href="#final-ui">Final UI</a></nav>
+    <nav class="cs-links" aria-label="Case study sections"><a href="#research">Research</a><a href="#buyer">Buyer</a><a href="#problem">Problem</a><a href="#design">Design</a><a href="#validation">Validation</a><a class="cs-cv" href="assets/Vidhina_Singhal_Resume.pdf?v=3" target="_blank" rel="noopener">Resume<span class="sr-only"> (PDF, opens in new tab)</span></a></nav>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
   </div>
   <span class="progress" aria-hidden="true"></span><img class="cs-zari" src="assets/images/zari-nav.svg" alt="" aria-hidden="true">
 </header>
-<nav class="mobile-menu" id="mobile-menu" aria-label="Case study sections" aria-hidden="true"><a href="#overview">Overview</a><a href="#process">Process</a><a href="#goals">Goals</a><a href="#secondary-research">Secondary Research</a><a href="#competitors">Competitors</a><a href="#final-ui">Final UI</a><a href="index.html#projects">All projects</a><small>Vidhina Singhal · Portfolio</small></nav>
+<nav class="mobile-menu" id="mobile-menu" aria-label="Case study sections" aria-hidden="true"><a href="#research">Research</a><a href="#field">Varanasi</a><a href="#buyer">Buyer</a><a href="#problem">Problem</a><a href="#design">Design</a><a href="#who">Who wove this</a><a href="#validation">Validation</a><a href="#learned">Learnings</a><a href="#sources">Sources</a><a href="index.html#work">All projects</a><small>Vidhina Singhal, portfolio</small></nav>
 <main id="main">
-  <section class="bn-hero" aria-labelledby="bn-title">
-    <div class="silk" aria-hidden="true" data-parallax="0.05"><img src="assets/images/hero-silk.webp" width="940" height="836" alt=""></div>
-    <div class="in">
+
+  <!-- HERO -->
+  <section class="r-hero" aria-labelledby="r-title">
+    <img class="r-ribbon" src="assets/images/hero-silk.webp" width="940" height="836" alt="" aria-hidden="true">
+    <div class="r-wrap r-hero-g">
+      <div class="r-hero-t">
+        <p class="r-kick">A Banarasi silk e-commerce prototype</p>
+        <h1 id="r-title">Resham Riwayat</h1>
+        <p class="r-tag">“Your story, our weave. A legacy in Banarasi silk.”</p>
+        <p class="r-lead">A storefront that brings handwoven sarees from Varanasi’s looms to buyers online, designed to prove each one is handwoven and, next, show who wove it.</p>
+        <dl class="r-meta">
+          <div><dt class="ic-l"><span class="mi" aria-hidden="true">person</span>My role</dt><dd>Field research, information architecture, UI design</dd></div>
+          <div><dt class="ic-l"><span class="mi" aria-hidden="true">calendar_month</span>Timeline</dt><dd>Jun – Oct 2025</dd></div>
+          <div><dt class="ic-l"><span class="mi" aria-hidden="true">computer</span>Platform</dt><dd>Desktop-first website</dd></div>
+          <div><dt class="ic-l"><span class="mi" aria-hidden="true">travel_explore</span>Research</dt><dd>Varanasi workshop visit, 21 weaving steps documented</dd></div>
+        </dl>
+        <p class="r-credit">Solo academic project, Symbiosis Institute of Design. Faculty: Shruti Tambhake, Sailee Shewale.</p>
+      </div>
+      <figure class="r-browser r-hero-b">
+        <div class="r-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img class="zoomable" src="assets/images/rr-product.webp" width="1224" height="870" alt="Resham Riwayat product page with the authenticity badge">
+      </figure>
+    </div>
+  </section>
+  <div class="zari-band" aria-hidden="true"></div>
+
+  <!-- IN SHORT -->
+  <section class="r-sec r-short" aria-labelledby="sh-h">
+    <div class="r-wrap">
+      <h2 class="sr-only" id="sh-h">The project in short</h2>
+      <div class="tagcard">
+        <span class="tag-hole" aria-hidden="true"></span>
+        <p class="tag-brand">Resham Riwayat, in short</p>
+        <dl>
+          <div><dt>The problem</dt><dd>Banarasi handloom weavers are left out of online markets, and buyers can’t easily tell a handwoven saree from a cheaper power-loom copy.</dd></div>
+          <div><dt>What I did</dt><dd>Interviewed a Varanasi workshop’s owner, manager and an artisan, documented the 21-step weaving process, compared 4 competing brands, then designed a desktop storefront.</dd></div>
+          <div><dt>The result</dt><dd>A high-fidelity storefront with an authenticity badge, a craft-first home page, a 5-step checkout and photographer booking, plus a “Who wove this” panel and weaver flow, designed as the next version.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section class="r-sec" aria-labelledby="bg-h">
+    <div class="r-wrap r-split">
+      <figure class="x-arch"><img src="assets/images/bn-artisan.webp" width="600" height="981" loading="lazy" alt="An artisan’s hand weaving silk threads on a handloom"><figcaption>Each saree can take weeks on the loom.</figcaption></figure>
       <div>
-        <p class="bn-brand h-in" style="--delay:.1s">Resham Riwayat</p>
-        <h1 id="bn-title"><span class="line-mask"><span style="--delay:.22s">“Your Story, Our Weave. A Legacy</span></span><span class="line-mask"><span style="--delay:.34s">in Banarasi Silk.”</span></span></h1>
-        <p class="h-in" style="--delay:.55s">A handloom e-commerce &amp; customization platform bringing authentic Banarasi silk sarees from Varanasi's looms to your doorstep.</p>
-      </div>
-      <div class="mock" aria-label="Mockups of the Resham Riwayat website">
-        <div class="win w1 h-in" style="--delay:.65s"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><b></b></div><img class="zoomable" src="assets/images/rr-product.webp" width="1224" height="870" alt="Resham Riwayat product detail page" data-caption="Product detail"></div>
-        <div class="win w2 h-in" style="--delay:.5s"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><b></b></div><img class="zoomable" src="assets/images/rr-home.webp" width="1441" height="1025" alt="Resham Riwayat home page" data-caption="Home"></div>
+        <div class="eyeh"><h2 class="r-h2" id="bg-h">A centuries-old craft, almost invisible online</h2></div>
+        <p class="r-p">Banarasi silk weaving is rooted in Varanasi’s cultural identity and carries generations of skill. This project set out to document the process from yarn to finished saree, understand the weaving community, and find sustainable ways to support artisans through visibility, fair value and voice.</p>
+        <p class="r-p">Brocade weaving with gold and silver thread became Banaras’s speciality in the Mughal era, but power looms, which spread through the city in the 1980s and 1990s, have pushed most weavers off the handloom,<sup class="cite"><a href="#ref-6" aria-label="Source 6">6</a></sup> and in 2023 a handwoven saree selling for about ₹10,000 could earn its weaver only ₹1,500–2,000.<sup class="cite"><a href="#ref-1" aria-label="Source 1">1</a></sup></p>
+        <div class="duo">
+          <figure><img src="assets/images/bn-weave1.webp" width="704" height="260" loading="lazy" alt="Warp threads stretched on a loom"><figcaption>Warp threads on a Banarasi loom</figcaption></figure>
+          <figure><img src="assets/images/bn-ghats.webp" width="704" height="260" loading="lazy" alt="Temples and ghats along the Ganges in Varanasi"><figcaption>Varanasi, home of the craft</figcaption></figure>
+        </div>
       </div>
     </div>
-    <div class="zari" aria-hidden="true"></div>
+      <div class="r-wrap"><blockquote class="x-mission"><p>Our mission: to change how authentic Banarasi sarees are discovered and bought, by connecting buyers directly with the weavers behind every saree, so their craft is seen, valued and carried home with its true story intact.</p></blockquote></div>
   </section>
 
-  <section class="bn-bg" id="overview" aria-label="Project background and problem statement">
-    <div class="in">
-      <div class="arch reveal left"><div class="pic reveal-img"><img src="assets/images/bn-artisan.webp" width="600" height="981" loading="lazy" alt="Artisan's hand weaving silk threads on a handloom"></div></div>
+  <div class="zari-band" aria-hidden="true"></div>
+
+  <!-- SECONDARY -->
+  <section class="r-sec r-rose" id="research" aria-labelledby="sr-h">
+    <div class="r-wrap">
+      <div class="r-head stack"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">query_stats</span>Secondary research</p><h2 class="r-h2" id="sr-h">What the numbers say</h2></div><p>From secondary research: the 4th All India Handloom Census, reporting from Varanasi, and studies of handloom e-commerce. Figures are dated, because wages and loom counts have changed over time.</p></div>
+      
+      <div class="nums">
+        <p><b>₹250</b><span>what a weaver could earn in 2016 for a saree taking 10–15 days; by 2023, ₹1,500–2,000 on a ₹10,000 saree<sup class="cite"><a href="#ref-2" aria-label="Source 2">2</a>,<a href="#ref-1" aria-label="Source 1">1</a></sup></span></p>
+        <p><b>0.2%</b><span>of handloom weavers’ sales happen online<sup class="cite"><a href="#ref-3" aria-label="Source 3">3</a>,<a href="#ref-4" aria-label="Source 4">4</a></sup></span></p>
+        <p><b>5%</b><span>of Varanasi’s weaver community still worked on handlooms in 2016<sup class="cite"><a href="#ref-2" aria-label="Source 2">2</a></sup></span></p>
+        <p><b>31.45 lakh</b><span>handloom households in India, about two-thirds earning under ₹5,000 a month<sup class="cite"><a href="#ref-3" aria-label="Source 3">3</a>,<a href="#ref-4" aria-label="Source 4">4</a></sup></span></p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- COMPETITORS -->
+  <section class="r-sec" aria-labelledby="cp-h">
+    <div class="r-wrap">
+      <div class="r-head stack"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">fact_check</span>Competitive analysis</p><h2 class="r-h2" id="cp-h">Four brands, one missing piece</h2></div><p>I compared four brands that sell Banarasi sarees online on nine features, looking for what a buyer still can’t see.</p></div>
+      <div class="cmp-logos"><div class="cmp-grp"><p class="cmp-gl">Direct competitors: brands selling Banarasi sarees online</p><ul><li><span class="mono" aria-hidden="true">R</span><span>Raw Mango</span></li><li><img class="logo" src="assets/logos/sabyasachi.png" alt="" width="20" height="20" loading="lazy"><span>Sabyasachi</span></li><li><img class="logo" src="assets/logos/taneira.png" alt="" width="20" height="20" loading="lazy"><span>Taneira</span></li><li><img class="logo" src="assets/logos/jaypore.png" alt="" width="20" height="20" loading="lazy"><span>Jaypore</span></li></ul></div></div>
+      <h3 class="cmp-cap">Feature comparison</h3><p class="cmp-scroll">Scroll the table sideways to see every competitor.</p>
+      <div class="cmp-wrap" tabindex="0" role="region" aria-label="Benchmarking"><table class="bm-t"><thead><tr><th scope="col">Features</th><th scope="col">Raw Mango</th><th scope="col">Sabyasachi</th><th scope="col">Taneira</th><th scope="col">Jaypore</th></tr></thead><tbody><tr><th scope="row">Weaver stories or profiles</th><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td></tr><tr><th scope="row">Customisation options</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td></tr><tr><th scope="row">Artisan involvement or ownership</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td></tr><tr><th scope="row">Transparent pricing</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td></tr></tbody></table></div>
+      <p class="cmp-note">All four brands sell online and globally, focus on Banarasi craft heritage, tell a brand story and talk about sustainable, ethical production, so those rows are left out. Taneira gets the artisan tick for its Weavershalas, weaving centres it has run since 2022, the first and largest in Varanasi.<sup class="cite"><a href="#ref-5" aria-label="Source 5">5</a></sup> Transparent pricing is empty for every brand. That is the gap Resham Riwayat starts from.</p>
+      <div class="gapopp"><div class="go-c gap"><h4>Gap</h4><ul><li>Only Raw Mango profiles its weavers.</li><li>No brand explains its prices or the weaver’s share, and only Taneira invests in weavers directly.</li><li>Customisation is rare and limited to luxury bridal wear.</li></ul></div><div class="go-c opp"><h4>Opportunity</h4><ul><li>Make the weaver and the loom visible on every product.</li><li>Prove a saree is handwoven with an authenticity mark.</li><li>Turn buying into an experience: customise it, then book a photographer.</li></ul></div></div>
+    </div>
+  </section>
+
+  <!-- STAKEHOLDERS -->
+  <section class="r-sec r-rose" aria-labelledby="st-h">
+    <div class="r-wrap r-split2">
       <div>
-        <div class="panel-top reveal">
-          <h2 class="bn-h">Project Background</h2>
-          <p>Banarasi silk weaving is a centuries-old handloom craft rooted in Varanasi's cultural identity, carrying generations of tradition, skill, and emotional meaning. This project set out to document the entire process from yarn to finished saree, understand the socioeconomic structure of the weaving community, and explore sustainable ways to support artisans through visibility, fair value, and voice.</p>
-          <div class="ims"><span class="reveal-img"><img src="assets/images/bn-weave1.webp" width="704" height="260" loading="lazy" alt="Warp threads stretched on a Banarasi loom"></span><span class="reveal-img" style="--delay:.12s"><img src="assets/images/bn-ghats.webp" width="704" height="260" loading="lazy" alt="Temples and ghats along the Ganges in Varanasi"></span></div>
-        </div>
-        <div class="panel-bot reveal">
-          <div class="zari" aria-hidden="true"></div>
-          <h2>Problem Statement</h2>
-          <p>Banarasi silk is a centuries-old handloom craft rooted in Varanasi's cultural identity. However, its artisans face <b>digital exclusion</b> due to <b>lack of awareness, infrastructure, and institutional support</b>. Without centralized systems or targeted policies, they are left out of <b>modern markets</b>, while most government programs focus on urban industries — overlooking the unique needs of <b>traditional weaving communities</b>.</p>
-        </div>
+        <div class="eyeh"><h2 class="r-h2" id="st-h">Everyone a saree passes through</h2></div>
+        <p class="r-p">From the buyer and weaver at the core, to the people and policies around them.</p>
+        <dl class="st-key">
+          <div><dt><i class="c1"></i>Core</dt><dd>On the platform regularly: the buyer, and the weaver whose work is sold</dd></div>
+          <div><dt><i class="c2"></i>Direct</dt><dd>Help create or deliver the product or service</dd></div>
+          <div><dt><i class="c3"></i>Indirect</dt><dd>Affected by, or able to influence, the platform</dd></div>
+        </dl>
+      </div>
+      <ul class="st-list">
+        <li class="c1"><b>Core</b><small>On the platform regularly</small>Saree buyers, weavers and artisans</li>
+        <li class="c2"><b>Direct</b><small>Help create or deliver the product</small>Weaver cooperatives, the platform team, photographers and stylists, GI-tag certifiers</li>
+        <li class="c3"><b>Indirect</b><small>Affected by, or able to influence, the platform</small>Handloom NGOs, local boutiques, logistics partners, investors, influencers, government textile policy</li>
+      </ul>
+      <div class="x-rings" role="img" aria-label="Stakeholder map. Core: saree buyers, weavers and artisans. Direct: weaver cooperatives, the platform team, photographers and stylists, GI-tag certifiers. Indirect: handloom NGOs, local boutiques, logistics partners, investors, influencers, government textile policy.">
+        <div class="x-ring x-r3"><span style="--a:200deg">Handloom NGOs</span><span style="--a:250deg">Local boutiques</span><span style="--a:300deg">Logistics</span><span style="--a:20deg">Investors</span><span style="--a:70deg">Influencers</span><span style="--a:130deg">Textile policy</span></div>
+        <div class="x-ring x-r2"><span style="--a:230deg">Cooperatives</span><span style="--a:320deg">Platform team</span><span style="--a:50deg">Photographers</span><span style="--a:140deg">GI-tag certifiers</span></div>
+        <div class="x-ring x-r1"><b>Buyers</b><b>Weavers</b></div>
       </div>
     </div>
   </section>
+  <div class="zari-band" aria-hidden="true"></div>
 
-  <section id="process" aria-labelledby="proc-h">
-    <div class="proc-scroll">
-      <div class="proc reveal fade">
-        <div class="proc-inner">
-          <span class="gl" style="left:48px"></span><span class="gl" style="left:195px"></span><span class="gl" style="left:342px"></span><span class="gl" style="left:489px"></span><span class="gl" style="left:636px"></span><span class="gl" style="left:783px"></span><span class="gl" style="left:930px"></span><span class="gl" style="left:1077px"></span><span class="gl" style="left:1224px"></span>
-          <img class="thread" src="assets/images/silk-thread.webp" width="1272" height="926" alt="" aria-hidden="true">
-          <h2 id="proc-h">Design Process</h2>
-          <p class="pnote">The entire project was completed in ~<b>2 months</b></p>
-          <span class="wk" style="left:107px">Week 1</span><span class="wk" style="left:243px">Week 2</span><span class="wk" style="left:379px;top:108px">Week 3</span><span class="wk" style="left:534px;top:108px">Week 4</span><span class="wk" style="left:680px;top:108px">Week 5</span><span class="wk" style="left:827px;top:108px">Week 6</span><span class="wk" style="left:978px;top:108px">Week 7</span><span class="wk" style="left:1125px;top:108px">Week 8</span>
-          <div class="pb" style="left:48px;top:148px;width:420px;--delay:.1s">Strategy</div>
-          <div class="pb dk" style="left:48px;top:222px;width:276px;--delay:.2s"><span class="mi" aria-hidden="true">description</span>Secondary Research</div>
-          <div class="pb dk" style="left:336px;top:296px;width:132px;--delay:.3s"><span class="mi" aria-hidden="true">person</span>Primary Research</div>
-          <div class="pb" style="left:480px;top:370px;width:132px;--delay:.4s">Scope</div>
-          <div class="pb dk" style="left:480px;top:444px;width:132px;--delay:.5s"><span class="mi" aria-hidden="true">lightbulb</span>Define &amp; Ideate</div>
-          <div class="pb" style="left:480px;top:518px;width:276px;--delay:.6s">Structure</div>
-          <div class="pb dk" style="left:624px;top:592px;width:132px;--delay:.7s"><span class="mi" aria-hidden="true">account_tree</span>Task Flows &amp; IA</div>
-          <div class="pb" style="left:768px;top:666px;width:420px;--delay:.8s">Skeleton and Surface</div>
-          <div class="pb dk" style="left:768px;top:740px;width:276px;--delay:.9s"><span class="mi" aria-hidden="true">edit</span>Design &amp; Prototype</div>
-          <div class="pb dk" style="left:1056px;top:814px;width:132px;--delay:1s"><span class="mi" aria-hidden="true">fact_check</span>Usability Testing</div>
-        </div>
-      </div>
-    </div>
-    <p class="swipe">Swipe to see the full timeline →</p>
-  </section>
-
-  <section id="goals" aria-labelledby="goal-h">
-    <div class="goal">
-      <div class="pic reveal-img"><img src="assets/images/bn-aaditi.webp" width="600" height="798" loading="lazy" alt="A young woman browsing sarees on a tablet — persona Aaditi Sharma"></div>
-      <div>
-        <h2 class="bn-h reveal" id="goal-h">Goal Statement</h2>
-        <p class="g reveal">To design a platform that will let <b>saree buyers</b> <b>discover and customize authentic, handwoven Banarasi silk sarees</b>, <b>connect directly with the weavers</b> behind each piece, and <b>book styling or photography support</b>.</p>
-        <p class="s reveal">This will affect buyers and artisans alike — helping customers verify authenticity and provenance before they buy, while giving weavers a direct, verified channel to reach customers and earn fair value without relying on middlemen.</p>
-        <h2 class="bn-h t2 reveal">Target Audience</h2>
-        <div class="aud-c reveal">Buyers (Online) — urban professionals aged 25–35 purchasing Banarasi sarees for festive &amp; wedding occasions, e.g. persona Aaditi Sharma, 28, New Delhi</div>
-        <div class="aud-c reveal">Artisans, Owners &amp; Managers — Banarasi silk weavers and workshop stakeholders in Varanasi seeking direct, fair market reach</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bn-about" aria-labelledby="about-h">
-    <div class="in">
-      <div class="mock2" aria-label="Mockups of the shop, product and photographer pages">
-        <div class="win a1 reveal" style="--delay:0s"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><b></b></div><img class="zoomable" src="assets/images/rr-shop.webp" width="1224" height="870" loading="lazy" alt="Resham Riwayat shop page with saree grid and filters" data-caption="Browse &amp; filter · Shop"></div>
-        <div class="win a2 reveal" style="--delay:.15s"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><b></b></div><img class="zoomable" src="assets/images/rr-product.webp" width="1224" height="870" loading="lazy" alt="Resham Riwayat product page" data-caption="Product page"></div>
-        <div class="win a3 reveal" style="--delay:.3s"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><b></b></div><img class="zoomable" src="assets/images/rr-photographer.webp" width="1224" height="870" loading="lazy" alt="Resham Riwayat book a photographer page" data-caption="Book a photographer"></div>
-      </div>
-      <div>
-        <h2 class="reveal" id="about-h">About</h2>
-        <hr class="reveal fade">
-        <p class="lead reveal">It is a platform that aims to help buyers <b>discover and own authentic, handwoven Banarasi silk saree</b> through:</p>
-        <ul data-stagger="0.12">
-          <li>Browse and filter a curated catalog of handwoven Banarasi sarees by fabric, colour, price, and occasion — or request a custom saree estimate.</li>
-          <li>View detailed product pages with sourcing details and sizing, and check out through a simple, guided flow.</li>
-          <li>Book a photographer and styling consultation to capture their saree, directly through the site.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section aria-label="Who the platform is and is not for">
-    <div class="isfor wrap" data-stagger="0.15">
-      <div><h2 class="hd">Platform Is For</h2><div class="bd"><ol><li>Browsing, customizing, and purchasing authentic handwoven Banarasi silk sarees.</li><li>Connecting buyers directly with verified weavers and the story behind each saree.</li><li>Booking styling and photography support for a purchased saree.</li></ol></div></div>
-      <div><h2 class="hd">Platform Is Not For</h2><div class="bd"><ol><li>Not for teaching or manufacturing the weaving craft itself.</li><li>Not eliminating artisans from the process — the platform supports weavers, not replaces them.</li><li>Not for mass-produced or powerloom sarees — only authentic handloom Banarasi silk.</li></ol></div></div>
-    </div>
-  </section>
-
-  <section class="mission" aria-labelledby="mission-h">
-    <div class="in">
-      <div class="big reveal-img"><img src="assets/images/bn-mission.webp" width="600" height="931" loading="lazy" alt="Close-up of white warp threads on a loom"></div>
-      <div class="stack"><span class="reveal-img" style="--delay:.15s"><img src="assets/images/bn-threads.webp" width="380" height="596" loading="lazy" alt="Spools of coloured silk thread"></span><span class="reveal-img" style="--delay:.3s"><img src="assets/images/bn-loom.webp" width="380" height="596" loading="lazy" alt="Weaver's hand working a patterned handloom"></span></div>
-      <div class="txt">
-        <img class="motif" src="assets/images/bn-motif.webp" width="305" height="317" alt="" aria-hidden="true">
-        <h2 class="reveal" id="mission-h">Our Mission</h2>
-        <hr class="reveal fade">
-        <p class="reveal"><b>Revolutionize</b> <b>the way authentic Banarasi silk sarees are discovered and bought</b> — <b>connecting buyers directly with the weavers</b> behind every saree, so their craft is seen, valued, and carried home with its true story intact.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec2" id="secondary-research" aria-labelledby="sr-h">
-    <div class="wrap" style="padding:0">
-      <h2 class="big reveal" id="sr-h">1.&nbsp; Secondary Research</h2>
-      <h3 class="sub reveal">1.1&nbsp; Domain Study</h3>
-      <div class="domain">
-        <div class="rings reveal fade" role="img" aria-label="Concentric diagram: global handloom market, India's handloom tradition, Banarasi silk in Varanasi">
-          <span class="r r1"></span><span class="r r2"></span><span class="r r3"></span>
-          <p class="t t1"><b>Global Handloom Market</b><strong>$7.8 billion </strong>market in 2023, projected to reach $17B by 2033. (Market.us, 2024)</p>
-          <p class="t t2"><b>India's Handloom Tradition</b>31.45 lakh households nationwide (4th Handloom Census, 2019–20)</p>
-          <p class="t t3"><b>Banarasi Silk, Varanasi</b>~40,000 weavers today, down from 300,000 — one of India's most iconic handloom traditions</p>
-        </div>
-        <div>
-          <h3 class="reveal">India's Handloom Heritage</h3>
-          <p class="lead reveal">Handloom weaving is one of India's oldest livelihoods and cultural exports, sustaining over <b>31 lakh worker households nationwide</b> — with Banarasi silk among its most iconic traditions.</p>
-          <ul data-stagger="0.1">
-            <li>India observes National Handloom Day every August 7, commemorating the 1905 Swadeshi movement's call to revive indigenous craft.</li>
-            <li>Handloom households have grown to 31.45 lakh nationwide (2019–20), up from 27.83 lakh a decade earlier — yet 67% still earn under ₹5,000 a month.</li>
-            <li>Banarasi silk flourished under Mughal patronage in Varanasi and remains one of India's most globally recognised handloom crafts.</li>
-            <li>Power looms and falling demand have driven Varanasi's own weaver population down from 300,000 to roughly 40,000 today.</li>
+  <!-- FIELD -->
+  <section class="r-sec r-wine" id="field" aria-labelledby="fd-h">
+    <div class="r-wrap">
+      <div class="r-head"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">location_on</span>Field research</p><h2 class="r-h2" id="fd-h">In a Varanasi workshop</h2></div><p>I interviewed the workshop’s owner, manager and an artisan, and documented all 21 steps from raw yarn to a packed saree. Photos are blurred to protect the people in them.</p></div>
+      
+      <div class="field-g">
+        <figure><img src="assets/images/bn-interview.webp" width="1200" height="680" loading="lazy" alt="Blurred photo of Vidhina interviewing the workshop owner"><figcaption>Interviewing the workshop owner</figcaption></figure>
+        <div class="told">
+          <h3>What they told me</h3>
+          <ul>
+            <li>Weaving is a family legacy and a source of pride. They welcome time-saving tools, but not anything that replaces traditional skill.</li>
+            <li>Marketing is their biggest challenge. They need direct reach to buyers, fair pricing, and something that proves authenticity.</li>
+            <li>Artisans learn by doing, so anything built for them should rely on visuals, voice and regional language, not text-heavy menus.</li>
           </ul>
+          <p class="shaped"><b>How it shaped the design:</b> the craft comes before the catalogue. The home page opens with the history of the weave, and the product page carries an authenticity badge; weaver profiles come next.</p>
+        </div>
+      </div>
+      <h3 class="loom-h">From yarn to saree</h3>
+      <ol class="loom" tabindex="0" aria-label="Eight weaving steps, scrolls sideways">
+        <li><img src="assets/images/bn-dyeing.webp" width="600" height="600" loading="lazy" alt="Blurred photo of yarn being dyed"><span>Dyeing the yarn</span></li>
+        <li><img src="assets/images/bn-warping.webp" width="600" height="600" loading="lazy" alt="Blurred photo of warp threads being stretched"><span>Warping the threads</span></li>
+        <li><img src="assets/images/bn-drafting.webp" width="600" height="600" loading="lazy" alt="Blurred photo of threads drawn through the reed"><span>Drafting and denting</span></li>
+        <li><img src="assets/images/bn-zari.webp" width="600" height="600" loading="lazy" alt="Blurred photo of zari thread spools"><span>Sourcing zari</span></li>
+        <li><img src="assets/images/bn-graph.webp" width="600" height="600" loading="lazy" alt="Blurred photo of a motif drawn on graph paper"><span>Sketch to graph</span></li>
+        <li><img src="assets/images/bn-cards.webp" width="600" height="600" loading="lazy" alt="Blurred photo of punched jacquard cards"><span>Punching jacquard cards</span></li>
+        <li><img src="assets/images/bn-weaving.webp" width="600" height="600" loading="lazy" alt="Blurred photo of a weaver at the loom"><span>Weaving the motif</span></li>
+        <li><img src="assets/images/bn-cutwork.webp" width="600" height="600" loading="lazy" alt="Blurred photo of loose threads being trimmed"><span>Cutwork and finishing</span></li>
+      </ol>
+      <p class="r-cap light">8 of the 21 steps I documented.</p>
+    </div>
+  </section>
+  <div class="zari-band" aria-hidden="true"></div>
+
+  <!-- BUYER -->
+  <section class="r-sec" id="buyer" aria-labelledby="by-h">
+    <div class="r-wrap">
+      <div class="r-head stack"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">person</span>Proto-persona and journey</p><h2 class="r-h2" id="by-h">Understanding the buyer</h2></div><p>A proto-persona: I didn’t interview buyers, so Aaditi is built from secondary research on how people buy handloom online and from what the workshop told me about its market. Testing with real buyers is the first step of the validation plan.</p></div>
+
+      <article class="pz">
+        <div class="pz-side">
+          <figure class="pz-ph"><img src="assets/images/bn-aaditi-28.webp" alt="Stock photo of a young woman in a red saree, representing the persona Aaditi" width="360" height="440" loading="lazy"><figcaption class="stock-l">Stock photo</figcaption></figure>
+          <ul class="pz-tags" aria-label="Personality"><li>Aesthetic-driven</li><li>Digitally aware</li><li>Curious</li></ul>
+          <dl class="pz-facts"><div><dt>Age</dt><dd>28</dd></div><div><dt>Location</dt><dd>New Delhi</dd></div><div><dt>Occupation</dt><dd>HR executive</dd></div><div><dt>Buys</dt><dd>Mostly online, on phone</dd></div></dl>
+          <p class="pz-l">Where she discovers brands</p><div class="pz-apps"><span class="pz-app"><span class="mi" aria-hidden="true">photo_camera</span>Instagram</span><span class="pz-app"><span class="mi" aria-hidden="true">search</span>Search</span><span class="pz-app"><span class="mi" aria-hidden="true">storefront</span>Exhibitions</span></div>
+        </div>
+        <div class="pz-main">
+          <p class="pz-role">Proto-persona, online buyer</p><h3 class="pz-name">Aaditi Sharma</h3>
+          <blockquote class="pz-q">“It’s so hard to tell if it’s handwoven or machine-made.”</blockquote>
+          <p class="pz-bio">Aaditi is an urban professional who loves Indian textiles. She buys Banarasi sarees for weddings and festivals, from exhibitions or boutiques she trusts. She values craft but rarely gets the story or a way to verify what she buys. She finds brands on social media and will engage online if it feels personal and real.</p>
+          <div class="pz-grid"><div class="pz-b"><h4>Goals</h4><ul><li>Buy an authentic, handwoven Banarasi saree</li><li>Support real artisans, not just retailers</li><li>Know the story behind what she wears</li></ul></div><div class="pz-b"><h4>Pain points</h4><ul><li>Can’t tell handloom from power-loom</li><li>No way to verify where a saree comes from</li><li>Stores rarely share artisan information</li><li>Prices feel high and unexplained</li></ul></div><div class="pz-b"><h4>Needs</h4><ul><li>Proof of handloom and quality</li><li>Photos, videos and the maker’s story</li><li>A simple purchase and delivery</li><li>Ways to connect with the craft</li></ul></div><div class="pz-b"><h4>What would win her trust</h4><ul><li>Artisan profiles and process videos</li><li>GI tag or Handloom Mark details</li><li>Knowing her money reaches the weaver</li></ul></div></div>
+        </div>
+      </article>
+      <h3 class="r-h3 emq-h">Empathy map</h3>
+      <div class="emq">
+        <div><h4>Says</h4><ul><li>“I love handloom, but I want something real and trustworthy.”</li><li>“It’s so hard to tell if it’s handwoven or machine-made.”</li><li>“I want to know the story behind what I wear.”</li></ul></div>
+        <div><h4>Thinks</h4><ul><li>“Is this saree really handwoven?”</li><li>“Am I paying the right price?”</li><li>“Who made this? I wish I knew more about them.”</li><li>“Is this a fair platform, or just another reseller?”</li></ul></div>
+        <div><h4>Does</h4><ul><li>Compares sarees across Jaypore, Taneira and others</li><li>Checks reviews, Instagram and customer photos</li><li>Adds to cart, then abandons if unsure it’s authentic</li><li>Shops mostly on her phone</li></ul></div>
+        <div><h4>Feels</h4><ul><li>Moved by real artisan stories</li><li>Disappointed when a product doesn’t match its story</li><li>Proud when she supports a traditional craft</li><li>Frustrated by unclear returns or product details</li></ul></div>
+        <img class="emq-c" src="assets/images/bn-aaditi-28.webp" alt="" width="84" height="84">
+      </div>
+      <div class="eyeh jg-eh"><h3 class="r-h3">Her buying journey: where trust breaks</h3></div>
+      <div class="tf-scn jg-scn"><div class="tf-txt"><p><b>Scenario:</b> Aaditi searches online for an authentic Banarasi saree for her friend’s wedding. Overwhelmed by options and unsure what is real, she looks for a site with stories, GI tags and clear policies, buys, and shares the experience when it arrives.</p><p class="tf-eh"><b>Expectations</b></p><ul><li>Handwoven Banarasi silk with a verified origin</li><li>A trustworthy, visually rich shopping experience</li><li>Clear pricing, smooth checkout, timely delivery</li><li>A connection to the artisans through their stories</li></ul></div><img class="tf-ph" src="assets/images/bn-aaditi-28.webp" alt="" width="180" height="180" loading="lazy"></div>
+      <p class="jg-sum">Trust breaks at evaluation and decision: no listing names the weaver or shows the Handloom Mark, and the price is never explained.</p>
+      <details class="more-d"><summary>See the full journey: 7 stages, from discovery to loyalty<span class="mi" aria-hidden="true">expand_more</span></summary><p class="cmp-scroll jg-hint">Scroll the map sideways to see every stage. Pain points come from the persona research and the workshop’s account of its buyers, not from buyer interviews.</p>
+      <div class="jg-wrap" tabindex="0" role="region" aria-label="User journey map"><table class="jg"><thead><tr><th scope="col">Stage</th><th scope="col">Discovery</th><th scope="col">Evaluation</th><th scope="col">Decision</th><th scope="col">Purchase</th><th scope="col">Delivery</th><th scope="col">After purchase</th><th scope="col">Loyalty</th></tr></thead><tbody><tr><th scope="row"><span class="mi" aria-hidden="true">flag</span>Goal</th><td>Find authentic Banarasi sarees</td><td>Compare price, design and fabric</td><td>Decide with confidence</td><td>Order easily and securely</td><td>Get the saree on time, in good condition</td><td>Get help with any issue</td><td>Feel sure enough to buy again</td></tr><tr><th scope="row"><span class="mi" aria-hidden="true">touch_app</span>Actions</th><td>Searches online, visits the site, browses</td><td>Reads descriptions, studies photos, checks reviews</td><td>Adds to cart, checks the return policy</td><td>Enters details, confirms, gets an email</td><td>Tracks the parcel and unboxes it</td><td>Contacts support, asks for a return</td><td>Writes a review, shares, signs up</td></tr><tr><th scope="row"><span class="mi" aria-hidden="true">devices</span>Touchpoints</th><td>Search, social ads, homepage</td><td>Product pages, reviews, chat</td><td>Cart, payment, FAQ</td><td>Checkout, confirmation email</td><td>Courier tracking, packaging</td><td>Chat, email, phone</td><td>Newsletter, social media</td></tr><tr class="feel"><th scope="row"><span class="mi" aria-hidden="true">mood</span>Feelings</th><td><span class="emo e-neutral"><span class="mi" aria-hidden="true">sentiment_neutral</span></span><span class="emo-l">Unsure</span></td><td><span class="emo e-dissatisfied"><span class="mi" aria-hidden="true">sentiment_dissatisfied</span></span><span class="emo-l">Frustrated</span></td><td><span class="emo e-very_dissatisfied"><span class="mi" aria-hidden="true">sentiment_very_dissatisfied</span></span><span class="emo-l">Anxious</span></td><td><span class="emo e-satisfied"><span class="mi" aria-hidden="true">sentiment_satisfied</span></span><span class="emo-l">Relieved</span></td><td><span class="emo e-very_satisfied"><span class="mi" aria-hidden="true">sentiment_very_satisfied</span></span><span class="emo-l">Happy</span></td><td><span class="emo e-dissatisfied"><span class="mi" aria-hidden="true">sentiment_dissatisfied</span></span><span class="emo-l">Frustrated</span></td><td><span class="emo e-neutral"><span class="mi" aria-hidden="true">sentiment_neutral</span></span><span class="emo-l">Indifferent</span></td></tr><tr class="pain"><th scope="row"><span class="mi" aria-hidden="true">report</span>Pain points</th><td>Every listing says “Banarasi”; she can’t tell handloom from power-loom</td><td>No weaver, loom or Handloom Mark details, only adjectives</td><td>The price feels high and unexplained, so she abandons the cart</td><td>Unsure whether her money reaches the weaver or a reseller</td><td>Nothing in the parcel proves it is handwoven</td><td>Returns on a costly saree feel risky</td><td>No story to share, so nothing to come back for</td></tr><tr class="opp"><th scope="row"><span class="mi" aria-hidden="true">lightbulb</span>Opportunities</th><td>A handloom filter and an authenticity badge on every listing</td><td>A “Who wove this” panel with weaver, loom and Handloom Mark</td><td>A price breakdown that shows the weaver’s share</td><td>Show where the money goes, at checkout</td><td>A tag with the weaver’s name and a QR code to her story</td><td>Clear returns for high-value sarees</td><td>Follow the weaver and share her story</td></tr></tbody></table></div></details>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="r-sec r-wine" id="problem" aria-labelledby="pb-h">
+    <div class="r-wrap">
+      <h2 class="r-h2" id="pb-h">Finding the root cause</h2>
+      <ol class="r-why">
+        <li><p class="q">Why are weavers’ incomes falling while their work stays invisible?</p><p>They rely on middlemen to sell their sarees.</p></li>
+        <li><p class="q">Why do they rely on middlemen?</p><p>They have no direct access to buyers or markets.</p></li>
+        <li><p class="q">Why no direct access?</p><p>They lack the digital skills, tools and platforms to reach customers themselves.</p></li>
+        <li><p class="q">Why are those missing?</p><p>Training and support schemes rarely reach weaving communities.</p></li>
+      </ol>
+      <p class="r-root"><b>Root cause:</b> nothing connects weavers directly to buyers, or helps them build a presence online.</p>
+      <h3 class="r-ps">Problem statement</h3>
+      <div class="pov2">
+        <p><b>Aaditi</b>, a 28-year-old professional who buys Banarasi sarees online for weddings and festivals, needs a way to know that a saree is genuinely handwoven and who made it, because power-loom copies are often sold as handloom and online stores rarely show the weaver or where a saree comes from.</p>
+        <p class="pov-2">At the same time, the weavers behind these sarees need a direct, fair route to buyers, because they lack digital skills, access and support, and depend on middlemen who keep most of the value.</p>
+      </div>
+      <div class="hmw-r">
+        <h3>How might we…</h3>
+        <ul><li>help online buyers trust that a Banarasi saree is authentic handloom?</li><li>make the weaver behind each saree visible to the buyer?</li><li>give weavers a direct way to reach buyers without middlemen?</li></ul>
+      </div>
+      <div class="goal-r">
+        <div>
+          <h3>Goal statement</h3>
+          <p><b>Resham Riwayat will let saree buyers discover and buy authentic handwoven Banarasi sarees, see who wove them, and book styling or photography support.</b></p>
+          <p>This will help buyers trust what they buy and give weavers a fair, direct channel. We will measure it by whether buyers can find a saree’s weaver and origin, and by task success in usability testing.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="lit" aria-labelledby="lit-h">
-    <div class="top"><h2 class="bn-h reveal" id="lit-h">1.2&nbsp; Literature Review</h2><p class="q reveal right">A saree can sell for ₹40,000 — the weaver who made it may earn just ₹2,000.</p></div>
-    <div class="row">
-      <p class="src reveal"><b><span data-count="50" data-suffix="+">50+</span></b><span>Sources Reviewed</span></p>
-      <div class="chips2 reveal"><span>Authenticity &amp; Trust</span><i></i><span>Livelihood Crisis</span><i></i><span>The Next Generation</span></div>
-    </div>
-    <div class="finds" data-stagger="0.12">
-      <div class="find"><span class="n">1</span><p>Counterfeit powerloom sarees, mislabeled as handloom, undercut genuine work. In Varanasi itself, handloom weavers have shrunk from 75% of silk workers in the 1990s to just 25% today, as cheaper power-loom imitations took over the market.</p></div>
-      <div class="find"><span class="n">2</span><p>A finished Banarasi saree can sell for ₹40,000, yet the weaver who made it by hand often earns just ₹2,000–3,000 for weeks of work — driving debt, migration to cities paying nearly double the wage, and, in the worst cases, over 50 recorded weaver suicides in Varanasi alone.</p></div>
-      <div class="find"><span class="n">3</span><p class="reg">Online channels make up just <b>0.2%</b> of handloom sales nationwide, and as power-loom competition eats into income, <b>fewer young weavers are choosing to inherit the craft</b> — threatening a tradition passed hand-to-hand since Vedic times.</p></div>
-    </div>
-  </section>
-
-  <section class="comp" id="competitors" aria-labelledby="comp-h">
-    <div class="top"><h2 class="bn-h reveal" id="comp-h">1.3&nbsp; Competitor Analysis</h2><a class="cta-pill reveal" href="banarasi-competitors.html">View Detailed Competitor Study <span class="mi" aria-hidden="true">arrow_forward</span></a></div>
-    <div class="params" data-stagger="0.08">
-      <p>A detailed competitor study was conducted across the following parameters:</p>
-      <span>Platform Experience &amp; Buyer Reviews</span><span>Interaction: Features, Accessibility, Navigation</span><span>Visual Design: Brand &amp; Craft Identity</span><span>Content: Tone &amp; Product Descriptiveness</span>
-    </div>
-    <h3 class="sw reveal">SWOT Analysis</h3>
-    <div class="swot-g">
-      <div class="swot-col">
-        <div class="quad reveal"><h4 style="color:#bb8b68">STRENGTHS</h4><div class="cw"><p>Documented weaver stories and provenance details build buyer trust.</p><p>High-resolution zoom photography reveals real zari and weave texture.</p><p>Curated occasion-based collections (bridal, festive) simplify browsing.</p></div></div>
-        <div class="quad pink reveal"><h4 style="color:#a60458">OPPORTUNITY</h4><div class="cw"><p>Show a verifiable handloom mark / weaver certificate at checkout.</p><p>Offer in-app photographer &amp; styling booking as a differentiator.</p><p>Let buyers book a video call directly with the weaver.</p><p>Display a transparent price breakdown showing the weaver's share.</p><p>Add regional language support to reach more Indian buyers.</p></div></div>
+  <!-- IDEATION -->
+  <section class="r-sec r-rose" aria-labelledby="id-h">
+    <div class="r-wrap">
+      <div class="r-head"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">lightbulb</span>Ideation</p><h2 class="r-h2" id="id-h">Six clusters, nine concepts, four kept</h2></div><p>I brainstormed ideas across authenticity, customisation, experiences and trust, grouped them into 6 clusters, combined those into 9 concepts, and kept the 4 that answered the problem statement directly.</p></div>
+      <div class="x-split"><figure class="x-clusters"><img class="zoomable" src="assets/images/rr-clusters.webp" width="1400" height="1554" loading="lazy" alt="Six clusters of brainstormed ideas around customisation, experience, personal touch, purchasing, trust and community"><figcaption>The six idea clusters from my brainstorm, as drawn in the project report.</figcaption></figure>
+      <div class="x-kept">
+        <article class="x-k"><p class="x-tag">Kept</p><h3>Loom-origin stamp</h3><p>A mark of where, and by whom, each saree was woven. It addresses trust directly.</p></article>
+        <article class="x-k"><p class="x-tag">Kept</p><h3>Artisan stories</h3><p>Raw materials, process and the weaver behind each saree, on the product page.</p></article>
+        <article class="x-k"><p class="x-tag">Kept</p><h3>Photographer booking</h3><p>Buyers book a shoot in their saree, and the photos feed a customer gallery.</p></article>
+        <article class="x-k"><p class="x-tag">Kept</p><h3>Custom saree estimate</h3><p>Choose a fabric and see how long a handwoven custom saree will take.</p></article>
+        <article class="x-l"><p class="x-tag">Later</p><h3>Live try-on and weaving demos</h3><p>Powerful for trust, but needs live staff and video infrastructure.</p></article>
       </div>
-      <div class="swot-col">
-        <div class="quad pink reveal" style="--delay:.1s"><h4 style="color:#0c0b0b">WEAKNESSES</h4><div class="cw"><p>Handloom vs. power-loom distinction is rarely shown at point of sale.</p><p>Basic queries are routed to WhatsApp instead of in-app support.</p><p>No AR or video draping to preview fit and fall before buying.</p><p>Weaver's earning share is never disclosed in the price breakdown.</p><p>Few platforms offer multilingual storefronts for non-English buyers.</p></div></div>
-        <div class="quad reveal" style="--delay:.1s"><h4 style="color:#0c0b0b">THREAT</h4><div class="cw"><p>Mass marketplaces sell power-loom "Banarasi-style" sarees far cheaper.</p><p>Counterfeit handloom labelling erodes trust across the category.</p><p>Rising price sensitivity pushes buyers toward cheaper imitations.</p></div></div>
       </div>
-    </div>
-  </section>
-
-  <section class="stake" aria-labelledby="st-h">
-    <h2 class="bn-h reveal" id="st-h">1.4&nbsp; Stakeholder Map</h2>
-    <p class="d reveal">Everyone who touches — or is touched by — ReshamRiwaayat, from the weaver and buyer at the core to the policies and NGOs shaping the craft's future.</p>
-    <div class="g">
-      <div class="orbit reveal fade" role="img" aria-label="Stakeholder map. Core: saree buyers, weavers and artisans. Direct: weaver cooperatives, platform team, photographers and stylists, GI-tag certifiers. Indirect: handloom NGOs, local boutiques, logistics partners, investors, influencers, government textile policies.">
-        <span class="o o1"></span><span class="o o2"></span><span class="o o3"></span>
-        <span class="lab" style="top:3.2%">Indirect Stakeholders</span><span class="lab l2" style="top:18.7%">Direct Stakeholders</span><span class="lab l3" style="top:34.85%">Core</span>
-        <span class="badge2" style="left:36.18%;top:41.62%;width:13.53%;height:5.00%;--delay:.1s">Saree Buyers</span>
-        <span class="badge2" style="left:52.21%;top:42.94%;width:14.71%;height:7.06%;--delay:.15s">Weavers &amp; Artisans</span>
-        <span class="badge2" style="left:19.41%;top:33.24%;width:15.29%;height:7.06%;--delay:.3s">Weaver Cooperatives</span>
-        <span class="badge2" style="left:65.88%;top:33.24%;width:14.12%;height:7.06%;--delay:.35s">Platform Team</span>
-        <span class="badge2" style="left:55.88%;top:68.38%;width:14.71%;height:9.12%;--delay:.4s">Photographers &amp; Stylists</span>
-        <span class="badge2" style="left:19.71%;top:59.71%;width:14.71%;height:7.06%;--delay:.45s">GI-Tag Certifiers</span>
-        <span class="badge2" style="left:2.35%;top:32.06%;width:15.88%;height:7.06%;--delay:.6s">Handloom NGOs</span>
-        <span class="badge2" style="left:78.97%;top:25.29%;width:15.29%;height:7.06%;--delay:.65s">Local Boutiques</span>
-        <span class="badge2" style="left:82.06%;top:60.88%;width:15.29%;height:7.06%;--delay:.7s">Logistics Partners</span>
-        <span class="badge2" style="left:57.65%;top:87.21%;width:13.53%;height:5.00%;--delay:.75s">Investors</span>
-        <span class="badge2" style="left:21.76%;top:84.12%;width:14.12%;height:5.00%;--delay:.8s">Influencers</span>
-        <span class="badge2" style="left:0.74%;top:53.82%;width:15.29%;height:7.06%;--delay:.85s">Govt. Textile Policies</span>
+      <p class="x-note"><b>Where they are now:</b> the loom-origin stamp and artisan stories come together in the “Who wove this” panel, designed below with its own task flow. Photographer booking has a flow too. The custom estimate has its own Customise section, not shown here.</p>
+      <div class="tflow2 tflow-trust">
+        <div class="eyeh"><h3 class="r-h3">Checking who wove a saree: 3 screens, 3 to 5 clicks</h3><span class="concept-tag">Concept, not yet in the prototype</span></div>
+        <div class="tf-scn"><div class="tf-txt"><p><b>Scenario:</b> Aaditi likes a saree but isn’t sure it’s handwoven. Before she pays ₹50,000, she wants to know who made it and how she can check.</p><p class="tf-eh"><b>Expectations</b></p><ul><li>The weaver’s name, place and loom, one click from the product</li><li>Proof she can check herself: Handloom Mark and GI tag</li><li>A reason to trust the price</li></ul></div></div>
+        <ul class="flow-key" aria-hidden="true"><li><i class="k-se"></i>Start / end</li><li><i class="k-sc"></i>Screen</li><li><i class="k-ac"></i>User action</li><li><i class="k-de"></i>Decision</li></ul>
+        <figure class="flow"><div class="flow-h"><svg class="flow-svg" viewBox="0 0 1328 277" role="img" aria-label="Task flow: checking who wove a saree before buying it"><defs><marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fa"/></marker></defs><path class="fe" d="M138,76 L193,76" marker-end="url(#ah1)"/><path class="fe" d="M335,76 L353,76" marker-end="url(#ah1)"/><path class="fe" d="M495,76 L513,76" marker-end="url(#ah1)"/><path class="fe" d="M655,76 L673,76" marker-end="url(#ah1)"/><path class="fe" d="M815,76 L848,76" marker-end="url(#ah1)"/><path class="fe" d="M960,76 L993,76" marker-end="url(#ah1)"/><text class="fl" x="976" y="68" text-anchor="middle">Yes</text><path class="fe" d="M1135,76 L1190,76" marker-end="url(#ah1)"/><path class="fe" d="M904,126 L904,166" marker-end="url(#ah1)"/><text class="fl" x="912" y="146" text-anchor="start">No</text><path class="fe" d="M975,196 L1064,196 L1064,106" marker-end="url(#ah1)"/><g class="fn start"><circle cx="104" cy="76" r="34"/><text x="104" y="81" text-anchor="middle">Start</text></g><g class="fn action"><rect x="193" y="46" width="142" height="60" rx="30"/><text x="264" y="81" text-anchor="middle">Open a saree</text></g><g class="fn screen"><rect x="353" y="46" width="142" height="60" rx="10"/><text x="424" y="81" text-anchor="middle">Product page</text></g><g class="fn action"><rect x="513" y="46" width="142" height="60" rx="30"/><text x="584" y="74" text-anchor="middle">Tap “Who</text><text x="584" y="88" text-anchor="middle">wove this”</text></g><g class="fn screen"><rect x="673" y="46" width="142" height="60" rx="10"/><text x="744" y="81" text-anchor="middle">Weaver panel</text></g><g class="fn decision"><path d="M904,26 L960,76 L904,126 L848,76 Z"/><text x="904" y="74" text-anchor="middle">Sure it’s</text><text x="904" y="88" text-anchor="middle">handloom?</text></g><g class="fn action"><rect x="993" y="46" width="142" height="60" rx="30"/><text x="1064" y="81" text-anchor="middle">Add to cart</text></g><g class="fn end"><circle cx="1224" cy="76" r="34"/><text x="1224" y="81" text-anchor="middle">End</text></g><g class="fn screen"><rect x="833" y="166" width="142" height="60" rx="10"/><text x="904" y="193" text-anchor="middle">Handloom Mark</text><text x="904" y="208" text-anchor="middle">and GI proof</text></g></svg></div><div class="flow-v"><svg class="flow-svg" viewBox="0 0 388 840" role="img" aria-label="Task flow: checking who wove a saree before buying it"><defs><marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fa"/></marker></defs><path class="fe" d="M109,102 L109,126" marker-end="url(#ah1)"/><path class="fe" d="M109,186 L109,214" marker-end="url(#ah1)"/><path class="fe" d="M109,274 L109,302" marker-end="url(#ah1)"/><path class="fe" d="M109,362 L109,390" marker-end="url(#ah1)"/><path class="fe" d="M109,450 L109,458" marker-end="url(#ah1)"/><path class="fe" d="M109,558 L109,654" marker-end="url(#ah1)"/><text class="fl" x="117" y="606" text-anchor="start">Yes</text><path class="fe" d="M165,508 L279,508 L279,557" marker-end="url(#ah1)"/><text class="fl" x="222" y="500" text-anchor="start">No</text><path class="fe" d="M279,617 L279,684 L180,684" marker-end="url(#ah1)"/><path class="fe" d="M109,714 L109,738" marker-end="url(#ah1)"/><g class="fn start"><circle cx="109" cy="68" r="34"/><text x="109" y="73" text-anchor="middle">Start</text></g><g class="fn action"><rect x="38" y="126" width="142" height="60" rx="30"/><text x="109" y="161" text-anchor="middle">Open a saree</text></g><g class="fn screen"><rect x="38" y="214" width="142" height="60" rx="10"/><text x="109" y="249" text-anchor="middle">Product page</text></g><g class="fn action"><rect x="38" y="302" width="142" height="60" rx="30"/><text x="109" y="330" text-anchor="middle">Tap “Who</text><text x="109" y="344" text-anchor="middle">wove this”</text></g><g class="fn screen"><rect x="38" y="390" width="142" height="60" rx="10"/><text x="109" y="425" text-anchor="middle">Weaver panel</text></g><g class="fn decision"><path d="M109,458 L165,508 L109,558 L53,508 Z"/><text x="109" y="506" text-anchor="middle">Sure it’s</text><text x="109" y="520" text-anchor="middle">handloom?</text></g><g class="fn screen"><rect x="208" y="557" width="142" height="60" rx="10"/><text x="279" y="585" text-anchor="middle">Handloom Mark</text><text x="279" y="600" text-anchor="middle">and GI proof</text></g><g class="fn action"><rect x="38" y="654" width="142" height="60" rx="30"/><text x="109" y="689" text-anchor="middle">Add to cart</text></g><g class="fn end"><circle cx="109" cy="772" r="34"/><text x="109" y="777" text-anchor="middle">End</text></g></svg></div><figcaption class="sr-only">Steps: <ol><li>Open a saree</li><li>Product page</li><li>Tap Who wove this</li><li>Weaver panel</li><li>If unsure, open the Handloom Mark and GI proof</li><li>Add to cart</li></ol></figcaption></figure>
       </div>
-      <div class="stbl reveal right" role="table" aria-label="Stakeholder groups and their roles">
-        <div class="tr th" role="row"><b role="columnheader">Stakeholder</b><span role="columnheader">Their Role</span></div>
-        <div class="tr" role="row"><b class="k" role="cell">Core</b><span role="cell">Uses or is featured on the platform regularly — the buyer and the weaver whose work is sold.</span></div>
-        <div class="tr" role="row"><b class="k" role="cell">Direct<br>Stakeholder</b><span role="cell">Directly involved in creating or delivering the product or service.</span></div>
-        <div class="tr" role="row"><b class="k" role="cell">Indirect<br>Stakeholder</b><span role="cell">Affected by, or able to influence, the platform without daily direct involvement.</span></div>
+      <div class="tflow2">
+        <div class="eyeh"><h3 class="r-h3">Booking a photographer: 6 screens, 6 to 8 clicks</h3></div>
+        <div class="tf-scn">
+        <div class="tf-txt"><p><b>Scenario:</b> Aaditi has bought a saree for her friend’s wedding and wants it photographed. She books a photographer, and a stylist, through the site.</p><p class="tf-eh"><b>Expectations</b></p><ul><li>Pick a date, place and photographer in a few steps</li><li>See prices and portfolios before choosing</li><li>A clear confirmation that a person will follow up</li></ul></div>
+        <img class="tf-ph" src="assets/images/bn-aaditi-28.webp" alt="" width="240" height="300" loading="lazy">
+      </div>
+      <ul class="flow-key" aria-hidden="true"><li><i class="k-se"></i>Start / end</li><li><i class="k-sc"></i>Screen</li><li><i class="k-ac"></i>User action</li><li><i class="k-de"></i>Decision</li></ul>
+      <figure class="flow">
+        <div class="flow-h"><svg class="flow-svg" viewBox="0 0 1168 369" role="img" aria-label="Task flow: booking a photographer and stylist for a saree shoot"><defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fa"/></marker></defs><path class="fe" d="M138,76 L193,76" marker-end="url(#ah2)"/><path class="fe" d="M335,76 L353,76" marker-end="url(#ah2)"/><path class="fe" d="M495,76 L513,76" marker-end="url(#ah2)"/><path class="fe" d="M655,76 L673,76" marker-end="url(#ah2)"/><path class="fe" d="M815,76 L833,76" marker-end="url(#ah2)"/><path class="fe" d="M975,76 L993,76" marker-end="url(#ah2)"/><path class="fe" d="M1064,106 L1064,171" marker-end="url(#ah2)"/><path class="fe" d="M993,201 L960,201" marker-end="url(#ah2)"/><path class="fe" d="M848,201 L495,201" marker-end="url(#ah2)"/><text class="fl" x="672" y="193" text-anchor="middle">No</text><path class="fe" d="M904,251 L904,315 L815,315" marker-end="url(#ah2)"/><text class="fl" x="912" y="283" text-anchor="start">Yes</text><path class="fe" d="M673,315 L655,315" marker-end="url(#ah2)"/><path class="fe" d="M513,315 L424,315 L424,231" marker-end="url(#ah2)"/><path class="fe" d="M353,201 L335,201" marker-end="url(#ah2)"/><path class="fe" d="M193,201 L138,201" marker-end="url(#ah2)"/><g class="fn start"><circle cx="104" cy="76" r="34"/><text x="104" y="81" text-anchor="middle">Start</text></g><g class="fn action"><rect x="193" y="46" width="142" height="60" rx="30"/><text x="264" y="74" text-anchor="middle">Tap “Book a</text><text x="264" y="88" text-anchor="middle">photographer”</text></g><g class="fn screen"><rect x="353" y="46" width="142" height="60" rx="10"/><text x="424" y="74" text-anchor="middle">Booking:</text><text x="424" y="88" text-anchor="middle">date and time</text></g><g class="fn action"><rect x="513" y="46" width="142" height="60" rx="30"/><text x="584" y="74" text-anchor="middle">Pick date</text><text x="584" y="88" text-anchor="middle">and time</text></g><g class="fn screen"><rect x="673" y="46" width="142" height="60" rx="10"/><text x="744" y="81" text-anchor="middle">Location</text></g><g class="fn action"><rect x="833" y="46" width="142" height="60" rx="30"/><text x="904" y="74" text-anchor="middle">Choose city or</text><text x="904" y="88" text-anchor="middle">enter address</text></g><g class="fn screen"><rect x="993" y="46" width="142" height="60" rx="10"/><text x="1064" y="81" text-anchor="middle">Photographers</text></g><g class="fn action"><rect x="993" y="171" width="142" height="60" rx="30"/><text x="1064" y="198" text-anchor="middle">Compare portfolios,</text><text x="1064" y="213" text-anchor="middle">prices, reviews</text></g><g class="fn decision"><path d="M904,151 L960,201 L904,251 L848,201 Z"/><text x="904" y="198" text-anchor="middle">Add a</text><text x="904" y="213" text-anchor="middle">stylist?</text></g><g class="fn screen"><rect x="673" y="285" width="142" height="60" rx="10"/><text x="744" y="320" text-anchor="middle">Stylists</text></g><g class="fn action"><rect x="513" y="285" width="142" height="60" rx="30"/><text x="584" y="320" text-anchor="middle">Pick a stylist</text></g><g class="fn screen"><rect x="353" y="171" width="142" height="60" rx="10"/><text x="424" y="198" text-anchor="middle">Confirm</text><text x="424" y="213" text-anchor="middle">booking</text></g><g class="fn screen"><rect x="193" y="171" width="142" height="60" rx="10"/><text x="264" y="198" text-anchor="middle">Request</text><text x="264" y="213" text-anchor="middle">received</text></g><g class="fn end"><circle cx="104" cy="201" r="34"/><text x="104" y="206" text-anchor="middle">End</text></g></svg></div>
+        <div class="flow-v"><svg class="flow-svg" viewBox="0 0 528 1270" role="img" aria-label="Task flow: booking a photographer and stylist for a saree shoot"><defs><marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fa"/></marker></defs><path class="fe" d="M264,102 L264,126" marker-end="url(#ah3)"/><path class="fe" d="M264,186 L264,214" marker-end="url(#ah3)"/><path class="fe" d="M264,274 L264,302" marker-end="url(#ah3)"/><path class="fe" d="M264,362 L264,390" marker-end="url(#ah3)"/><path class="fe" d="M264,450 L264,478" marker-end="url(#ah3)"/><path class="fe" d="M264,538 L264,566" marker-end="url(#ah3)"/><path class="fe" d="M264,626 L264,654" marker-end="url(#ah3)"/><path class="fe" d="M264,714 L264,722" marker-end="url(#ah3)"/><path class="fe" d="M320,772 L424,772 L424,830" marker-end="url(#ah3)"/><text class="fl" x="372" y="764" text-anchor="start">Yes</text><path class="fe" d="M264,822 L264,1006" marker-end="url(#ah3)"/><text class="fl" x="272" y="914" text-anchor="start">No</text><path class="fe" d="M424,890 L424,918" marker-end="url(#ah3)"/><path class="fe" d="M424,978 L424,1036 L335,1036" marker-end="url(#ah3)"/><path class="fe" d="M264,1066 L264,1094" marker-end="url(#ah3)"/><path class="fe" d="M264,1154 L264,1178" marker-end="url(#ah3)"/><g class="fn start"><circle cx="264" cy="68" r="34"/><text x="264" y="73" text-anchor="middle">Start</text></g><g class="fn action"><rect x="193" y="126" width="142" height="60" rx="30"/><text x="264" y="154" text-anchor="middle">Tap “Book a</text><text x="264" y="168" text-anchor="middle">photographer”</text></g><g class="fn screen"><rect x="193" y="214" width="142" height="60" rx="10"/><text x="264" y="242" text-anchor="middle">Booking:</text><text x="264" y="256" text-anchor="middle">date and time</text></g><g class="fn action"><rect x="193" y="302" width="142" height="60" rx="30"/><text x="264" y="330" text-anchor="middle">Pick date</text><text x="264" y="344" text-anchor="middle">and time</text></g><g class="fn screen"><rect x="193" y="390" width="142" height="60" rx="10"/><text x="264" y="425" text-anchor="middle">Location</text></g><g class="fn action"><rect x="193" y="478" width="142" height="60" rx="30"/><text x="264" y="506" text-anchor="middle">Choose city or</text><text x="264" y="520" text-anchor="middle">enter address</text></g><g class="fn screen"><rect x="193" y="566" width="142" height="60" rx="10"/><text x="264" y="601" text-anchor="middle">Photographers</text></g><g class="fn action"><rect x="193" y="654" width="142" height="60" rx="30"/><text x="264" y="682" text-anchor="middle">Compare portfolios,</text><text x="264" y="696" text-anchor="middle">prices, reviews</text></g><g class="fn decision"><path d="M264,722 L320,772 L264,822 L208,772 Z"/><text x="264" y="770" text-anchor="middle">Add a</text><text x="264" y="784" text-anchor="middle">stylist?</text></g><g class="fn screen"><rect x="353" y="830" width="142" height="60" rx="10"/><text x="424" y="865" text-anchor="middle">Stylists</text></g><g class="fn action"><rect x="353" y="918" width="142" height="60" rx="30"/><text x="424" y="953" text-anchor="middle">Pick a stylist</text></g><g class="fn screen"><rect x="193" y="1006" width="142" height="60" rx="10"/><text x="264" y="1034" text-anchor="middle">Confirm</text><text x="264" y="1048" text-anchor="middle">booking</text></g><g class="fn screen"><rect x="193" y="1094" width="142" height="60" rx="10"/><text x="264" y="1122" text-anchor="middle">Request</text><text x="264" y="1136" text-anchor="middle">received</text></g><g class="fn end"><circle cx="264" cy="1212" r="34"/><text x="264" y="1217" text-anchor="middle">End</text></g></svg></div>
+        <figcaption class="sr-only">Steps: <ol><li>Tap Book a photographer</li><li>Pick a date and time</li><li>Choose the city or enter an address</li><li>Compare photographers’ portfolios, prices and reviews</li><li>Optionally add a stylist</li><li>Confirm the booking and get a “request received” email or SMS</li></ol></figcaption>
+      </figure>
       </div>
     </div>
   </section>
 
-  <section class="fui" id="final-ui" aria-labelledby="fui-h">
-    <h2 class="bn-h reveal" id="fui-h">2.&nbsp; Design — Final UI</h2>
-    <p class="d reveal">A desktop-first storefront that lets the textile lead: quiet ivory interface, one terracotta action per view, and craft woven into the shopping journey rather than parked on an “About” page.</p>
-    <figure><span class="shot zoomable reveal-img" data-caption="Home — an editorial story, not a template"><img src="assets/images/rr-home.webp" width="1441" height="1025" loading="lazy" alt="Resham Riwayat home page: tagline, history-of-Banarasi film and craft tiles"></span><figcaption class="reveal"><h3>Home — an editorial story, not a template</h3><p>The tagline, the history-of-Banarasi film and four craft tiles open the page; collections, the weaving process, customization and photographer booking unfold below.</p></figcaption></figure>
-    <div class="two">
-      <figure><span class="shot zoomable reveal-img" data-caption="Shop — quiet filters, image-led grid"><img src="assets/images/rr-shop.webp" width="1224" height="870" loading="lazy" alt="Shop page with filter bar and saree grid"></span><figcaption class="reveal"><h3>Shop — quiet filters, image-led grid</h3><p>Five filters from the original IA (category, colour, fabric, price, occasion) sit in one light bar; the sarees carry the colour.</p></figcaption></figure>
-      <figure><span class="shot zoomable reveal-img" style="--delay:.12s" data-caption="Product — gallery first, calm purchase column"><img src="assets/images/rr-product.webp" width="1224" height="870" loading="lazy" alt="Product page for the magenta Paithani Meenakari Katan silk saree"></span><figcaption class="reveal"><h3>Product — gallery first, calm purchase column</h3><p>Magenta · Free Size · ₹50,710 with Add to Cart and Buy it Now together, reassurance under the CTA, details in accordions.</p></figcaption></figure>
-      <figure><span class="shot zoomable reveal-img" data-caption="Checkout — five clear steps"><img src="assets/images/rr-checkout.webp" width="1224" height="870" loading="lazy" alt="Checkout page with five steps and order summary"></span><figcaption class="reveal"><h3>Checkout — five clear steps</h3><p>Contact, Address, Shipping, Payment and Review with an always-visible order summary, ending in one explicit “Pay ₹50,710”.</p></figcaption></figure>
-      <figure><span class="shot zoomable reveal-img" style="--delay:.12s" data-caption="Book a Photographer — a request, not a promise"><img src="assets/images/rr-photographer.webp" width="1224" height="870" loading="lazy" alt="Book a photographer page"></span><figcaption class="reveal"><h3>Book a Photographer — a request, not a promise</h3><p>Choose date, location and photographer, add styling if wanted; the flow ends in “request received”, matching how the team actually follows up.</p></figcaption></figure>
+  <!-- FINAL UI -->
+  <section class="r-sec" id="design" aria-labelledby="ui-h">
+    <div class="r-wrap">
+      <div class="r-head"><div class="eyeh"><h2 class="r-h2" id="ui-h">The storefront</h2></div><p>Desktop first. A quiet ivory interface, so the sarees carry the colour and the craft sits inside the shopping journey. Aaditi mostly shops on her phone, so a mobile version is the next step after validation.</p></div>
+      <div class="ui">
+        <figure class="ui-row"><div class="r-browser"><div class="r-bar" aria-hidden="true"><i></i><i></i><i></i></div><img class="zoomable" src="assets/images/rr-home.webp" width="1441" height="1025" loading="lazy" alt="Home page with the tagline, a history of Banarasi film and craft tiles"></div><figcaption><h3>Home: the craft before the catalogue</h3><p>Buyers meet the craft and its history before they see prices.</p></figcaption></figure>
+        <figure class="ui-row flip"><div class="r-browser"><div class="r-bar" aria-hidden="true"><i></i><i></i><i></i></div><img class="zoomable" src="assets/images/rr-shop.webp" width="1224" height="870" loading="lazy" alt="Shop page with a filter bar and saree grid"></div><figcaption><h3>Shop: quiet filters, image-led grid</h3><p>Five filters in one light bar; the neutral interface lets the sarees’ colours lead.</p></figcaption></figure>
+        <figure class="ui-row"><div class="r-browser"><div class="r-bar" aria-hidden="true"><i></i><i></i><i></i></div><img class="zoomable" src="assets/images/rr-product.webp" width="1224" height="870" loading="lazy" alt="Product page for a magenta silk saree"></div><figcaption><h3>Product: gallery first, details on demand</h3><p>Fabric and weave details sit in an accordion under a large gallery, next to an “Authentic” badge, so buyers can check what they are buying without leaving the page. The saree shown is a Banarasi Paithani, a Banarasi weave with Paithani-style zari borders.</p></figcaption></figure>
+        <figure class="ui-row flip"><div class="r-browser"><div class="r-bar" aria-hidden="true"><i></i><i></i><i></i></div><img class="zoomable" src="assets/images/rr-checkout.webp" width="1224" height="870" loading="lazy" alt="Checkout page with five steps and an order summary"></div><figcaption><h3>Checkout: five clear steps</h3><p>The order summary stays visible, so buyers know the total before they pay.</p></figcaption></figure>
+        <figure class="ui-row"><div class="r-browser"><div class="r-bar" aria-hidden="true"><i></i><i></i><i></i></div><img class="zoomable" src="assets/images/rr-photographer.webp" width="1224" height="870" loading="lazy" alt="Book a photographer page"></div><figcaption><h3>Book a photographer: a request, not a promise</h3><p>Buyers choose a date, location and photographer. The flow is designed to end in “request received” rather than a confirmed booking, because a person still has to confirm availability.</p></figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <div class="zari-band" aria-hidden="true"></div>
+
+  <!-- WHO WOVE THIS -->
+  <section class="r-sec r-rose" id="who" aria-labelledby="ww-h">
+    <div class="r-wrap">
+      <div class="r-head"><div class="eyeh"><h2 class="r-h2" id="ww-h">“Who wove this”: the screen the project is about</h2><span class="concept-tag">Concept, not yet in the prototype</span></div><p>The prototype proves a saree is handloom with a badge. This panel goes further and puts the weaver on the product page. It is designed but not yet built, so it is the first thing the validation test checks.</p></div>
+      <div class="ww">
+        <figure class="ww-mock" aria-label="Wireframe of the Who wove this panel on the product page">
+          <div class="r-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="ww-body">
+            <div class="ww-img"><img src="assets/images/rr-product.webp" alt="" width="1224" height="870" loading="lazy"></div>
+            <div class="ww-panel">
+              <p class="ww-k">Who wove this <span class="ww-n">1</span></p>
+              <div class="ww-weaver"><span class="ww-av" aria-hidden="true"><span class="mi" aria-hidden="true">person</span></span><div><b>Weaver’s name</b><small>Locality, Varanasi · 20 years at the loom</small></div></div>
+              <button class="ww-voice" type="button" tabindex="-1" aria-hidden="true"><span class="mi" aria-hidden="true">play_arrow</span>Hear her story, 0:30 · Hindi, with transcript <span class="ww-n">2</span></button>
+              <dl class="ww-facts"><div><dt>Loom</dt><dd>Handloom, jacquard</dd></div><div><dt>Time on the loom</dt><dd>Days, from the weaver’s log</dd></div></dl>
+              <p class="ww-k">Proof you can check <span class="ww-n">3</span></p>
+              <ul class="ww-proof"><li><span class="mi" aria-hidden="true">verified</span>Handloom Mark number</li><li><span class="mi" aria-hidden="true">workspace_premium</span>GI: Banaras Brocades and Sarees</li><li><span class="mi" aria-hidden="true">qr_code_2</span>QR on the tag links back here</li></ul>
+              <p class="ww-k">Where your money goes <span class="ww-n">4</span></p>
+              <div class="ww-bar" aria-hidden="true"><i style="--w:20%">Weaver</i><i style="--w:40%">Silk and zari</i><i style="--w:25%">Workshop</i><i style="--w:15%">Us</i></div>
+              <small class="ww-ill">Widths are illustrative. The weaver’s slice reflects the 15–20% of a saree’s price weavers earned in 2023; real shares would come from each workshop, and the aim is to raise them.</small>
+            </div>
+          </div>
+        </figure>
+        <ol class="ww-notes">
+          <li><b>The weaver, by name.</b> Answers Aaditi’s “Who made this?” and the workshop’s point that weaving is personal pride.</li>
+          <li><b>A voice note, not a form.</b> The workshop told me artisans work best with visuals, voice and their own language, so the weaver speaks and the site transcribes.</li>
+          <li><b>Proof she can check.</b> The Handloom Mark and GI tag already exist, but buyers rarely see them. Here they sit next to the price, and the QR on the tag brings her back after delivery.</li>
+          <li><b>Where the money goes.</b> No competitor explains its prices. A share bar makes a ₹50,000 saree easier to trust and shows the weaver is paid fairly.</li>
+        </ol>
+      </div>
+
+      <div class="ww-m">
+        <div class="ww-phones" aria-hidden="true">
+          <div class="ww-ph"><div class="ww-ph-in">
+            <div class="ww-ph-img"><img src="assets/images/rr-product.webp" alt="" width="1224" height="870" loading="lazy"></div>
+            <p class="ww-ph-t">Magenta Paithani Katan Silk Banarasi Saree</p><p class="ww-ph-p">₹50,710</p>
+            <span class="ww-chip"><span class="mi" aria-hidden="true">badge</span>Who wove this</span>
+            <span class="ww-ph-btn">Add to cart</span>
+          </div></div>
+          <div class="ww-ph"><div class="ww-ph-in ww-sheet-bg">
+            <div class="ww-sheet"><i class="ww-grab"></i>
+              <p class="ww-k">Who wove this</p>
+              <div class="ww-weaver"><span class="ww-av"><span class="mi" aria-hidden="true">person</span></span><div><b>Weaver’s name</b><small>Locality, Varanasi</small></div></div>
+              <span class="ww-voice"><span class="mi" aria-hidden="true">play_arrow</span>Hear her story, 0:30</span>
+              <ul class="ww-proof"><li><span class="mi" aria-hidden="true">verified</span>Handloom Mark</li><li><span class="mi" aria-hidden="true">workspace_premium</span>GI tag</li></ul>
+              <div class="ww-bar"><i style="--w:20%"></i><i style="--w:40%"></i><i style="--w:25%"></i><i style="--w:15%"></i></div><small class="ww-leg">Weaver · Silk and zari · Workshop · Us</small>
+            </div>
+          </div></div>
+        </div>
+        <div class="ww-m-t">
+          <h3 class="r-h3">On her phone</h3>
+          <p>Aaditi mostly shops on her phone, so the panel can’t depend on desktop space. On mobile, a “Who wove this” chip sits under the price, right where she decides, and opens the same content as a bottom sheet she can swipe away without losing her place.</p>
+          <ul><li>The weaver and the voice note come first, because they answer her first question.</li><li>The proof and the money bar stay one swipe down, short enough to scan with one thumb.</li><li>The rest of the storefront stays desktop-first for this project; the mobile layout starts with this panel because it carries the trust.</li></ul>
+        </div>
+      </div>
+
+      <h3 class="r-h3 ww-sub">How a weaver gets on the page</h3><span class="concept-tag">Concept, not yet in the prototype</span>
+      <p class="ww-lead">The weaver side of the problem. Weavers rely on middlemen because they lack digital tools, so the workshop manager does the typing and the weaver only talks.</p>
+      <ol class="ww-steps">
+        <li><span><span class="mi" aria-hidden="true">photo_camera</span></span><b>The manager photographs the saree and the weaver</b><p>From a phone, in the workshop, when the saree comes off the loom.</p></li>
+        <li><span><span class="mi" aria-hidden="true">mic</span></span><b>The weaver records a 30-second voice note</b><p>In Hindi or Bhojpuri: her name, her years at the loom, what this saree took.</p></li>
+        <li><span><span class="mi" aria-hidden="true">fact_check</span></span><b>Our team checks the Handloom Mark and publishes</b><p>The panel goes live with the listing, and the tag’s QR code points to it.</p></li>
+      </ol>
     </div>
   </section>
 
-  <section class="bn-cta" aria-labelledby="cta-h">
-    <p class="k reveal">This project is a part of an ongoing research</p>
-    <h2 class="reveal" id="cta-h">Get the detailed case study on request!</h2>
-    <a class="req reveal" href="mailto:vidhina63@gmail.com?subject=Case%20study%20request%3A%20Banarasi%20Silk%20Saree">Request now <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 6l5 5-5 5" fill="none" stroke="#2a2838" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    <div class="ribbon" aria-hidden="true"><img src="assets/images/silk-finale.webp" width="1800" height="426" alt="" loading="lazy"></div>
-    <div class="zari" aria-hidden="true"></div>
+  <!-- VALIDATION -->
+  <section class="r-sec r-wine" id="validation" aria-labelledby="vp-h">
+    <div class="r-wrap">
+      <div class="r-head stack"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">science</span>Validation plan</p><h2 class="r-h2" id="vp-h">How I would validate it</h2></div><p>The project ended at the high-fidelity prototype. This is the test I would run next: can buyers trust a saree and find who made it?</p></div>
+      <div class="vplan">
+        <div><h3>Participants</h3><p>5 people aged 25–35 who have bought, or plan to buy, a Banarasi saree online.</p></div>
+        <div><h3>Method</h3><p>Moderated think-aloud sessions on the Figma prototype, followed by a SUS questionnaire.</p></div>
+        <div><h3>Tasks</h3><ol><li>Find a festive saree under ₹40,000 using the filters.</li><li>Find out who wove this saree, and where, using the “Who wove this” panel.</li><li>Check whether it is genuine handloom.</li><li>Buy it.</li><li>Book a photographer for the wedding date.</li></ol></div>
+        <div><h3>Success measures</h3><ul><li>Task completion rate for each task</li><li>Time to find the weaver and the handloom mark</li><li>SUS score, aiming above the average of 68</li><li>Trust that the saree is authentic, on a 1–5 scale</li></ul></div>
+      <div class="r-risk">
+        <h3>The assumptions the test has to check first</h3>
+        <p>The design rests on four things I haven’t proven yet. Each task in the plan is there to test one of them, and each has a clear answer for what I’d change if it’s wrong.</p>
+        <div class="cmp-wrap" tabindex="0" role="region" aria-label="Riskiest assumptions"><table class="r-risk-t">
+          <thead><tr><th scope="col">Assumption</th><th scope="col">What it rests on now</th><th scope="col">How the test checks it</th><th scope="col">If it’s wrong</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Buyers want to know who wove a saree</th><td>Secondary research and the proto-persona; no buyer interviews yet</td><td>Task 2, and whether people open “Who wove this” without being asked</td><td>Lead with handloom proof, and keep the weaver one tap deeper</td></tr>
+            <tr><th scope="row">Proof they can check builds more trust than a badge</th><td>Buyers rarely see the Handloom Mark or GI tag today</td><td>Trust rating from 1 to 5, before and after opening the proof</td><td>Make the badge itself explain what it certifies</td></tr>
+            <tr><th scope="row">Showing the weaver’s share helps, not hurts</th><td>No competitor explains its prices</td><td>Ask what the money bar made them think about the price</td><td>Show the share on a separate “our practice” page instead</td></tr>
+            <tr><th scope="row">A workshop can add a weaver in a day</th><td>The workshop told me artisans prefer voice and visuals</td><td>A pilot listing with the Varanasi workshop I visited</td><td>Let the platform team record the voice note on a visit</td></tr>
+          </tbody></table></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARNED -->
+  <section class="r-sec" id="learned" aria-labelledby="ln-h">
+    <div class="r-wrap">
+      <h2 class="r-h2" id="ln-h">What I learned</h2>
+      <div class="learn-r">
+        <div><h3>A saree isn’t just a product</h3><p>It carries generations of knowledge. The design had to show that, not just sell fabric.</p></div>
+        <div><h3>The hardest problems are invisible</h3><p>Low wages, digital gaps and market struggles are invisible to buyers. Making the weaver visible became the goal of the storefront, and it’s the part I’d push furthest in the next version.</p></div>
+        <div><h3>Next time</h3><p>Design the core screen first. The “Who wove this” panel is the one screen the whole problem points to, so it should come before checkout and booking. Then test with real buyers, and co-create the weaver flow with the artisans.</p></div>
+      </div>
+      <div class="r-end"><p>Happy to walk you through the field research and design.</p><a class="btn btn-filled lead r-mail" href="mailto:vidhina63@gmail.com?subject=Resham%20Riwayat%20case%20study"><span class="mi" aria-hidden="true">mail</span>Email me about this project</a></div>
+    </div>
+  </section>
+<section class="refs-sec" id="sources" aria-labelledby="src-h">
+    <div class="refs-wrap">
+      <h2 id="src-h" class="refs-h"><span class="mi" aria-hidden="true">menu_book</span>Sources</h2>
+      <p class="refs-note">Field research was my own: interviews with the workshop’s owner, manager and an artisan in Varanasi. These are the published sources behind the facts on this page.</p>
+      <ol class="refs"><li id="ref-1"><span class="rn">1</span><span>Gurmat S. The Silk Weavers of Varanasi. <i>AFAR</i>, 23 February 2023. <a href="https://www.afar.com/magazine/the-silk-weavers-of-varanasi" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 1 in a new tab</span></a></span></li><li id="ref-2"><span class="rn">2</span><span>Chakravartty A. Golden thread of misery. <i>Down To Earth</i>, 1–15 November 2016. <a href="https://www.downtoearth.org.in/economy/golden-thread-of-misery-56195" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 2 in a new tab</span></a></span></li><li id="ref-3"><span class="rn">3</span><span>Office of the Development Commissioner for Handlooms, Ministry of Textiles. <i>Fourth All India Handloom Census 2019–20</i>. <a href="https://ruralindiaonline.org/en/library/resource/fourth-all-india-handloom-census-2019-2020" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 3 in a new tab</span></a></span></li><li id="ref-4"><span class="rn">4</span><span>India Development Review. Indian artisans are still missing from e-commerce platforms. <a href="https://idronline.org/article/ecosystem-development/indian-artisans-are-still-missing-from-e-commerce-platforms/" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 4 in a new tab</span></a></span></li><li id="ref-5"><span class="rn">5</span><span>Tata Group. Taneira’s Weavershala: threads of change. <i>Tata Newsroom</i>, November 2024. <a href="https://www.tata.com/newsroom/community/taneira-weavershala-threads-of-change" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 5 in a new tab</span></a></span></li><li id="ref-6"><span class="rn">6</span><span>iPleaders. Made in Banaras: GI tag in Banaras brocades and sarees. <a href="https://blog.ipleaders.in/made-in-banaras-gi-tag-in-banaras-brocades-and-sarees/" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 6 in a new tab</span></a></span></li></ol>
+      <h3 class="refs-h3">Competitor sources</h3><ul class="refs-co"><li><a href="https://www.rawmango.com/" target="_blank" rel="noopener">Raw Mango</a></li><li><a href="https://www.sabyasachi.com/" target="_blank" rel="noopener">Sabyasachi</a></li><li><a href="https://www.taneira.com/" target="_blank" rel="noopener">Taneira</a></li><li><a href="https://www.jaypore.com/" target="_blank" rel="noopener">Jaypore</a></li></ul>
+    </div>
   </section>
 </main>
-<footer class="cs-foot">
-  <div class="in">
-    <a href="index.html#projects"><small>BACK TO</small><span><span class="mi l" aria-hidden="true">arrow_back</span>All projects</span></a>
-    <a class="next" href="fruit-vegetable-carts.html"><small>NEXT PROJECT</small><span>Indian Fruit &amp; Vegetable Carts<span class="mi r" aria-hidden="true">arrow_forward</span></span></a>
+<footer class="cs-foot cf">
+  <div class="cf-in">
+    <h2 class="cf-h">Have a look at my other projects</h2>
+    <div class="cf-g">
+      <a class="cf-c cf-bs" href="breathe-safe.html">
+        <span class="cf-ph"><img src="assets/images/more-bs.webp" width="960" height="600" alt="" loading="lazy"></span>
+        <span class="cf-t"><small>Mobile app, healthcare</small><b>Breathe Safe</b><span class="cf-q">How much activity is safe for someone with asthma, today?</span></span>
+        <span class="cf-go" aria-hidden="true"><span class="mi">arrow_forward</span></span>
+      </a>
+      <a class="cf-c cf-th" href="fruit-vegetable-carts.html">
+        <span class="cf-ph"><img src="assets/images/more-th.webp" width="840" height="525" alt="" loading="lazy"></span>
+        <span class="cf-t"><small>Product design, team of 2</small><b>Rethinking the Thela</b><span class="cf-q">Why does pushing a vegetable cart have to hurt?</span></span>
+        <span class="cf-go" aria-hidden="true"><span class="mi">arrow_forward</span></span>
+      </a>
+    </div>
+    <div class="cf-bar">
+      <a class="cf-back" href="index.html#work"><span class="mi" aria-hidden="true">arrow_back</span>All projects</a>
+      <ul class="cf-l">
+        <li><a href="mailto:vidhina63@gmail.com">vidhina63@gmail.com</a></li>
+        <li><a href="assets/Vidhina_Singhal_Resume.pdf?v=3" target="_blank" rel="noopener">Resume<span class="sr-only"> (PDF, opens in new tab)</span></a></li>
+        <li><a href="https://www.linkedin.com/in/vidhina-singhal-3a0296372" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in new tab)</span></a></li>
+      </ul>
+      <p>Designed by Vidhina Singhal, 2026</p>
+    </div>
   </div>
 </footer>
-<script src="js/script.js?v=4" defer></script>
+<script src="js/script.js?v=20261025" defer></script>
 </body>
 </html>

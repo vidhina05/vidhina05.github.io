@@ -111,6 +111,13 @@
       });
     }, { rootMargin: "-45% 0px -50% 0px" });
     Object.keys(map).forEach(function (id) { secObs.observe(doc.getElementById(id)); });
+    /* clear the highlight when back at the top (no section is "current" there) */
+    var firstId = Object.keys(map)[0], firstSec = firstId && doc.getElementById(firstId);
+    window.addEventListener("scroll", function () {
+      if (firstSec && firstSec.getBoundingClientRect().top > window.innerHeight * 0.5) {
+        navLinks.forEach(function (a) { a.classList.remove("is-active"); a.removeAttribute("aria-current"); });
+      }
+    }, { passive: true });
   }
 
   /* ---------- Mobile menu ---------- */

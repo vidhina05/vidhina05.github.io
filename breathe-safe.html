@@ -3,420 +3,402 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Breathe Safe — Chronic Asthma App Case Study · Vidhina Singhal</title>
-<meta name="description" content="Breathe Safe: a UX/UI case study by Vidhina Singhal on helping people with chronic asthma make safer, in-the-moment decisions about physical activity — research, persona, journey map, task flow and final screens.">
+<title>Breathe Safe, asthma app case study | Vidhina Singhal</title>
+<meta name="description" content="Breathe Safe: a mobile app that helps people with chronic asthma check their breathing before activity, log it for their doctor and reach a caregiver in one tap. Research, persona, journey map, design and usability testing. A case study by Vidhina Singhal.">
 <meta name="theme-color" content="#1e433a">
 <link rel="canonical" href="https://vidhina05.github.io/breathe-safe.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Breathe Safe — Case Study · Vidhina Singhal">
-<meta property="og:description" content="Making everyday physical activity safer and more understandable for people living with chronic asthma.">
+<meta property="og:title" content="Breathe Safe, a case study by Vidhina Singhal">
+<meta property="og:description" content="An asthma app tested with 5 people: average SUS 86.5, 12 issues found, two redesigns planned from the results.">
 <meta property="og:url" content="https://vidhina05.github.io/breathe-safe.html">
-<meta property="og:image" content="https://vidhina05.github.io/assets/og-breathe.jpg">
+<meta property="og:image" content="https://vidhina05.github.io/assets/og-breathe.jpg?v=4">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
 <link rel="preload" href="assets/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="stylesheet" href="css/style.css?v=20261025">
+<link rel="stylesheet" href="css/m3.css?v=20261025b">
+<link rel="stylesheet" href="css/breathe.css?v=13">
+<link rel="stylesheet" href="css/cs-shared.css?v=3">
 </head>
-<body class="cs bs">
+<body class="cs bs2">
 <a class="skip" href="#main">Skip to content</a>
 <header class="cs-bar" role="banner">
   <div class="in">
-    <a class="cs-back" href="index.html#projects" aria-label="Back to all projects"><img src="assets/icons/arrow-back.svg" alt="" width="24" height="24"></a>
+    <a class="cs-back" href="index.html#work" aria-label="Back to all projects"><span class="mi" aria-hidden="true">arrow_back</span></a>
     <a class="cs-name" href="index.html">Vidhina Singhal</a>
-    <nav class="cs-links" aria-label="Case study sections"><a href="#overview">Overview</a><a href="#secondary-research">Secondary Research</a><a href="#empathize">Empathize</a><a href="#primary-research">Primary Research</a><a href="#define">Define</a><a href="#design">Design</a></nav>
+    <nav class="cs-links" aria-label="Case study sections"><a href="#research">Research</a><a href="#people">People</a><a href="#problem">Problem</a><a href="#design">Design</a><a href="#testing">Testing</a><a class="cs-cv" href="assets/Vidhina_Singhal_Resume.pdf?v=3" target="_blank" rel="noopener">Resume<span class="sr-only"> (PDF, opens in new tab)</span></a></nav>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
   </div>
   <span class="progress" aria-hidden="true"></span>
 </header>
-<nav class="mobile-menu" id="mobile-menu" aria-label="Case study sections" aria-hidden="true"><a href="#overview">Overview</a><a href="#secondary-research">Secondary Research</a><a href="#empathize">Empathize</a><a href="#primary-research">Primary Research</a><a href="#define">Define</a><a href="#design">Design</a><a href="index.html#projects">All projects</a><small>Vidhina Singhal · Portfolio</small></nav>
+<nav class="mobile-menu" id="mobile-menu" aria-label="Case study sections" aria-hidden="true"><a href="#research">Research</a><a href="#people">People</a><a href="#problem">Problem</a><a href="#design">Design</a><a href="#testing">Testing</a><a href="#learned">Learnings</a><a href="#sources">Sources</a><a href="index.html#work">All projects</a><small>Vidhina Singhal, portfolio</small></nav>
 <main id="main">
+
   <!-- HERO -->
-  <section class="bs-hero" aria-labelledby="bs-title">
-    <div class="wrap">
-      <div class="panel">
-        <div>
-          <img class="appicon h-in" style="--delay:.1s" src="assets/images/bs-appicon.webp" width="324" height="304" alt="Breathe Safe app icon">
-          <h1 id="bs-title"><span class="line-mask"><span style="--delay:.2s">Breathe Safe</span></span></h1>
-          <div class="rule" aria-hidden="true"></div>
-          <p class="tag h-in" style="--delay:.55s">Making everyday physical activity safer and more understandable for people living with chronic asthma</p>
+  <section class="b-hero" aria-labelledby="b-title">
+    <div class="b-wrap b-hero-g">
+      <div class="b-hero-t">
+        <img class="b-icon" src="assets/images/bs-appicon.webp" width="324" height="304" alt="Breathe Safe app icon">
+        <h1 id="b-title">Breathe Safe</h1>
+        <p class="b-lead">A mobile app that helps people with chronic asthma check how their breathing is before they get active, keep a record for their doctor, and reach a caregiver in one tap.</p>
+        <dl class="b-meta">
+          <div><dt class="ic-l"><span class="mi" aria-hidden="true">person</span>My role</dt><dd>UX research, IA, interaction and visual design, usability testing</dd></div>
+          <div><dt class="ic-l"><span class="mi" aria-hidden="true">calendar_month</span>Timeline</dt><dd>Dec 2025 – Feb 2026</dd></div>
+          <div><dt class="ic-l"><span class="mi" aria-hidden="true">handyman</span>Tools</dt><dd class="tools-l"><span><img class="logo" src="assets/logos/figma.png" alt="" width="20" height="20" loading="lazy">Figma</span><span><img class="logo" src="assets/logos/googleforms.png" alt="" width="20" height="20" loading="lazy">Google Forms</span><span><img class="logo" src="assets/logos/tobii.png" alt="" width="20" height="20" loading="lazy">Tobii eye tracker</span></dd></div>
+          <div><dt class="ic-l"><span class="mi" aria-hidden="true">insights</span>Result</dt><dd>Average SUS 86.5 with 5 testers</dd></div>
+        </dl>
+        <p class="b-credit">Solo academic project, Symbiosis Institute of Design. Faculty: Dr. Pranita Ranade, Shruti Tambhake, Keddar Deshpande.</p>
+      </div>
+      <div class="b-hero-ph">
+        <div class="ph-stack">
+          <img class="zoomable b-p1" src="assets/images/scr-checkin.webp" width="564" height="1256" alt="Breathing check-in screen">
+          <img class="zoomable b-p2" src="assets/images/scr-home.webp?v=2" width="564" height="1256" alt="Home screen showing breathing status Comfortable">
+          <img class="zoomable b-p3" src="assets/images/scr-activity.webp" width="564" height="1256" alt="Activity log screen">
         </div>
-        <div class="bs-phones" data-parallax="0.03">
-          <img class="p1 h-in ph" src="assets/images/scr-checkin.webp" width="564" height="1256" alt="Breathe Safe breathing check-in screen">
-          <img class="p2 h-in ph" src="assets/images/scr-activity.webp" width="564" height="1256" alt="Breathe Safe activity log screen">
-          <img class="p3 h-in ph" src="assets/images/scr-home.webp" width="564" height="1256" alt="Breathe Safe home dashboard showing breathing status Comfortable">
-        </div>
+        <p class="status-chip"><i aria-hidden="true"></i>Breathing: comfortable</p>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT & ROLE -->
-  <section class="bs-sec bs-about" id="overview" aria-labelledby="about-h">
-    <div class="wrap">
-      <h2 class="bs-h2 reveal" id="about-h">About the project</h2>
-      <p class="lead reveal">Breathe Safe is an app that replaces guesswork with real-time guidance for chronic asthma patients, helping them read their body's own signals instead of relying on gut-feeling during physical activity. It connects patients, caregivers, and doctors through breathing status tracking, activity logging, and an immediate caregiver alert system.</p>
-      <h2 class="bs-h2 reveal" style="margin-top:48px">My Role</h2>
-      <ol class="roles reveal fade" data-stagger="0.12">
-        <li class="role"><span class="dot"><img src="assets/icons/role-search.svg" alt="" width="25" height="25"></span><span>UX <br>Researcher</span></li>
-        <li class="role"><span class="dot"><img src="assets/icons/role-sitemap.svg" alt="" width="26" height="26"></span><span>Information <br>Architecture</span></li>
-        <li class="role"><span class="dot"><img src="assets/icons/role-pen.svg" alt="" width="10" height="22" style="width:10px;height:22px"></span><span>Visual <br>Designer</span></li>
-        <li class="role"><span class="dot"><img src="assets/icons/role-cursor.svg" alt="" width="16" height="22" style="width:16px;height:22px"></span><span>Interaction <br>Designer</span></li>
-        <li class="role"><span class="dot"><img src="assets/icons/role-check.svg" alt="" width="22" height="22" style="width:22px;height:22px"></span><span>Usability <br>Testing</span></li>
+  <!-- IN SHORT -->
+  <section class="b-short" aria-labelledby="sh-h">
+    <div class="b-wrap">
+      <h2 class="sr-only" id="sh-h">The project in short</h2>
+      <div class="vitals">
+        <div class="vit"><p class="vit-k">The problem</p><p>People with chronic asthma judge their limits during activity by gut feel alone, and caregivers usually find out only once symptoms are visible.</p></div>
+        <div class="vit"><p class="vit-k">What I did</p><p>6 stakeholder interviews, a 12-person survey and a 7-app competitive audit, then a breathing check-in, activity and inhaler logging, and a one-tap caregiver alert.</p></div>
+        <div class="vit"><p class="vit-k">The result</p><p>Tested with 5 people using think-aloud, eye-tracking and SUS: an average SUS of 86.5, 12 issues, and two redesigns planned for the home and caregiver screens.</p></div>
+      </div>
+      <p class="b-key"><span><b>The finding that changed the design:</b> 4 of 5 testers looked at the weekly graph before their breathing status, so the next version puts the status first and help one tap away.</span><a href="#testing">See the testing<span class="mi" aria-hidden="true">arrow_downward</span></a></p>
+    </div>
+  </section>
+
+  <!-- CONTEXT -->
+  <section class="b-sec" id="context" aria-labelledby="cx-h">
+    <div class="b-wrap">
+      <div class="b-head stack"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">menu_book</span>Secondary research</p><h2 class="b-h2" id="cx-h">Asthma is common. Managing it while active isn’t.</h2></div><p>Asthma affected an estimated 363 million people in 2023 and caused 442,000 deaths.<sup class="cite"><a href="#ref-1" aria-label="Source 1">1</a></sup> I started with secondary research, reviewing 25+ papers, medical articles and case studies, and mapped what I knew and needed to learn in a KWL chart. Three findings framed the project.</p></div>
+      
+      <ol class="b-find">
+        <li><h3>Care is reactive</h3><p>Many patients reach for their reliever inhaler only once symptoms are bad, instead of following a preventive routine. The global asthma strategy treats relying on reliever-only treatment as a risk in itself.<sup class="cite"><a href="#ref-2" aria-label="Source 2">2</a></sup></p></li>
+        <li><h3>Activity is a trigger</h3><p>Exercise-induced bronchoconstriction affects a large share of people with asthma,<sup class="cite"><a href="#ref-3" aria-label="Source 3">3</a></sup> yet patients get no guidance on how much effort is safe on a given day.</p></li>
+        <li><h3>Tools look backwards</h3><p>A review of 38 popular asthma apps found data was entered by hand and no app could give just-in-time support during the day.<sup class="cite"><a href="#ref-4" aria-label="Source 4">4</a></sup></p></li>
       </ol>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="b-sec b-mist" aria-labelledby="pr-h">
+    <div class="b-wrap">
+      <h2 class="b-h2 solo-h" id="pr-h">Five stages, December to February</h2>
+      <ol class="b-stages">
+        <li><h3>Discover</h3><p>Secondary research, 6 interviews, a 12-person survey, a 7-app competitive audit</p></li>
+        <li><h3>Empathise</h3><p>Persona, empathy map, journey map, research synthesis</p></li>
+        <li><h3>Define</h3><p>Problem statement, How Might We questions, goals and scope</p></li>
+        <li><h3>Ideate and design</h3><p>SCAMPER, task flows, information architecture, wireframes, hi-fi screens, prototype</p></li>
+        <li><h3>Test and iterate</h3><p>Think-aloud, eye-tracking and SUS, then two planned fixes</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="b-sec" id="research" aria-labelledby="rs-h">
+    <div class="b-wrap">
+      <div class="b-head stack"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">record_voice_over</span>Primary research</p><h2 class="b-h2" id="rs-h">Who I spoke to</h2></div><p>Semi-structured interviews in person, and an online survey through Google Forms.</p></div>
+      <p class="study-l">6 semi-structured interviews, a 12-person survey on Google Forms and 1 field observation.</p>
+      <ul class="who4">
+        <li><h3>Patients</h3><p class="n">1 interview, 12 survey responses</p><p>The patient I interviewed has lived with asthma for 15+ years. Survey respondents were aged 18 to 50+, a third of them 18–25.</p></li>
+        <li><h3>Doctors</h3><p class="n">2 interviews</p><p>They only see what patients remember at appointments.</p></li>
+        <li><h3>Caregivers</h3><p class="n">2 interviews</p><p>A mother and a hostel warden, who step in once symptoms appear.</p></li>
+        <li><h3>Physiotherapist</h3><p class="n">1 interview, plus 1 field observation</p><p>Pacing and breathing guidance stays inside supervised sessions.</p></li>
+      </ul>
+
+      
+
+      <h3 class="b-h3 sp">What the research told me</h3>
+      <ol class="ins2">
+        <li><p class="ins-f">9 of 12</p><div><h4>Patients judge their limit by feel, and often too late</h4><p>9 of 12 decide when to stop from body signals or past experience, so they react after breathlessness starts instead of before. 5 of 12 only notice their limit once symptoms escalate.</p></div></li>
+        <li><p class="ins-f">2 of 2</p><div><h4>Caregivers step in late</h4><p>Help is reactive: both caregivers act once symptoms are visible, because nothing tells them sooner.</p></div></li>
+        <li><p class="ins-f">2 of 2</p><div><h4>Doctors can’t see daily activity</h4><p>Both doctors rely on what patients remember at appointments, because nothing records activity and symptoms in between.</p></div></li>
+        <li><p class="ins-f">7 of 12</p><div><h4>Uncertainty makes patients avoid activity</h4><p>Not knowing their limit makes exercise stressful, so many cut back on it. 7 of 12 rated their confidence during heavy activity 3 out of 5 or lower, and 7 of 12 feel anxious or helpless.</p></div></li>
+        <li><p class="ins-f">11 of 12</p><div><h4>They want guidance, not another tracker</h4><p>11 of 12 said a tool that works out how much activity is safe each day would be very or extremely useful. That shows the need, not the answer: what the tool should actually do came from the interviews and testing.</p></div></li>
+      </ol>
+    </div>
+    </div>
+  </section>
+
+  <!-- COMPETITIVE AUDIT -->
+  <section class="b-sec b-mist" aria-labelledby="cp-h">
+    <div class="b-wrap">
+      <div class="b-head stack"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">fact_check</span>Competitive analysis</p><h2 class="b-h2" id="cp-h">What 7 apps already do</h2></div><p>I compared 4 asthma apps (direct competitors) and 3 fitness and health apps (indirect) on what matters during activity, then looked for the gap none of them fills.</p></div>
+      <p class="cmp-ins"><span class="mi" aria-hidden="true">tips_and_updates</span><span>Asthma apps log symptoms but none gives feedback during activity. Fitness apps do, but know nothing about asthma.</span></p>
+      <div class="cmp-logos"><div class="cmp-grp"><p class="cmp-gl">Direct competitors: asthma apps</p><ul><li><img class="logo" src="assets/logos/asthmamd.png" alt="" width="20" height="20" loading="lazy"><span>AsthmaMD</span></li><li><img class="logo" src="assets/logos/propeller.png" alt="" width="20" height="20" loading="lazy"><span>Propeller Health</span></li><li><span class="mono" aria-hidden="true">M</span><span>MyAsthma</span></li><li><img class="logo" src="assets/logos/careclinic.png" alt="" width="20" height="20" loading="lazy"><span>CareClinic</span></li></ul></div><div class="cmp-grp"><p class="cmp-gl">Indirect competitors: fitness and health apps</p><ul><li><img class="logo" src="assets/logos/googlefit.png" alt="" width="20" height="20" loading="lazy"><span>Google Fit</span></li><li><img class="logo" src="assets/logos/apple.png" alt="" width="20" height="20" loading="lazy"><span>Apple Health</span></li><li><img class="logo" src="assets/logos/fitbit.png" alt="" width="20" height="20" loading="lazy"><span>Fitbit</span></li></ul></div></div>
+      <h3 class="cmp-cap">From weakness to gap to solution</h3>
+      <div class="cmp-wrap" tabindex="0" role="region" aria-label="Weakness, gap and solution"><table class="wgs-t"><thead><tr><th scope="col">Who</th><th scope="col"><span class="mi" aria-hidden="true">report</span>Weakness</th><th scope="col"><span class="mi" aria-hidden="true">search</span>Gap</th><th scope="col"><span class="mi" aria-hidden="true">lightbulb</span>Breathe Safe’s answer</th></tr></thead><tbody><tr><th scope="row"><span class="brand">AsthmaMD, MyAsthma</span></th><td>Symptoms are logged after the fact.</td><td>No signal before or during activity.</td><td>A breathing check-in on Home, before she starts.</td></tr><tr><th scope="row"><span class="brand">Propeller Health</span></th><td>Help depends on extra hardware.</td><td>Support that works with only a phone.</td><td>Inhaler use logged in the app, no sensor needed.</td></tr><tr><th scope="row"><span class="brand">CareClinic</span></th><td>Asthma is a side module.</td><td>A tool built around breathing.</td><td>Breathing status is the first thing on every visit.</td></tr><tr><th scope="row"><span class="brand">Google Fit, Apple Health, Fitbit</span></th><td>Activity feedback with no asthma context.</td><td>Nobody joins activity and asthma.</td><td>Each activity is saved with how her breathing felt.</td></tr></tbody></table></div>
+      <details class="audit"><summary>See the full feature audit: 7 apps, 7 features each<span class="mi" aria-hidden="true">expand_more</span></summary>
+      <h3 class="cmp-cap">Feature audit: asthma apps</h3><p class="cmp-scroll">Scroll the table sideways to see every competitor.</p>
+      <div class="cmp-wrap" tabindex="0" role="region" aria-label="Benchmarking: asthma apps"><table class="bm-t"><thead><tr><th scope="col">Features</th><th scope="col">AsthmaMD</th><th scope="col">Propeller Health</th><th scope="col">MyAsthma</th><th scope="col">CareClinic</th></tr></thead><tbody><tr><th scope="row">Asthma-specific</th><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td></tr><tr><th scope="row">Symptom or inhaler tracking</th><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr><tr><th scope="row">Medication reminders</th><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr><tr><th scope="row">Environmental tracking</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td></tr><tr><th scope="row">Real-time feedback</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td></tr><tr><th scope="row">Activity tracking</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td></tr><tr><th scope="row">Personalisation</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr></tbody></table></div>
+      <h3 class="cmp-cap">Feature audit: fitness and health apps</h3><p class="cmp-scroll">Scroll the table sideways to see every competitor.</p>
+      <div class="cmp-wrap" tabindex="0" role="region" aria-label="Benchmarking: fitness and health apps"><table class="bm-t"><thead><tr><th scope="col">Features</th><th scope="col">Google Fit</th><th scope="col">Apple Health</th><th scope="col">Fitbit</th></tr></thead><tbody><tr><th scope="row">Asthma-specific</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td></tr><tr><th scope="row">Activity tracking</th><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr><tr><th scope="row">Heart rate</th><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr><tr><th scope="row">Environmental tracking</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td></tr><tr><th scope="row">Real-time feedback</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr><tr><th scope="row">Health insights</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr><tr><th scope="row">Personalisation</th><td class="b-n"><span aria-hidden="true">✕</span><span class="sr-only">No</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="b-y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr></tbody></table></div>
+      <p class="cmp-note">✓ means the app offers the feature. “Limited” or “basic” support from my audit counts as ✕. No app scores on both asthma and real-time feedback. Apps are named as they were at the time of the audit (February 2026); in May 2026 Google renamed the Fitbit app Google Health and announced that Google Fit will close.<sup class="cite"><a href="#ref-6" aria-label="Source 6">6</a></sup></p>
+      </details></section>
+
+  <!-- PERSONA -->
+  <section class="b-sec" id="people" aria-labelledby="ps-h">
+    <div class="b-wrap">
+      <div class="b-head stack"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">person</span>Personas and empathy map</p><h2 class="b-h2" id="ps-h">Meet Madhushree, and the mother who looks after her</h2></div><p>Built from 1 patient interview, 5 interviews with doctors, caregivers and a physiotherapist, and a 12-person survey. Madhushree’s patterns match the survey: like her, 9 of 12 decide when to stop by body signals.</p></div>
+      <article class="pz round">
+        <div class="pz-side">
+          <figure class="pz-ph"><img src="assets/images/aud-patient.webp" alt="Stock photo representing the persona Madhushree" width="360" height="440" loading="lazy"><figcaption class="stock-l">Stock photo</figcaption></figure>
+          <ul class="pz-tags" aria-label="Personality"><li>Independent</li><li>Resilient</li><li>Cautious</li></ul>
+          <dl class="pz-facts"><div><dt>Age</dt><dd>21</dd></div><div><dt>Location</dt><dd>Kolkata, West Bengal</dd></div><div><dt>Occupation</dt><dd>College student</dd></div><div><dt>Asthma</dt><dd>10+ years</dd></div></dl>
+          <p class="pz-l">Apps she uses</p><div class="pz-apps"><img src="assets/images/tech-1.webp" width="82" height="82" loading="lazy" alt="WhatsApp"><img src="assets/images/tech-2.webp" width="53" height="45" loading="lazy" alt="Google Fit"><img src="assets/images/tech-3.webp" width="45" height="45" loading="lazy" alt="Apple Health"><img src="assets/images/tech-4.webp" width="74" height="74" loading="lazy" alt="Gmail"><img src="assets/images/tech-5.webp" width="36" height="36" loading="lazy" alt="Instagram"><img src="assets/images/tech-6.webp" width="36" height="36" loading="lazy" alt="Google Calendar"></div>
+        </div>
+        <div class="pz-main">
+          <p class="pz-role">Primary user, person with asthma</p><h3 class="pz-name">Madhushree Das</h3>
+          <blockquote class="pz-q">“I don’t know how much is too much until it’s too late.”</blockquote>
+          <p class="pz-bio">She gets breathless on stairs and during exertion, and relies on her inhaler once symptoms appear. That makes her anxious, so she avoids activity. She wants to stay active without guessing where her limit is.</p>
+          <div class="pz-grid"><div class="pz-b"><h4>Goals</h4><ul><li>Stay active without triggering her asthma</li><li>Know her safe activity limits</li><li>Avoid sudden breathlessness in public</li><li>Feel confident during daily movement</li></ul></div><div class="pz-b"><h4>Pain points</h4><ul><li>No early warning before symptoms start</li><li>Never sure how much activity is safe today</li><li>Depends on her inhaler once symptoms worsen</li><li>Health apps aren’t made for asthma</li></ul></div><div class="pz-b"><h4>Behaviours and patterns</h4><ul><li>Avoids intense physical activity</li><li>Stops only when symptoms appear</li><li>Relies on past experience, not data</li><li>Seeks reassurance during exertion</li></ul></div><div class="pz-b"><h4>Technology use</h4><ul><li>Uses her inhaler when needed</li><li>Tracks steps or heart rate now and then</li><li>Has no asthma-specific monitoring tool</li></ul></div></div>
+        </div>
+      </article>
+      <article class="pz round">
+        <div class="pz-side">
+          <figure class="pz-ph"><img src="assets/images/bs-caregiver.webp" alt="Stock photo representing the caregiver persona Mouali" width="360" height="440" loading="lazy"><figcaption class="stock-l">Stock photo</figcaption></figure>
+          <ul class="pz-tags" aria-label="Personality"><li>Protective</li><li>Practical</li><li>Calm under pressure</li></ul>
+          <dl class="pz-facts"><div><dt>Age</dt><dd>40</dd></div><div><dt>Location</dt><dd>Kolkata, West Bengal</dd></div><div><dt>Role</dt><dd>Primary caregiver at home</dd></div></dl>
+          
+        </div>
+        <div class="pz-main">
+          <p class="pz-role">Secondary user, caregiver</p><h3 class="pz-name">Mouali Das</h3>
+          <blockquote class="pz-q">“Take the inhaler now. Let’s go outside.”</blockquote>
+          <p class="pz-bio">When her daughter has trouble breathing, she hands her the inhaler and moves her to an open space where breathing feels easier. Her help is quick and practical, but it only starts once symptoms are visible.</p>
+          <div class="pz-grid"><div class="pz-b"><h4>Goals</h4><ul><li>Make sure her daughter can breathe comfortably</li><li>Give immediate relief during breathlessness</li><li>Stop symptoms from getting worse</li></ul></div><div class="pz-b"><h4>Pain points</h4><ul><li>Little control once symptoms start</li><li>The inhaler is her only response</li><li>Has to act fast, with no warning</li></ul></div><div class="pz-b"><h4>Behaviours and patterns</h4><ul><li>Hands over the inhaler as soon as she notices</li><li>Moves her to a well-ventilated space</li><li>Stays close until breathing settles</li></ul></div><div class="pz-b"><h4>Technology use</h4><ul><li>Doesn’t use digital tools for this</li><li>Relies on being there and watching</li></ul></div></div>
+        </div>
+      </article>
+      <h3 class="b-h3 sp">Empathy map</h3>
+      <div class="empq">
+        <div><h4>Says</h4><p>“I get breathless if I climb stairs or run.”</p><p>“Some days are fine, some days are not.”</p><p>“I stop only when breathing becomes difficult.”</p><p>“I feel safer when someone is around.”</p></div>
+        <div><h4>Thinks</h4><p>“Will this activity trigger my asthma today?”</p><p>“What if I get breathless in public?”</p><p>“I wish I could know my limits beforehand.”</p></div>
+        <div><h4>Does</h4><p>Takes frequent pauses during daily tasks</p><p>Uses her inhaler after symptoms appear</p><p>Decides when to stop by body signals and experience</p><p>Tracks steps occasionally, but not symptoms</p></div>
+        <div><h4>Feels</h4><p>Anxious during exertion</p><p>Frustrated when asthma interrupts her routine</p><p>Relieved after using her inhaler</p><p>Hopeful for better support</p>  <span class="empq-c" aria-hidden="true"><img src="assets/images/aud-patient.webp" alt="" width="72" height="72"></span>
+      </div>
+    </div>
+    </div>
+    </section>
+
+  <!-- JOURNEY as breath curve -->
+  <section class="b-sec b-mist" aria-labelledby="jm-h">
+    <div class="b-wrap">
+      <div class="b-head"><div class="eyeh"><h2 class="b-h2" id="jm-h">A walk, as she lives it today</h2></div><p><b>Scenario:</b> she goes for a walk or a light workout without knowing how much her breathing can handle that day. <b>Expectation:</b> stay active safely and get help quickly if she needs it.</p></div>
+      <div class="jm2">
+        <svg class="jm-curve" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true"><path d="M100 26 C 200 26, 220 40, 300 40 S 420 78, 500 82 S 640 104, 700 104 S 820 46, 900 46" fill="none" stroke="#1E433A" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/><circle cx="100" cy="26" r="9" fill="#3E9B5F"/><circle cx="300" cy="40" r="9" fill="#3E9B5F"/><circle cx="500" cy="82" r="9" fill="#E2A23B"/><circle cx="700" cy="104" r="9" fill="#D9583B"/><circle cx="900" cy="46" r="9" fill="#3E9B5F"/></svg>
+        <ol class="jm-cols">
+          <li><span class="emo e-satisfied" title="satisfied"><span class="mi" aria-hidden="true">sentiment_satisfied</span></span><h3>Starts</h3><q>I feel fine today, should be okay.</q><p class="pain">No objective signal for her limit</p><p class="opp">A quick breathing check-in before she starts</p></li>
+          <li><span class="emo e-satisfied" title="satisfied"><span class="mi" aria-hidden="true">sentiment_satisfied</span></span><h3>During</h3><q>Just keep it light.</q><p class="pain">No early warning before symptoms</p><p class="opp">Log activity with how her breathing felt</p></li>
+          <li><span class="emo e-dissatisfied" title="dissatisfied"><span class="mi" aria-hidden="true">sentiment_dissatisfied</span></span><h3>Symptoms begin</h3><q>Is this the moment I should stop?</q><p class="pain">Too late to avoid them; anxiety</p><p class="opp">An easy pause and check-in</p></li>
+          <li><span class="emo e-very_dissatisfied" title="very dissatisfied"><span class="mi" aria-hidden="true">sentiment_very_dissatisfied</span></span><h3>Inhaler</h3><q>By the time I notice, it’s already happening.</q><p class="pain">Caregivers find out late; no usage pattern</p><p class="opp">One-tap caregiver alert; inhaler log</p></li>
+          <li><span class="emo e-satisfied" title="satisfied"><span class="mi" aria-hidden="true">sentiment_satisfied</span></span><h3>Recovery</h3><q>Okay, it passed. For now.</q><p class="pain">Doctors can’t see real-world patterns</p><p class="opp">A symptom journal she can share</p></li>
+        </ol>
+        <p class="key"><i class="kg"></i>Calm <i class="ka"></i>Worried <i class="kr"></i>Distressed. Under each stage: the pain point (red) and the opportunity (green).</p>
+      </div>
     </div>
   </section>
 
   <!-- PROBLEM -->
-  <section class="bleed problem" aria-labelledby="prob-h">
-    <div class="side" aria-hidden="true"><span>Overview</span></div>
-    <div class="content">
-      <h2 id="prob-h"><span class="line-mask solo"><span>Problem</span></span></h2>
-      <p class="intro reveal">Chronic asthma patients have no reliable way to know their real-time physical limits during activity, because:</p>
-      <ol data-stagger="0.1">
-        <li>No objective signal for real-time limits — patients rely on gut sense alone, not data.</li>
-        <li>Caregivers only find out something is wrong after symptoms are already visible.</li>
-        <li>Doctors have limited visibility into patients' real-world activity patterns between visits.</li>
-        <li>Physiotherapist guidance doesn't extend to unsupervised daily exertion at home.</li>
+  <section class="b-sec b-problem" id="problem" aria-labelledby="pb-h">
+    <div class="b-wrap">
+      <h2 class="b-h2" id="pb-h">Finding the root cause</h2>
+      <ol class="b-why">
+        <li><p class="q">Why do people with chronic asthma struggle to manage physical activity?</p><p>They can’t tell what level of effort is safe for them.</p></li>
+        <li><p class="q">Why can’t they tell?</p><p>Nothing gives them feedback on their breathing during activity.</p></li>
+        <li><p class="q">Why is there no feedback?</p><p>Current asthma tools are reactive, and don’t monitor anything as it happens.</p></li>
       </ol>
-    </div>
-  </section>
-
-  <!-- METHODOLOGY -->
-  <section class="bs-sec" aria-labelledby="meth-h">
-    <div class="wrap">
-      <h2 class="bs-h2 reveal" id="meth-h">Design methodology</h2>
-      <div class="gantt-wrap">
-        <div class="gantt">
-          <div class="months" aria-hidden="true"><span>DECEMBER 2025</span><span>JANUARY 2026</span></div>
-          <div class="weeks" aria-hidden="true"><span>Week 1</span><span>Week 2</span><span>Week 3</span><span>Week 4</span><span>Week 5</span><span>Week 6</span><span>Week 7</span><span>Week 8</span></div>
-          <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div class="phase ph1 reveal" style="--delay:0s"><div class="pill">01 Discover</div><div class="card"><ul><li>Design proposal &amp; goal statement</li><li>Secondary research — severity stats, literature review</li><li>Primary research — 5 interviews (patient, doctors, caregiver, physiotherapist)</li><li>Online survey — 13 respondents</li><li>Competitor's analysis</li></ul></div></div>
-          <div class="phase ph2 reveal" style="--delay:.12s"><div class="pill">02 Empathize</div><div class="card"><ul><li>Persona</li><li>Empathy map</li><li>User journey mapping</li><li>Research synthesis</li></ul></div></div>
-          <div class="phase ph3 reveal" style="--delay:.24s"><div class="pill">03 Define</div><div class="card"><ul><li>Problem statement</li><li>How Might We questions</li><li>Goals &amp; scope</li></ul></div></div>
-          <div class="phase ph4 reveal" style="--delay:.36s"><div class="pill">04 Ideate &amp; Design</div><div class="card"><ul><li>Brainstorming &amp; feature prioritization</li><li>Wireframes</li><li>Hi-fi screens — Home Dashboard, Notify Caregiver flow</li><li>Interactive prototype</li></ul></div></div>
-          <div class="phase ph5 reveal" style="--delay:.48s"><div class="pill">05 Iterate</div><div class="card"><ul><li>Usability testing — eye-tracking, SUS, think-aloud</li><li>Fix: Breathing Status Clarity</li><li>Fix: Emergency Action Visibility</li></ul></div></div>
+      <p class="b-root"><b>Root cause:</b> there is no proactive support that guides safe activity in the moment.</p>
+      <h3 class="b-h3 b-ps">Problem statement</h3>
+      <p class="b-pov">Madhushree, a college student living with chronic asthma, needs a way to notice how her breathing is before and during activity, and to get help sooner, because she decides by gut feel alone and only notices her limit once breathlessness has already started.</p>
+      <div class="pb-g one">
+        
+        <div>
+          <h3 class="b-h3">How might we…</h3>
+          <ul class="b-hmw">
+            <li>help people with chronic asthma notice changes in their breathing before and during activity?</li>
+            <li>let caregivers know sooner when breathing gets worse?</li>
+            <li>give doctors a clearer picture of a patient’s activity between visits?</li>
+          </ul>
         </div>
       </div>
+      <div class="b-goal"><h3>Goal statement</h3><p>Breathe Safe will let people with chronic asthma check their breathing status, log activity and inhaler use, and alert a caregiver in one tap. This will help them stay active with less guesswork and get support before symptoms escalate. We will measure effectiveness through task completion, the issues people hit, and SUS scores in usability testing.</p></div>
     </div>
   </section>
 
-  <!-- TARGET AUDIENCE -->
-  <section class="bs-sec" id="secondary-research" aria-labelledby="ta-h">
-    <div class="wrap">
-      <p class="bs-kicker reveal">01 Discover</p>
-      <h2 class="bs-h2 reveal" id="ta-h" style="margin-top:12px">Target Audience</h2>
-      <div class="aud" data-stagger="0.12">
-        <figure><span class="ph reveal-img"><img src="assets/images/aud-patient.webp" width="360" height="360" loading="lazy" alt="Young woman representing chronic asthma patients"></span><figcaption>Chronic asthma patients navigating daily physical activity</figcaption></figure>
-        <figure><span class="ph reveal-img"><img src="assets/images/aud-doctor.webp" width="360" height="360" loading="lazy" alt="Doctor representing clinicians tracking symptoms"></span><figcaption>Doctors tracking patient symptoms between visits</figcaption></figure>
-        <figure><span class="ph reveal-img"><img src="assets/images/aud-caregiver.webp" width="360" height="360" loading="lazy" alt="Caregiver supporting a family member"></span><figcaption>Caregivers who step in when symptoms appear</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHAT WILL USERS DO -->
-  <section class="bs-sec" aria-labelledby="do-h">
-    <div class="wrap">
-      <h2 class="bs-h2 reveal" id="do-h">What will users do?</h2>
-      <div class="board reveal" data-stagger="0.1">
-        <div class="cat"><h3>Onboarding</h3><div class="row"><div class="tk"><small>1.</small><p>Create profile</p></div><div class="tk"><small>2.</small><p>Add caregiver &amp; doctor contacts</p></div></div></div>
-        <div class="cat"><h3>Home Dashboard</h3><div class="row"><div class="tk"><small>1.</small><p>Check real-time breathing status</p></div><div class="tk"><small>2.</small><p>View daily trends</p></div></div><div class="row"><div class="tk pain"><small>1.</small><p>Daily Trends graph dominated the screen, pulling attention from breathing status</p></div></div></div>
-        <div class="cat"><h3>Activity Logging</h3><div class="row"><div class="tk"><small>1.</small><p>Log activity with breathing impact</p></div><div class="tk"><small>2.</small><p>Track exertion during exercise</p></div></div><div class="row"><div class="tk pain"><small>1.</small><p>No monitoring during exertion before Breathe Safe</p></div></div></div>
-        <div class="cat"><h3>Symptom Journal</h3><div class="row"><div class="tk"><small>1.</small><p>Record symptoms over time</p></div><div class="tk"><small>2.</small><p>Share journal with doctor</p></div></div><div class="row"><div class="tk pain"><small>1.</small><p>Doctors have limited visibility into real-world activity patterns</p></div></div></div>
-        <div class="cat"><h3>Inhaler Tracking</h3><div class="row"><div class="tk"><small>1.</small><p>Log inhaler usage</p></div><div class="tk"><small>2.</small><p>View usage patterns</p></div></div><div class="row"><div class="tk pain"><small>1.</small><p>Over-reliance on inhaler with no pattern visibility</p></div></div></div>
-        <div class="cat"><h3>Notify Caregiver</h3><div class="row"><div class="tk"><small>1.</small><p>Notify caregiver instantly</p></div><div class="tk"><small>2.</small><p>See what will be shared before sending</p></div></div><div class="row"><div class="tk pain"><small>1.</small><p>Caregivers only found out after symptoms were already visible</p></div><div class="tk pain"><small>2.</small><p>Notify option wasn't noticed quickly in testing</p></div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMPETITORS -->
-  <section class="bleed" aria-labelledby="bench-h">
-    <div class="side" aria-hidden="true"><span>Competitors</span></div>
-    <div class="content" style="padding-left:64px">
-      <div class="bench">
-        <h2 class="reveal" id="bench-h">Benchmarking</h2>
-        <div class="table-scroll reveal">
-          <table class="bt">
-            <caption class="sr-only">Feature comparison of Breathe Safe against seven competitors. ✓ means the feature is offered, ✗ means it is not.</caption>
-            <thead><tr><th scope="col">Features</th><th scope="col">Breathe Safe</th><th scope="col">AsthmaMD</th><th scope="col">Propeller Health</th><th scope="col">MyAsthma</th><th scope="col">CareClinic</th><th scope="col">Google Fit</th><th scope="col">Apple Health</th><th scope="col">Fitbit</th></tr></thead>
-            <tbody><tr><td>Asthma-Specific Focus</td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td></tr><tr><td>Symptom / Breathing Tracking</td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td></tr><tr><td>Medication / Inhaler Reminders</td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td></tr><tr><td>Environmental Trigger Tracking</td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td></tr><tr><td>Real-time Feedback</td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr><tr><td>Activity Tracking</td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr><tr><td>Symptom Journal</td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td></tr><tr><td>Caregiver Notification</td><td class="y"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td><td class="n"><span aria-hidden="true">✗</span><span class="sr-only">No</span></td></tr><tr class="total"><td>Total</td><td>7</td><td>4</td><td>4</td><td>4</td><td>1</td><td>1</td><td>1</td><td>2</td></tr></tbody>
-          </table>
-        </div>
-      </div>
-      <div class="swot">
-        <h2 class="reveal">Strengths and Weaknesses</h2>
-        <div class="sw-grid" data-stagger="0.12">
-          <div><div class="sw-h">Strengths</div><div class="sw-b"><ul><li>Only app connecting caregivers in real time — none of the 7 competitors have a Notify Caregiver flow</li><li>Combines asthma-specific tracking with real-time feedback — a pairing no competitor offers</li><li>Built directly from real interview findings, not generic health tracking</li></ul></div></div>
-          <div><div class="sw-h">Weaknesses</div><div class="sw-b"><ul><li>New entrant with no existing user base or clinical validation, unlike established players like Propeller Health</li><li>No environmental/weather trigger tracking yet — an area Propeller Health partially covers</li></ul></div></div>
-        </div>
-        <div class="go-grid" data-stagger="0.12">
-          <div><div class="go-h">Gap</div><div class="go-b"><ul><li>Established players (Propeller Health, Apple Health) have far larger user bases and could add caregiver features of their own</li><li>General fitness apps already have real-time feedback infrastructure and could bolt on asthma-specific modules</li></ul></div></div>
-          <div><div class="go-h">Opportunity</div><div class="go-b"><ul><li>Add environmental/weather trigger alerts — a gap no competitor fully solves</li><li>Partner with doctors/physiotherapists for clinical validation</li><li>Expand caregiver features further, since this is completely unaddressed market-wide</li></ul></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PERSONA -->
-  <section class="bs-sec" id="empathize" aria-labelledby="persona-h" style="padding-top:80px">
-    <div class="wrap">
-      <p class="bs-kicker reveal">02 Empathize</p>
-      <h2 class="bs-h2 reveal" id="persona-h" style="margin-top:12px">Persona</h2>
-      <div class="persona">
-        <aside class="p-side reveal left" aria-label="Persona profile">
-          <img class="avatar" src="assets/images/aud-patient.webp" width="360" height="360" loading="lazy" alt="Priya Nair, persona">
-          <div class="traits"><span>Independent</span><span>Resilient</span><span>Cautious</span></div>
-          <p class="p-facts"><b>Name:</b> Priya Nair<br><b>Age:</b> 26<br><b>Managing asthma since:</b> age 10 (15+ years)<br><b>Occupation:</b> Working Professional</p>
-          <h3>Technology Used</h3>
-          <div class="tech">
-            <img src="assets/images/tech-1.webp" width="82" height="82" loading="lazy" alt="Technology used by persona">
-            <img src="assets/images/tech-2.webp" width="53" height="45" loading="lazy" alt="Technology used by persona">
-            <img src="assets/images/tech-3.webp" width="45" height="45" loading="lazy" alt="Technology used by persona" style="border-radius:8px">
-            <img src="assets/images/tech-4.webp" width="74" height="74" loading="lazy" alt="Technology used by persona">
-            <img src="assets/images/tech-5.webp" width="36" height="36" loading="lazy" alt="Technology used by persona">
-            <img src="assets/images/tech-6.webp" width="36" height="36" loading="lazy" alt="Technology used by persona">
-          </div>
-        </aside>
-        <div class="p-main">
-          <blockquote class="quote reveal"><p>By the time symptoms start,<br>it's already too late.</p></blockquote>
-          <p class="p-desc-card reveal">Priya has lived with chronic asthma for over 15 years. She keeps up with daily activity — walking, errands, light exercise — but consciously avoids high-intensity exertion because she has no way to know her real-time limits, only long-term personal experience and gut sense. When symptoms interrupt her routine, it's frustrating and anxiety-inducing — and by the time she notices them, it's already too late to prevent them.</p>
-          <div class="p-cols">
-            <div class="reveal"><h3>Frustrations</h3><ul><li>No objective signal for her real-time limit — relies on gut sense and long-term experience alone</li><li>Never sure how much activity is safe on a given day</li><li>By the time symptoms appear, it's already too late to avoid them</li></ul></div>
-            <div class="reveal" style="--delay:.1s"><h3>Pain Points</h3><ul><li>Caregivers only find out something is wrong after symptoms are already visible</li><li>Doctors have limited visibility into her real-world activity patterns</li><li>Physiotherapist guidance doesn't extend to unsupervised daily exertion</li><li>Over-reliance on her inhaler with no visibility into usage patterns</li></ul></div>
-            <div class="reveal"><h3>Goals</h3><ul><li>Stay active without guessing when to stop</li><li>Get support before a crisis, not after</li><li>Make informed, in-the-moment decisions about physical activity</li></ul></div>
-            <div class="reveal" style="--delay:.1s"><h3>Motivation</h3>
-              <div class="bars">
-                <div class="bar"><span>Openness to a guidance system</span><i><b style="--v:.77"></b></i><em>77%</em></div>
-                <div class="bar"><span>Relies on body signals alone</span><i><b style="--v:.54;--delay:.1s"></b></i><em>54%</em></div>
-                <div class="bar"><span>Frustration when interrupted</span><i><b style="--v:.77;--delay:.2s"></b></i><em>77%</em></div>
-                <div class="bar"><span>Anxiety when interrupted</span><i><b style="--v:.31;--delay:.3s"></b></i><em>31%</em></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EMPATHY MAP -->
-  <section class="bs-sec" aria-labelledby="emp-h">
-    <div class="wrap">
-      <h2 class="bs-h2 reveal" id="emp-h">Empathy Map</h2>
-      <div class="emp reveal fade">
-        <div class="q"><div class="qh"><span><img src="assets/icons/emp-says.svg" alt="" width="64" height="64"></span><h3>Says</h3></div><ul><li>I get breathless climbing stairs or during any real exertion</li><li>By the time symptoms start, it's already too late</li><li>I just go by how I feel in the moment</li><li>I don't want to worry my family every time</li></ul></div>
-        <div class="q"><div class="qh"><span><img src="assets/icons/emp-thinks.svg" alt="" width="64" height="64"></span><h3>Thinks</h3></div><ul><li>Is it safe to keep pushing through this activity?</li><li>How much longer can I go before I need to stop?</li><li>What if my caregiver doesn't find out in time?</li><li>Am I relying on my inhaler too much?</li></ul></div>
-        <div class="q"><div class="qh"><span><img src="assets/icons/emp-does.svg" alt="" width="64" height="64"></span><h3>Does</h3></div><ul><li>Consciously avoids high-intensity activity</li><li>Monitors her limits through body signals and long-term experience alone</li><li>Reaches for her inhaler once symptoms start</li><li>Keeps up daily activity — walking, errands, light exercise</li></ul></div>
-        <div class="q"><div class="qh"><span><img src="assets/icons/emp-feels.svg" alt="" width="64" height="64"></span><h3>Feels</h3></div><ul><li>Frustrated when asthma interrupts activity</li><li>Anxious about unpredictable interruptions</li><li>Uncertain during sustained exertion, even when confident in short bursts</li><li>Relieved when her caregiver steps in — but wishes it happened sooner</li></ul></div>
-        <span class="vline" aria-hidden="true"></span><span class="hline" aria-hidden="true"></span>
-        <span class="center"><img src="assets/images/aud-patient.webp" width="360" height="360" loading="lazy" alt="Priya, the persona at the centre of the empathy map"></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- JOURNEY MAP -->
-  <section class="bs-sec" aria-labelledby="jm-h">
-    <div class="wrap">
-      <h2 class="bs-h2 reveal" id="jm-h">Journey Map</h2>
-      <div class="journey-scroll">
-        <div class="journey-inner">
-          <div class="stages" data-stagger="0.1" aria-hidden="true"><span>Starts Activity</span><span>During Activity</span><span>Symptoms Begin</span><span>Crisis / Inhaler Use</span><span>Recovery &amp; Follow-up</span></div>
-          <div class="jm reveal fade" role="table" aria-label="Journey map across five stages">
-            <div class="jrow" role="row"><div class="lab" role="rowheader"><span>User Action</span></div>
-              <div class="c" role="cell"><ul><li>Decides to go for a walk or workout; judges safety by past experience alone</li></ul></div>
-              <div class="c" role="cell"><ul><li>Continues activity while consciously avoiding high-intensity exertion</li></ul></div>
-              <div class="c" role="cell"><ul><li>Notices breathlessness building; unsure whether to push through or stop</li></ul></div>
-              <div class="c" role="cell"><ul><li>Reaches for her inhaler and stops the activity</li></ul></div>
-              <div class="c" role="cell"><ul><li>Recovers, and later mentions the episode to her doctor or caregiver in passing</li></ul></div>
-            </div>
-            <div class="jrow emo" role="row"><div class="lab" role="rowheader"><span>Emotion</span></div>
-              <svg class="curve" viewBox="0 0 1000 230" preserveAspectRatio="none" aria-hidden="true"><path d="M100,60 L300,68 L500,84 L700,96 L900,72" fill="none" stroke="#b2b8b2" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>
-              <div class="c" role="cell"><span class="emoji" style="top:47px" role="img" aria-label="Content">🙂</span><span class="bubble" style="transition-delay:.6s">I feel fine today — should be okay.</span></div>
-              <div class="c" role="cell"><span class="emoji" style="top:55px;transition-delay:.15s" role="img" aria-label="Neutral">😐</span></div>
-              <div class="c" role="cell"><span class="emoji" style="top:71px;transition-delay:.3s" role="img" aria-label="Worried">😟</span><span class="bubble" style="transition-delay:.8s">Is this the moment I should stop?</span></div>
-              <div class="c" role="cell"><span class="emoji" style="top:83px;transition-delay:.45s" role="img" aria-label="Distressed">😣</span><span class="bubble" style="transition-delay:1s">By the time I notice, it's already happening.</span></div>
-              <div class="c" role="cell"><span class="emoji" style="top:59px;transition-delay:.6s" role="img" aria-label="Relieved">😌</span></div>
-            </div>
-            <div class="jrow" role="row"><div class="lab" role="rowheader"><span>Pain Points</span></div>
-              <div class="c" role="cell"><ul><li>No objective signal for her real-time limit</li><li>Never sure how much activity is safe today</li></ul></div>
-              <div class="c" role="cell"><ul><li>No real-time monitoring during exertion</li><li>No early warning before symptoms appear</li></ul></div>
-              <div class="c" role="cell"><ul><li>By the time symptoms appear, it's already too late to avoid them</li><li>Interruptions cause anxiety</li></ul></div>
-              <div class="c" role="cell"><ul><li>Caregivers only find out after symptoms are already visible</li><li>Over-reliance on her inhaler with no pattern visibility</li></ul></div>
-              <div class="c" role="cell"><ul><li>Doctors have limited visibility into real-world activity patterns</li><li>Physiotherapist guidance doesn't extend to unsupervised exertion</li></ul></div>
-            </div>
-          </div>
-          <div class="jsol reveal" role="table" aria-label="Solutions">
-            <div class="lab" role="rowheader"><span>Solutions</span></div>
-            <div class="c" role="cell"><ul><li>Breathing status check-in gives a clear go/caution/stop signal instead of guessing</li></ul></div>
-            <div class="c" role="cell"><ul><li>Activity logging with breathing impact flags rising risk in real time</li></ul></div>
-            <div class="c" role="cell"><ul><li>Early warning cues surface before symptoms peak, giving time to slow down safely</li></ul></div>
-            <div class="c" role="cell"><ul><li>Notify Caregiver fires automatically; inhaler usage tracked for pattern visibility</li></ul></div>
-            <div class="c" role="cell"><ul><li>Symptom journal gives doctors and caregivers a shared, ongoing record</li></ul></div>
-          </div>
-        </div>
-      </div>
-      <p class="scroll-hint">Swipe to see the full journey →</p>
-    </div>
-  </section>
-
-  <!-- PRIMARY RESEARCH -->
-  <section class="bleed pr" id="primary-research" aria-labelledby="pr-h" style="grid-template-columns:180px 1fr">
-    <div class="side" aria-hidden="true" style="background:#1a3931"><span>Primary Research</span></div>
-    <div class="content">
-      <h2 class="sr-only" id="pr-h">Primary Research</h2>
-      <div class="blk reveal"><h2>Research Objective</h2><p>To understand how chronic asthma patients recognize and respond to their physical limits during daily and heavy activity, what role caregivers, doctors, and physiotherapists play in that process, and how confident patients feel managing exertion without any real-time support.</p></div>
-      <div class="blk reveal"><h2>Research Methodology</h2><ul><li>Method: Semi-structured interviews (in-person, qualitative) + online survey (Google Forms, quantitative)</li><li>Interview participants: 6 — 1 chronic asthma patient, 2 doctors, 1 caregiver, 1 physiotherapist — plus 1 field observation</li><li>Survey respondents: 13 chronic asthma patients</li><li>Focus: Symptom recognition, activity monitoring, inhaler reliance, caregiver support, clinical visibility, emotional impact</li></ul></div>
-      <div class="blk reveal"><h2>Screener</h2><ul><li>Interviews: chronic asthma patients, treating doctors, caregivers, and a physiotherapist directly involved in day-to-day asthma care</li><li>Asthma patient interviewee: managing the condition for 15+ years — the most lived expertise in the research set</li><li>Caregiver role: actively administers treatment and responds during symptom episodes</li><li>Survey: individuals currently managing chronic asthma, across a range of severity and experience</li></ul></div>
-    </div>
-  </section>
-
-  <!-- WHAT WE ASKED -->
-  <section class="bs-sec" aria-labelledby="asked-h">
-    <div class="wrap">
-      <h2 class="bs-h2 reveal" id="asked-h">What We Asked</h2>
-      <div class="qa" data-stagger="0.1">
-        <div class="qc"><h3>Question 1</h3><p>Walk us through how you decide when to stop during physical activity, and what you do after.</p></div>
-        <div class="qc"><h3>Question 2</h3><p>On a scale of 1–5, how confident do you feel while doing heavy physical activities?</p></div>
-        <div class="qc"><h3>Question 3</h3><p>If a system could help you understand how much activity is safe for you each day, how useful would that be?</p></div>
-      </div>
-      <div class="qa" data-stagger="0.1">
-        <div class="qc f"><h3>Key Finding 1</h3><p>Stops are decided by physical signals alone — no tracking, just long-term personal experience — followed by inhaler use.</p></div>
-        <div class="qc f"><h3>Key Finding 2</h3><p>Rating 3: 6/13 · Rating 5: 4/13 · Rating 1: 2/13 — most patients manage exertion through constant low-grade uncertainty.</p></div>
-        <div class="qc f"><h3>Key Finding 3</h3><p>Very/Extremely useful: 10/13 (77%) — strong, unprompted value for the product.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- USER INSIGHTS -->
-  <section class="bs-sec" aria-labelledby="ins-h">
-    <div class="wrap">
-      <h2 class="bs-h2 reveal" id="ins-h">User Insights</h2>
-      <div class="chips" data-stagger="0.06">
-        <span>No real-time signal — just gut sense</span><span>Caregivers find out after symptoms are visible</span><span>Doctors have limited visibility between visits</span><span>Guidance doesn't travel home with the patient</span><span>Interruptions cause anxiety</span><span>Confidence sits in the middle, not high</span><span>Frustration is nearly universal</span><span>Strong, unprompted desire for guidance</span><span>“Notify Caregiver” was easy to miss</span>
-      </div>
+  <!-- IDEATION -->
+  <section class="b-sec b-mist" aria-labelledby="id-h">
+    <div class="b-wrap">
+      <div class="b-head"><div class="eyeh"><h2 class="b-h2" id="id-h">What I kept, and what I left for later</h2></div><p>I used SCAMPER to push past “another tracker”, then broke the app into 9 task flows, each with its screens and clicks estimated, and an information architecture built on Rosenfeld, Morville and Arango’s <i>Information Architecture for the Web and Beyond</i>.</p></div>
+      <ul class="scamp">
+        <li class="in"><b>Combine</b><p>Activity tracking with breathing status.</p><span><span class="mi" aria-hidden="true">check_circle</span>In this version: every activity is saved with how breathing felt.</span></li>
+        <li class="in"><b>Modify</b><p>Adjust the intensity and length of activity from breathing feedback.</p><span><span class="mi" aria-hidden="true">check_circle</span>In this version: a check-in before and during activity.</span></li>
+        <li class="in"><b>Put to another use</b><p>Use the phone to act early, not only to record.</p><span><span class="mi" aria-hidden="true">check_circle</span>In this version: a one-tap caregiver alert.</span></li>
+        <li class="later"><b>Substitute</b><p>Replace self-judged exertion with real-time body and air-quality data.</p><span><span class="mi" aria-hidden="true">schedule</span>Later: needs wearables and clinical validation.</span></li>
+        <li class="later"><b>Adapt</b><p>Bring asthma guidance into existing wearables and fitness apps.</p><span><span class="mi" aria-hidden="true">schedule</span>Later: depends on platform partners.</span></li>
+      </ul>
+      <p class="b-note">I kept what a phone can do reliably on its own today. Anything that claims to measure breathing needs sensors and medical validation, so it waits for a later version.</p>
     </div>
   </section>
 
   <!-- TASK FLOW -->
-  <section class="bs-sec tf" id="define" aria-labelledby="tf-h">
-    <div class="wrap">
-      <div class="tf-grid">
-        <div>
-          <p class="k reveal">03 DEFINE</p>
-          <h2 class="reveal" id="tf-h">Task Flow</h2>
-          <p class="task reveal"><b>Task:</b> Check breathing status before a workout</p>
-          <div class="scn reveal">
-            <p><b>Scenario:</b> Priya Nair is a 26-year-old working professional who has managed chronic asthma for over 15 years. Before heading out for a run, she wants to check her breathing status on Breathe Safe and log the activity so she has a record to share with her doctor.</p>
-            <h3>Expectations:</h3>
-            <ul><li>A breathing status that's clear and immediate, not buried under other data</li><li>A quick way to log the activity, without excessive steps</li><li>Confidence that the status reflects her real-time state, not generic advice</li></ul>
-          </div>
+  <section class="b-sec" aria-labelledby="tf-h">
+    <div class="b-wrap">
+      <div class="b-head"><div class="eyeh"><h2 class="b-h2" id="tf-h">The main task, step by step</h2></div><p><b>Task:</b> check breathing status before a run, log the workout, and alert a caregiver if breathing gets worse. Each path takes 2 to 3 screens and 4 to 5 taps.</p></div>
+      <div class="tf-scn">
+        <div class="tf-txt"><p><b>Scenario:</b> Madhushree wants to go for a run in the evening. She checks how her breathing is today, logs the run, and if breathing gets worse, alerts her mother.</p><p class="tf-eh"><b>Expectations</b></p><ul><li>A status that’s clear and immediate</li><li>A quick way to log the activity</li><li>Help in one tap if things get worse</li></ul></div>
+        <img class="tf-ph" src="assets/images/aud-patient.webp" alt="" width="240" height="300" loading="lazy">
+      </div>
+      <ul class="flow-key" aria-hidden="true"><li><i class="k-se"></i>Start / end</li><li><i class="k-sc"></i>Screen</li><li><i class="k-ac"></i>User action</li><li><i class="k-de"></i>Decision</li></ul>
+      <figure class="flow">
+        <div class="flow-h"><svg class="flow-svg" viewBox="0 0 1392 284" role="img" aria-label="Task flow: check breathing status, log a workout, or notify a caregiver"><defs><marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fa"/></marker></defs><path class="fe" d="M128,83 L172,83" marker-end="url(#ah1)"/><path class="fe" d="M296,83 L312,83" marker-end="url(#ah1)"/><path class="fe" d="M436,83 L452,83" marker-end="url(#ah1)"/><path class="fe" d="M576,83 L598,83" marker-end="url(#ah1)"/><path class="fe" d="M710,83 L732,83" marker-end="url(#ah1)"/><text class="fl" x="721" y="68" text-anchor="middle">Yes</text><path class="fe" d="M856,83 L872,83" marker-end="url(#ah1)"/><path class="fe" d="M996,83 L1012,83" marker-end="url(#ah1)"/><path class="fe" d="M654,133 L654,200" marker-end="url(#ah1)"/><text class="fl" x="662" y="167" text-anchor="start">No, getting worse</text><path class="fe" d="M716,230 L732,230" marker-end="url(#ah1)"/><path class="fe" d="M856,230 L872,230" marker-end="url(#ah1)"/><path class="fe" d="M996,230 L1012,230" marker-end="url(#ah1)"/><path class="fe" d="M1136,83 L1298,83 L1298,122" marker-end="url(#ah1)"/><path class="fe" d="M1136,230 L1298,230 L1298,190" marker-end="url(#ah1)"/><g class="fn start"><circle cx="94" cy="83" r="34"/><text x="94" y="88" text-anchor="middle">Start</text></g><g class="fn action"><rect x="172" y="53" width="124" height="60" rx="30"/><text x="234" y="88" text-anchor="middle">Open the app</text></g><g class="fn screen"><rect x="312" y="53" width="124" height="60" rx="10"/><text x="374" y="88" text-anchor="middle">Home</text></g><g class="fn action"><rect x="452" y="53" width="124" height="60" rx="30"/><text x="514" y="80" text-anchor="middle">Read breathing</text><text x="514" y="96" text-anchor="middle">status card</text></g><g class="fn decision"><path d="M654,33 L710,83 L654,133 L598,83 Z"/><text x="654" y="80" text-anchor="middle">Safe to</text><text x="654" y="96" text-anchor="middle">go?</text></g><g class="fn action"><rect x="732" y="53" width="124" height="60" rx="30"/><text x="794" y="88" text-anchor="middle">Log a workout</text></g><g class="fn screen"><rect x="872" y="53" width="124" height="60" rx="10"/><text x="934" y="88" text-anchor="middle">Activity log</text></g><g class="fn action"><rect x="1012" y="53" width="124" height="60" rx="30"/><text x="1074" y="80" text-anchor="middle">Save, with how</text><text x="1074" y="96" text-anchor="middle">breathing felt</text></g><g class="fn action"><rect x="592" y="200" width="124" height="60" rx="30"/><text x="654" y="236" text-anchor="middle">Open Care tab</text></g><g class="fn screen"><rect x="732" y="200" width="124" height="60" rx="10"/><text x="794" y="228" text-anchor="middle">Care and</text><text x="794" y="243" text-anchor="middle">support</text></g><g class="fn action"><rect x="872" y="200" width="124" height="60" rx="30"/><text x="934" y="228" text-anchor="middle">Tap Notify</text><text x="934" y="243" text-anchor="middle">caregiver</text></g><g class="fn screen"><rect x="1012" y="200" width="124" height="60" rx="10"/><text x="1074" y="228" text-anchor="middle">Caregiver</text><text x="1074" y="243" text-anchor="middle">notified</text></g><g class="fn end"><circle cx="1298" cy="156" r="34"/><text x="1298" y="161" text-anchor="middle">End</text></g></svg></div>
+        <div class="flow-v"><svg class="flow-svg" viewBox="0 0 498 994" role="img" aria-label="Task flow: check breathing status, log a workout, or notify a caregiver"><defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fa"/></marker></defs><path class="fe" d="M249,106 L249,138" marker-end="url(#ah2)"/><path class="fe" d="M249,198 L249,234" marker-end="url(#ah2)"/><path class="fe" d="M249,294 L249,330" marker-end="url(#ah2)"/><path class="fe" d="M249,390 L249,406" marker-end="url(#ah2)"/><path class="fe" d="M193,456 L99,456 L99,522" marker-end="url(#ah2)"/><text class="fl" x="146" y="448" text-anchor="start">Yes</text><path class="fe" d="M99,582 L99,618" marker-end="url(#ah2)"/><path class="fe" d="M99,678 L99,714" marker-end="url(#ah2)"/><path class="fe" d="M305,456 L399,456 L399,522" marker-end="url(#ah2)"/><text class="fl" x="352" y="448" text-anchor="start">No</text><path class="fe" d="M399,582 L399,618" marker-end="url(#ah2)"/><path class="fe" d="M399,678 L399,714" marker-end="url(#ah2)"/><path class="fe" d="M399,774 L399,810" marker-end="url(#ah2)"/><path class="fe" d="M161,744 L249,744 L249,902" marker-end="url(#ah2)"/><path class="fe" d="M337,840 L249,840 L249,902" marker-end="url(#ah2)"/><g class="fn start"><circle cx="249" cy="72" r="34"/><text x="249" y="77" text-anchor="middle">Start</text></g><g class="fn action"><rect x="187" y="138" width="124" height="60" rx="30"/><text x="249" y="173" text-anchor="middle">Open the app</text></g><g class="fn screen"><rect x="187" y="234" width="124" height="60" rx="10"/><text x="249" y="269" text-anchor="middle">Home</text></g><g class="fn action"><rect x="187" y="330" width="124" height="60" rx="30"/><text x="249" y="358" text-anchor="middle">Read breathing</text><text x="249" y="372" text-anchor="middle">status card</text></g><g class="fn decision"><path d="M249,406 L305,456 L249,506 L193,456 Z"/><text x="249" y="454" text-anchor="middle">Safe to</text><text x="249" y="468" text-anchor="middle">go?</text></g><g class="fn action"><rect x="37" y="522" width="124" height="60" rx="30"/><text x="99" y="557" text-anchor="middle">Log a workout</text></g><g class="fn screen"><rect x="37" y="618" width="124" height="60" rx="10"/><text x="99" y="653" text-anchor="middle">Activity log</text></g><g class="fn action"><rect x="37" y="714" width="124" height="60" rx="30"/><text x="99" y="742" text-anchor="middle">Save, with how</text><text x="99" y="756" text-anchor="middle">breathing felt</text></g><g class="fn action"><rect x="337" y="522" width="124" height="60" rx="30"/><text x="399" y="557" text-anchor="middle">Open Care tab</text></g><g class="fn screen"><rect x="337" y="618" width="124" height="60" rx="10"/><text x="399" y="646" text-anchor="middle">Care and</text><text x="399" y="660" text-anchor="middle">support</text></g><g class="fn action"><rect x="337" y="714" width="124" height="60" rx="30"/><text x="399" y="742" text-anchor="middle">Tap Notify</text><text x="399" y="756" text-anchor="middle">caregiver</text></g><g class="fn screen"><rect x="337" y="810" width="124" height="60" rx="10"/><text x="399" y="838" text-anchor="middle">Caregiver</text><text x="399" y="852" text-anchor="middle">notified</text></g><g class="fn end"><circle cx="249" cy="936" r="34"/><text x="249" y="941" text-anchor="middle">End</text></g></svg></div>
+        <figcaption class="sr-only">Steps: <ol><li>Open the app</li><li>Home: read the breathing status card</li><li>If it is safe to go, log a workout, then save it with how breathing felt</li><li>If breathing gets worse, open the Care tab, tap Notify caregiver, and see the confirmation</li></ol></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- DESIGN -->
+  <section class="b-sec b-dark" id="design" aria-labelledby="ds-h">
+    <div class="b-wrap">
+      <div class="b-head"><div class="eyeh"><h2 class="b-h2" id="ds-h">From wireframe to final screen</h2></div><p>Layout and hierarchy first, with circles standing in for icons, then the visual design.</p></div>
+      <div class="b-evo">
+        <figure><img class="zoomable" src="assets/images/mid-home.webp?v=2" width="564" height="1256" loading="lazy" alt="Mid-fidelity wireframe of the home screen"><figcaption>Home</figcaption></figure>
+        <figure><img class="zoomable" src="assets/images/mid-checkin.webp" width="564" height="1256" loading="lazy" alt="Mid-fidelity wireframe of the breathing check-in"><figcaption>Check-in</figcaption></figure>
+        <figure><img class="zoomable" src="assets/images/mid-activity.webp" width="564" height="1256" loading="lazy" alt="Mid-fidelity wireframe of the activity log"><figcaption>Activity log</figcaption></figure>
+        <figure><img class="zoomable" src="assets/images/mid-caregiver.webp?v=2" width="564" height="1256" loading="lazy" alt="Mid-fidelity wireframe of caregiver support"><figcaption>Caregiver support</figcaption></figure>
+      </div>
+      <p class="evo-l">Mid-fidelity wireframes</p>
+
+      <div class="finals">
+        <figure><img class="zoomable" src="assets/images/scr-home.webp?v=2" width="564" height="1256" loading="lazy" alt="Final home screen"><figcaption><h3>Home</h3><p>Breathing status sits at the top in large type, so she can tell at a glance whether today is a good day to be active.</p></figcaption></figure>
+        <figure><img class="zoomable" src="assets/images/scr-checkin.webp" width="564" height="1256" loading="lazy" alt="Final breathing check-in screen"><figcaption><h3>Breathing check-in</h3><p>Three simple options instead of a long form, so checking in takes seconds, even mid-walk.</p></figcaption></figure>
+        <figure><img class="zoomable" src="assets/images/scr-activity.webp" width="564" height="1256" loading="lazy" alt="Final activity log screen"><figcaption><h3>Activity log</h3><p>Each activity is saved with how her breathing felt, so she learns her limits from data.</p></figcaption></figure>
+        <figure><img class="zoomable" src="assets/images/scr-inhaler.webp" width="564" height="1256" loading="lazy" alt="Final inhaler log screen"><figcaption><h3>Inhaler log</h3><p>Every puff is recorded, so she and her doctor can spot when she relies on it more than usual.</p></figcaption></figure>
+      </div>
+
+      <div class="key-f">
+        <div class="kf-t">
+          <h3>Notify caregiver</h3>
+          <p>One tap tells a trusted person how she’s doing, with her current status and location, so support arrives before symptoms escalate, not after.</p>
+          
         </div>
-        <div class="photo reveal-img"><img src="assets/images/taskflow-photo.webp" width="702" height="1036" loading="lazy" alt="Priya, the persona, getting ready for a run"></div>
+        <figure><img class="zoomable" src="assets/images/scr-caregiver.webp?v=2" width="563" height="1253" loading="lazy" alt="Caregiver support screen with Notify caregiver and Call emergency contact"><figcaption>Caregiver support</figcaption></figure>
+        <figure><img class="zoomable" src="assets/images/scr-notified.webp?v=2" width="563" height="1253" loading="lazy" alt="Confirmation screen: caregiver notified"><figcaption>Caregiver notified</figcaption></figure>
       </div>
-      <div class="flow-legend reveal" aria-hidden="true"><span><i></i>Option</span><span><i></i>Screen</span></div>
-      <p class="scroll-hint" style="margin-top:24px">Swipe to see the full flow →</p>
-      <div class="flow-scroll"><div class="flow reveal fade" role="img" aria-label="Task flow: Start, open the app, home dashboard; then either breathing status card leading to green zone, or activity logging leading to log a workout; both lead to notify caregiver, what will be shared, confirmation sent, end.">
-<svg viewBox="0 0 1312 580" aria-hidden="true">
-<path class="ln" style="--delay:0.15s" d="M184,176 H230"/>
-<path class="ln" style="--delay:0.27s" d="M460,176 H506"/>
-<path class="ln" style="--delay:0.39s" d="M736,176 H764 V46 H782"/>
-<path class="ln" style="--delay:0.39s" d="M736,176 H764 V296 H782"/>
-<path class="ln" style="--delay:0.51s" d="M1012,46 H1058"/>
-<path class="ln" style="--delay:0.75s" d="M1012,296 H1058"/>
-<path class="ln" style="--delay:0.63s" d="M1288,46 H1328 V496 H1298"/>
-<path class="ln" style="--delay:0.63s" d="M1288,296 H1328 V496 H1298"/>
-<path class="ln" style="--delay:0.75s" d="M1068,496 H1022"/>
-<path class="ln" style="--delay:0.87s" d="M792,496 H746"/>
-<path class="ln" style="--delay:0.99s" d="M516,496 H194"/>
-<path class="hd" style="--delay:0.15s" d="M230,169 L240,176 L230,183Z"/>
-<path class="hd" style="--delay:0.25s" d="M506,169 L516,176 L506,183Z"/>
-<path class="hd" style="--delay:0.35s" d="M782,39 L792,46 L782,53Z"/>
-<path class="hd" style="--delay:0.45s" d="M782,289 L792,296 L782,303Z"/>
-<path class="hd" style="--delay:0.55s" d="M1058,39 L1068,46 L1058,53Z"/>
-<path class="hd" style="--delay:0.65s" d="M1058,289 L1068,296 L1058,303Z"/>
-<path class="hd" style="--delay:0.75s" d="M1288,496 L1298,489 L1298,503Z"/>
-<path class="hd" style="--delay:0.85s" d="M1012,496 L1022,489 L1022,503Z"/>
-<path class="hd" style="--delay:0.95s" d="M736,496 L746,489 L746,503Z"/>
-<path class="hd" style="--delay:1.05s" d="M184,496 L194,489 L194,503Z"/>
-</svg>
-<div class="fn o" style="left:64px;top:116px;--delay:0.00s" aria-hidden="true">Start</div>
-<div class="fn " style="left:240px;top:140px;--delay:0.08s" aria-hidden="true">Open the app</div>
-<div class="fn s" style="left:516px;top:140px;--delay:0.16s" aria-hidden="true">Home Dashboard</div>
-<div class="fn " style="left:792px;top:10px;--delay:0.24s" aria-hidden="true">Breathing Status Card</div>
-<div class="fn " style="left:1068px;top:10px;--delay:0.32s" aria-hidden="true">Green Zone</div>
-<div class="fn " style="left:792px;top:260px;--delay:0.40s" aria-hidden="true">Activity Logging</div>
-<div class="fn " style="left:1068px;top:260px;--delay:0.48s" aria-hidden="true">Log a Workout</div>
-<div class="fn s" style="left:1068px;top:460px;--delay:0.56s" aria-hidden="true">Notify Caregiver</div>
-<div class="fn " style="left:792px;top:460px;--delay:0.64s" aria-hidden="true">What Will Be Shared</div>
-<div class="fn " style="left:516px;top:460px;--delay:0.72s" aria-hidden="true">Confirmation Sent</div>
-<div class="fn o end" style="left:64px;top:436px;--delay:0.80s" aria-hidden="true">End</div>
-</div></div>
-      <p class="flow-note reveal">Similarly, multiple task flows were mapped for the app's other core features.</p>
-    </div>
-  </section>
-
-  <!-- MID-FI -->
-  <section class="bs-sec evo" id="design" aria-labelledby="mid-h">
-    <div class="wrap">
-      <p class="k reveal">03 DESIGN</p>
-      <h2 class="reveal" id="mid-h">Mid-fidelity Wireframes</h2>
-      <p class="desc reveal">Layout, hierarchy and content placed before any visual design. Black circles mark where icons will sit — no images, no colour.</p>
-      <div class="screens" data-stagger="0.1">
-        <figure class="scr"><span class="frame mid zoomable" data-caption="Mid-fidelity · Home"><img src="assets/images/mid-home.webp" width="564" height="1256" loading="lazy" alt="Mid-fidelity wireframe of the Home screen"></span><figcaption><h3>Home</h3></figcaption></figure>
-        <figure class="scr"><span class="frame mid zoomable" data-caption="Mid-fidelity · Breathing check-in"><img src="assets/images/mid-checkin.webp" width="564" height="1256" loading="lazy" alt="Mid-fidelity wireframe of the Breathing check-in screen"></span><figcaption><h3>Breathing check-in</h3></figcaption></figure>
-        <figure class="scr"><span class="frame mid zoomable" data-caption="Mid-fidelity · Activity log"><img src="assets/images/mid-activity.webp" width="564" height="1256" loading="lazy" alt="Mid-fidelity wireframe of the Activity log screen"></span><figcaption><h3>Activity log</h3></figcaption></figure>
-        <figure class="scr"><span class="frame mid zoomable" data-caption="Mid-fidelity · Caregiver support"><img src="assets/images/mid-caregiver.webp" width="564" height="1256" loading="lazy" alt="Mid-fidelity wireframe of the Caregiver support screen"></span><figcaption><h3>Caregiver support</h3></figcaption></figure>
+      <div class="b-limit">
+        <h3><span class="mi" aria-hidden="true">info</span>How the breathing status works, and its limits</h3>
+        <p>Breathe Safe doesn’t diagnose or measure anything. The status on Home is her own check-in (Comfortable, Slight discomfort or Difficulty breathing), and the weekly chart shows how those check-ins have trended. The app helps her notice changes earlier and share them; it doesn’t decide for her.</p>
+        <ul>
+          <li><b>Next version:</b> a “Difficulty breathing” check-in brings up the Notify caregiver card straight away, with a reminder to follow her asthma action plan and call emergency services if symptoms are severe.</li>
+          <li><b>After that:</b> link the check-in to the green, yellow and red zones of the asthma action plan her doctor already gives her, so “safe to go” comes from her doctor’s plan, not from the app.</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- HI-FI B&W -->
-  <section class="bs-sec evo" aria-labelledby="bw-h">
-    <div class="wrap">
-      <h2 class="reveal" id="bw-h" style="font-size:24px;line-height:32px">High-fidelity (Black &amp; White)</h2>
-      <p class="desc reveal">The final layouts, type and components in greyscale — hierarchy checked before colour was applied.</p>
-      <div class="screens bw" data-stagger="0.1">
-        <figure class="scr"><span class="frame zoomable" data-caption="High-fidelity B&W · Home"><img src="assets/images/scr-home.webp" width="564" height="1256" loading="lazy" alt="Greyscale high-fidelity Home screen"></span><figcaption><h3>Home</h3></figcaption></figure>
-        <figure class="scr"><span class="frame zoomable" data-caption="High-fidelity B&W · Breathing check-in"><img src="assets/images/scr-checkin.webp" width="564" height="1256" loading="lazy" alt="Greyscale high-fidelity Breathing check-in screen"></span><figcaption><h3>Breathing check-in</h3></figcaption></figure>
-        <figure class="scr"><span class="frame zoomable" data-caption="High-fidelity B&W · Activity log"><img src="assets/images/scr-activity.webp" width="564" height="1256" loading="lazy" alt="Greyscale high-fidelity Activity log screen"></span><figcaption><h3>Activity log</h3></figcaption></figure>
-        <figure class="scr"><span class="frame zoomable" data-caption="High-fidelity B&W · Caregiver support"><img src="assets/images/scr-caregiver.webp" width="563" height="1253" loading="lazy" alt="Greyscale high-fidelity Caregiver support screen"></span><figcaption><h3>Caregiver support</h3></figcaption></figure>
+  <!-- TESTING -->
+  <section class="b-sec" id="testing" aria-labelledby="ts-h">
+    <div class="b-wrap">
+      <div class="b-head stack"><div class="eyeh"><p class="eyebrow"><span class="mi" aria-hidden="true">science</span>Usability testing</p><h2 class="b-h2" id="ts-h">Testing with 5 people</h2></div><p>10 tasks, from onboarding to notifying a caregiver, using three methods: think-aloud, eye-tracking and the System Usability Scale (SUS).</p></div>
+      <p class="study-l">5 participants, 10 tasks, a Figma prototype, think-aloud, eye-tracking on a Tobii tracker and a SUS questionnaire.</p>
+      <div class="test-g">
+        <div class="sus2">
+          <h3 class="b-h3">SUS scores</h3>
+          <p class="b-big"><b>86.5</b><span>average out of 100</span></p>
+          <div class="sus-row" role="img" aria-label="SUS scores: 87.5, 80, 77.5, 87.5 and 100. The average benchmark is 68.">
+            <span class="bm" style="--v:68" aria-hidden="true"><em>avg 68</em></span>
+            <div style="--v:87.5"><i></i><b>87.5</b></div><div style="--v:80"><i></i><b>80</b></div><div style="--v:77.5"><i></i><b>77.5</b></div><div style="--v:87.5"><i></i><b>87.5</b></div><div style="--v:100"><i></i><b>100</b></div>
+          </div>
+          <p class="b-cap">All five scored above the industry average of 68, and an average of 86.5 sits in the top grade, A+.<sup class="cite"><a href="#ref-5" aria-label="Source 5">5</a></sup> Five testers is a small sample, so read this as a strong early signal.</p>
+        </div>
+        <div class="issues2">
+          <h3 class="b-h3">Think-aloud: 12 issues</h3>
+          <p>No task failures were recorded. The 12 issues were about clarity, labels and layout, not about getting stuck.</p>
+          <ul>
+            <li class="hi"><b>1 high</b>Emergency access wasn’t on the home screen</li>
+            <li class="md"><b>7 medium</b>Cards looked tappable but weren’t; Share and Download were combined</li>
+            <li class="lo"><b>4 low</b>“Call” instead of “Phone”; radio button placement</li>
+          </ul>
+          <p class="b-most">The most shared finding: <b>3 of 5</b> people expected Caregiver support under Profile, and 2 expected the health report there too. I haven’t moved them yet: emergency help also has to stay fast to reach, so the next round would test Profile against the Care tab before changing it.</p>
+          <h3 class="b-h3 sp2">What eye-tracking showed</h3>
+          <p>The first look usually landed on the colourful <b>weekly stability graph</b>, not the breathing status above it. For a health app that should answer “am I okay right now?” at a glance, that was the wrong order.</p>
+        </div>
+      </div>
+      <div class="fixes2">
+        <article><p class="fx-n">Planned fix 1</p><h3>Home: status first, help one tap away</h3><p><b>Found through</b> eye-tracking and think-aloud.</p><p><b>Next version:</b> a Notify caregiver card right under the breathing status, and the weekly graph moved lower and toned down, so the first look lands on “am I okay?” and emergency help is on Home. This also answers the one high-severity issue.</p></article>
+        <article><p class="fx-n">Planned fix 2</p><h3>Caregiver: say exactly what gets sent</h3><p><b>Found through</b> eye-tracking and think-aloud.</p><p><b>Next version:</b> keep Notify as the dark primary card and Call as the lighter option, and replace the one-line location note with a short “What will be shared” list: breathing status, live location and time.</p></article>
+      </div>
+      <p class="b-cap">Testing was done on the final screens shown above, so these two changes are designed but not yet built.</p>
+      <div class="b-r2">
+        <h3 class="b-h3">Round two: how I’ll know the fixes worked</h3>
+        <p>Same 10 tasks, same three methods, this time with people who live with asthma. Each fix has a baseline from round one and a target, so the result is a yes or no, not an impression.</p>
+        <div class="cmp-wrap" tabindex="0" role="region" aria-label="Round two success measures"><table class="b-r2-t">
+          <thead><tr><th scope="col">What I’ll measure</th><th scope="col">Round one</th><th scope="col">Target for round two</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Where the first look lands on Home</th><td>4 of 5 looked at the trends graph first</td><td>4 of 5 look at the breathing status first</td></tr>
+            <tr><th scope="row">Reaching emergency help from Home</th><td>Not on Home; flagged by 1 tester as high severity</td><td>Every tester finds it in one tap, without being told where</td></tr>
+            <tr><th scope="row">Noticing that the caregiver was told</th><td>The confirmation drew only about 0.65 s of attention on average</td><td>Every tester can say who was notified and what was shared</td></tr>
+            <tr><th scope="row">Where Caregiver support should live</th><td>3 of 5 expected it under Profile</td><td>Compare Care tab and Profile; keep whichever more testers find first</td></tr>
+            <tr><th scope="row">Overall usability (SUS)</th><td>Average 86.5</td><td>Stay above 80 with people who have asthma</td></tr>
+          </tbody></table></div>
       </div>
     </div>
   </section>
 
-  <!-- FINAL SCREENS -->
-  <section class="bs-sec evo final" aria-labelledby="final-h" style="padding-bottom:96px">
-    <div class="wrap">
-      <h2 class="reveal" id="final-h"><span class="line-mask solo"><span>Final Screens</span></span></h2>
-      <p class="desc reveal">The core of Breathe Safe: one clear breathing status, simple logging, and support that reaches a caregiver before a crisis.</p>
-      <div class="screens colorize" data-stagger="0.12">
-        <figure class="scr"><span class="frame zoomable" data-caption="Home — breathing status first, colour-coded, at the top."><img src="assets/images/scr-home.webp" width="564" height="1256" loading="lazy" alt="Final Home screen of Breathe Safe"></span><figcaption><h3>Home</h3><p>Breathing status first — colour-coded, at the top.</p></figcaption></figure>
-        <figure class="scr"><span class="frame zoomable" data-caption="Breathing check-in — how are you breathing right now?"><img src="assets/images/scr-checkin.webp" width="564" height="1256" loading="lazy" alt="Final Breathing check-in screen of Breathe Safe"></span><figcaption><h3>Breathing check-in</h3><p>A quick check-in: how are you breathing right now?</p></figcaption></figure>
-        <figure class="scr"><span class="frame zoomable" data-caption="Activity log — activity logged alongside its breathing impact."><img src="assets/images/scr-activity.webp" width="564" height="1256" loading="lazy" alt="Final Activity log screen of Breathe Safe"></span><figcaption><h3>Activity log</h3><p>Activity logged alongside its breathing impact.</p></figcaption></figure>
-        <figure class="scr"><span class="frame zoomable" data-caption="Inhaler log — inhaler use recorded, so patterns become visible."><img src="assets/images/scr-inhaler.webp" width="564" height="1256" loading="lazy" alt="Final Inhaler log screen of Breathe Safe"></span><figcaption><h3>Inhaler log</h3><p>Inhaler use recorded, so patterns become visible.</p></figcaption></figure>
+  <!-- LEARNED -->
+  <section class="b-sec b-mist" id="learned" aria-labelledby="ln-h">
+    <div class="b-wrap">
+      <h2 class="b-h2" id="ln-h">What I learned</h2>
+      <div class="learn2">
+        <div><h3>Clarity, not task failure</h3><p>People could finish the core tasks. What slowed them down were vague labels like “Currently Breathing” and cards that looked tappable but weren’t.</p></div>
+        
+        <div><h3>Combining methods catches more</h3><p>Eye-tracking showed where attention went, think-aloud explained why, and SUS gave an overall score. No single method would have found both problems.</p></div>
+        <div><h3>Next time</h3><p>I would test a first version earlier, then build the two planned fixes and run a second round, to measure the improvement directly.</p></div>
       </div>
+      <div class="b-end"><p>Happy to walk you through the research and the testing sessions.</p><a class="btn btn-filled lead b-mail" href="mailto:vidhina63@gmail.com?subject=Breathe%20Safe%20case%20study"><span class="mi" aria-hidden="true">mail</span>Email me about this project</a></div>
     </div>
   </section>
-
-  <section class="feature" aria-labelledby="nc-h">
-    <div class="wrap in">
-      <div>
-        <p class="k reveal">KEY FEATURE</p>
-        <h2 class="reveal" id="nc-h">Notify Caregiver</h2>
-        <p class="d reveal">One tap tells a trusted person how you’re doing — with your current status and location — so support arrives before symptoms escalate, not after.</p>
-        <p class="n reveal">None of the 7 competitors studied offered a caregiver flow like this.</p>
-      </div>
-      <div class="two" data-stagger="0.15">
-        <figure><span class="frame zoomable reveal-img" data-caption="Caregiver support"><img src="assets/images/scr-caregiver.webp" width="563" height="1253" alt="Caregiver support screen with Notify caregiver and call emergency contact"></span><figcaption>Caregiver support</figcaption></figure>
-        <figure><span class="frame zoomable reveal-img" data-caption="Caregiver notified"><img src="assets/images/scr-notified.webp" width="563" height="1253" alt="Confirmation screen: caregiver notified"></span><figcaption>Caregiver notified</figcaption></figure>
-      </div>
+<section class="refs-sec" id="sources" aria-labelledby="src-h">
+    <div class="refs-wrap">
+      <h2 id="src-h" class="refs-h"><span class="mi" aria-hidden="true">menu_book</span>Sources</h2>
+      <p class="refs-note">The 25+ papers, articles and case studies I reviewed are summarised in the project deck. These are the sources behind the facts on this page.</p>
+      <ol class="refs"><li id="ref-1"><span class="rn">1</span><span>World Health Organization. <i>Asthma</i>, fact sheet, updated 28 April 2026. <a href="https://www.who.int/news-room/fact-sheets/detail/asthma" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 1 in a new tab</span></a></span></li><li id="ref-2"><span class="rn">2</span><span>Global Initiative for Asthma. <i>Global Strategy for Asthma Management and Prevention</i>, 2023 update. <a href="https://ginasthma.org/2023-gina-main-report/" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 2 in a new tab</span></a></span></li><li id="ref-3"><span class="rn">3</span><span>Parsons J. P. et al. An Official American Thoracic Society Clinical Practice Guideline: Exercise-induced Bronchoconstriction. <i>Am J Respir Crit Care Med</i> 187(9), 1016–1027, 2013. <a href="https://www.rbht.nhs.uk/official-american-thoracic-society-clinical-practice-guideline-exercise-induced-bronchoconstriction" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 3 in a new tab</span></a></span></li><li id="ref-4"><span class="rn">4</span><span>Tinschert P., Jakob R., Barata F., Kramer J.-N., Kowatsch T. The Potential of Mobile Apps for Improving Asthma Self-Management: A Review of Publicly Available and Well-Adopted Asthma Apps. <i>JMIR mHealth and uHealth</i> 5(8), e113, 2017. <a href="https://mhealth.jmir.org/2017/8/e113" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 4 in a new tab</span></a></span></li><li id="ref-5"><span class="rn">5</span><span>Sauro J. 5 ways to interpret a SUS score. <i>MeasuringU</i>, 19 September 2018. <a href="https://measuringu.com/interpret-sus-score/" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 5 in a new tab</span></a></span></li><li id="ref-6"><span class="rn">6</span><span>9to5Google. Google Fit is shutting down, replaced by the Google Health app, 7 May 2026. <a href="https://9to5google.com/2026/05/07/google-fit-shut-down-health-replacement-migration-tool-coming/" target="_blank" rel="noopener"><span class="mi" aria-hidden="true">open_in_new</span><span class="sr-only">Open source 6 in a new tab</span></a></span></li></ol>
+      <h3 class="refs-h3">Competitor sources</h3><ul class="refs-co"><li><a href="https://www.asthmamd.org/" target="_blank" rel="noopener">AsthmaMD</a></li><li><a href="https://www.propellerhealth.com/" target="_blank" rel="noopener">Propeller Health</a></li><li><a href="https://apps.apple.com/us/app/my-mhealth/id1342640926" target="_blank" rel="noopener">MyAsthma (my mhealth)</a></li><li><a href="https://careclinic.io/asthma-tracker-app/" target="_blank" rel="noopener">CareClinic</a></li><li><a href="https://www.google.com/fit/" target="_blank" rel="noopener">Google Fit</a></li><li><a href="https://www.apple.com/health/" target="_blank" rel="noopener">Apple Health</a></li><li><a href="https://www.fitbit.com/" target="_blank" rel="noopener">Fitbit</a></li></ul>
     </div>
   </section>
 </main>
-<footer class="cs-foot">
-  <div class="in">
-    <a href="index.html#projects"><small>BACK TO</small><span><span class="mi l" aria-hidden="true">arrow_back</span>All projects</span></a>
-    <a class="next" href="banarasi-silk.html"><small>NEXT PROJECT</small><span>Banarasi Silk Saree<span class="mi r" aria-hidden="true">arrow_forward</span></span></a>
+<footer class="cs-foot cf">
+  <div class="cf-in">
+    <h2 class="cf-h">Have a look at my other projects</h2>
+    <div class="cf-g">
+      <a class="cf-c cf-rr" href="banarasi-silk.html">
+        <span class="cf-ph"><img src="assets/images/more-rr.webp" width="960" height="600" alt="" loading="lazy"></span>
+        <span class="cf-t"><small>Desktop website, e-commerce</small><b>Resham Riwayat</b><span class="cf-q">Who wove this saree, and how would a buyer ever know?</span></span>
+        <span class="cf-go" aria-hidden="true"><span class="mi">arrow_forward</span></span>
+      </a>
+      <a class="cf-c cf-th" href="fruit-vegetable-carts.html">
+        <span class="cf-ph"><img src="assets/images/more-th.webp" width="840" height="525" alt="" loading="lazy"></span>
+        <span class="cf-t"><small>Product design, team of 2</small><b>Rethinking the Thela</b><span class="cf-q">Why does pushing a vegetable cart have to hurt?</span></span>
+        <span class="cf-go" aria-hidden="true"><span class="mi">arrow_forward</span></span>
+      </a>
+    </div>
+    <div class="cf-bar">
+      <a class="cf-back" href="index.html#work"><span class="mi" aria-hidden="true">arrow_back</span>All projects</a>
+      <ul class="cf-l">
+        <li><a href="mailto:vidhina63@gmail.com">vidhina63@gmail.com</a></li>
+        <li><a href="assets/Vidhina_Singhal_Resume.pdf?v=3" target="_blank" rel="noopener">Resume<span class="sr-only"> (PDF, opens in new tab)</span></a></li>
+        <li><a href="https://www.linkedin.com/in/vidhina-singhal-3a0296372" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in new tab)</span></a></li>
+      </ul>
+      <p>Designed by Vidhina Singhal, 2026</p>
+    </div>
   </div>
 </footer>
-<script src="js/script.js?v=4" defer></script>
+<script src="js/script.js?v=20261025" defer></script>
 </body>
 </html>

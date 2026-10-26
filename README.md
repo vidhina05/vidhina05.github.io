@@ -1,27 +1,29 @@
-# Vidhina Singhal — Portfolio
+# Vidhina Singhal, UI/UX designer
 
-Personal UI/UX design portfolio, hand-built from the Figma design as a static site and hosted on GitHub Pages: **https://vidhina05.github.io/**
+My portfolio: **https://vidhina05.github.io/**
 
-## Pages
-| Page | File |
-|---|---|
-| Landing (hero, projects, education & experience, how I like to work, milestones, outside design, contact) | `index.html` |
-| Breathe Safe — chronic asthma app case study | `breathe-safe.html` |
-| Banarasi Silk Saree — Resham Riwayat case study | `banarasi-silk.html` |
-| Banarasi Silk — detailed competitor study | `banarasi-competitors.html` |
-| Indian Fruit & Vegetable Carts — frugal design case study | `fruit-vegetable-carts.html` |
+I’m a B.Des. student at Symbiosis Institute of Design, Pune (graduating May 2027), most recently a UI/UX Design Intern at Tech Mahindra. I’m looking for a 6-month UI/UX internship from December 2026.
 
-## Stack
-Plain HTML, CSS and vanilla JavaScript — no build step, no dependencies.
-- `css/style.css` — design tokens, layout, responsive rules and the motion system (`.reveal`, `.reveal-img`, `.line-mask`, `[data-stagger]`)
-- `js/script.js` — scroll reveals (IntersectionObserver), page transitions, sticky header + progress, active-section nav, mobile menu (focus-trapped), lightbox, custom cursor, subtle parallax, count-up numbers
-- `assets/fonts` — self-hosted Poppins, Inter, Roboto, Lexend Deca, Syne and Material Icons (woff2)
-- `assets/images` — WebP exports of the Figma assets
+## Case studies
 
-Motion respects `prefers-reduced-motion`; the custom cursor is disabled on touch devices.
+| Project | What it is | Page |
+|---|---|---|
+| Breathe Safe | A mobile app that helps people with chronic asthma know how much activity is safe today. Tested with 5 people, average SUS 86.5. | `breathe-safe.html` |
+| Resham Riwayat | A desktop storefront for handwoven Banarasi sarees, built to prove a saree is handwoven, based on field research in a Varanasi workshop. | `banarasi-silk.html` |
+| Rethinking the Thela | A low-cost redesign of India’s fruit and vegetable cart, from interviews with six vendors in Pune to a 3D concept. Team project with Nadiya Fathim. | `fruit-vegetable-carts.html` |
 
-## Local preview
+## How the site is made
+
+A static site with plain HTML, CSS and a little JavaScript, hosted on GitHub Pages. Each case study has its own stylesheet and visual identity (`css/breathe.css`, `css/silk.css`, `css/thela.css`); the landing page uses `css/home3.css`, and `css/cs-shared.css` gives every case study the same menu, footer and project cards. Fonts are self-hosted in `assets/fonts`, images are WebP in `assets/images`, and real photos of people are blurred.
+
+To preview locally:
+
 ```
 python3 -m http.server 8000
 ```
-then open http://localhost:8000.
+
+Then open http://localhost:8000.
+
+## Contact
+
+vidhina63@gmail.com | [LinkedIn](https://www.linkedin.com/in/vidhina-singhal-3a0296372)
