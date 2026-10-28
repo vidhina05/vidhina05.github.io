@@ -216,12 +216,12 @@
 .x-ex .h3t{color:#fff}
 .ex-k{margin-top:56px;display:flex;align-items:center;gap:12px;font:500 16px/1 var(--txt);letter-spacing:.14em;text-transform:uppercase;color:#EDE2DA}
 .ex-k i{width:8px;height:8px;border-radius:50%;background:var(--terra)}
-.edu{margin-top:20px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding:32px 32px;border-radius:32px;background:linear-gradient(110deg,#C26B45 0%,#A9542F 55%,#80391F 100%)}
+.edu{margin-top:20px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding:32px 32px;border-radius:32px;background:linear-gradient(110deg,#AD5A36 0%,#A9542F 55%,#80391F 100%)}
 .edu-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .edu-top img{width:56px;height:56px;object-fit:contain;border-radius:12px;background:#2A1C22;padding:4px}
 .edu-top span{padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.18);font:500 14px/1 var(--txt);letter-spacing:.08em;text-transform:uppercase}
 .edu h3{margin-top:24px;font:600 clamp(24px,2.4vw,32px)/1.15 var(--disp)}
-.edu p:not(.edu-top):not(.edu-gpa){margin-top:8px;color:rgba(255,255,255,.88)}
+.edu p:not(.edu-top):not(.edu-gpa){margin-top:8px;color:#fff}
 .edu-gpa{text-align:right;flex:none}
 .edu-gpa b{display:block;font:700 clamp(64px,8vw,120px)/.9 var(--disp);letter-spacing:-.03em}
 .edu-gpa span{display:block;margin-top:8px;font:500 14px/1 var(--txt);letter-spacing:.12em;text-transform:uppercase}
@@ -545,7 +545,7 @@
 .sk-t{gap:8px}
 .sk-t li{padding:8px 12px 8px 8px;background:rgba(255,255,255,.06);border-radius:8px;min-height:32px}
 .hw-tag{background:none;padding:0;min-height:0;font:500 14px/16px var(--txt);opacity:.7}
-.edu-top span{background:none;padding:0;min-height:0;font:500 14px/20px var(--txt);opacity:.9}
+.edu-top span{background:none;padding:0;min-height:0;font:500 14px/20px var(--txt);opacity:1}
 /* how I work: no giant ?, wider cards */
 .hw::before{content:none}
 .how3{grid-template-columns:minmax(0,.55fr) minmax(0,2fr);align-items:start}
@@ -695,3 +695,4 @@
 .nda-real::after{content:none;display:none}
 .tlx-mono{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#fff;color:#1F8FB0;font:700 20px/1 var(--disp)}
 .tlx.tlx-one{grid-template-columns:1fr}
+@media (max-width:839px){.pc-n{padding-right:72px}}

@@ -302,7 +302,7 @@ img.logo{width:20px!important;height:20px!important;max-width:none!important;dis
 .bm-t tbody th{font-weight:500}
 .bm-t tbody tr:nth-child(even){background:var(--cs-soft)}
 .bm-t td{font-size:16px;font-weight:700}
-.bm-t .b-y{color:#2E7D52}.bm-t .b-n{color:#9AA0A6;font-weight:400}
+.bm-t .b-y{color:#256B45}.bm-t .b-n{color:#5F656B;font-weight:400}
 .bm-t tr.tot th,.bm-t tr.tot td{font-weight:800;font-size:16px;border-top:2px solid var(--cs-ink);border-bottom:0;background:var(--cs-card,#fff)}
 .cmp-pl{margin:24px 0 8px;font-weight:500;color:var(--cs-ink)}
 .cmp-note{margin:12px 0 0;font-size:14px;line-height:1.5;color:var(--cs-mute);max-width:72ch}
