@@ -2,7 +2,7 @@
 
 My portfolio: **https://vidhina05.github.io/**
 
-I’m a B.Des. student at Symbiosis Institute of Design, Pune (graduating May 2027), most recently a UI/UX Design Intern at Tech Mahindra. I’m looking for a 6-month UI/UX internship from December 2026.
+I’m a B.Des. student at Symbiosis Institute of Design, Pune (graduating May 2027), most recently a UI/UX Design Intern at Tech Mahindra. I’m looking for a 5-month UI/UX internship from January 2027.
 
 ## Case studies
 
@@ -26,4 +26,4 @@ Then open http://localhost:8000.
 
 ## Contact
 
-vidhina63@gmail.com | [LinkedIn](https://www.linkedin.com/in/vidhina-singhal)
+vidhina63@gmail.com | [LinkedIn](https://www.linkedin.com/in/vidhina-singhal-3a0296372)
